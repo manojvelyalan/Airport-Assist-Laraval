@@ -1,5 +1,4 @@
 @extends('layouts.main')
-
 @section('content')
 <section class="banner-header">
 	<div class="four-features">
