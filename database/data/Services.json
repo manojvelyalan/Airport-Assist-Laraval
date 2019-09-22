@@ -1,0 +1,292 @@
+{
+"results" : [
+
+  {
+    "objectId": "F0Sok9Q9Lc",
+    "title": "Limousine",
+    "createdAt": "2018-03-08T15:28:48.573Z",
+    "updatedAt": "2018-03-08T15:38:45.316Z",
+    "status": true
+  },
+  {
+    "objectId": "GP0yUjsI2u",
+    "title": "Arrival",
+    "createdAt": "2018-03-08T15:29:00.733Z",
+    "updatedAt": "2018-03-08T15:29:02.676Z",
+    "status": true
+  },
+  {
+    "objectId": "aNsrmcngGs",
+    "title": "Lounge Services",
+    "createdAt": "2018-03-08T15:29:12.180Z",
+    "updatedAt": "2018-03-08T15:38:49.620Z",
+    "status": false
+  },
+  {
+    "objectId": "RXqCYMRwi8",
+    "title": "Departure",
+    "createdAt": "2018-03-08T15:29:24.986Z",
+    "updatedAt": "2018-03-08T15:29:29.342Z",
+    "status": true
+  },
+  {
+    "objectId": "cuRO5ta4bN",
+    "status": true,
+    "createdAt": "2018-03-08T15:29:39.277Z",
+    "updatedAt": "2018-03-08T15:29:43.189Z",
+    "title": "Transfer / Transit"
+  },
+  {
+    "objectId": "FHUpeidhfQ",
+    "title": "VIP Terminal Services",
+    "createdAt": "2018-03-08T15:30:45.036Z",
+    "updatedAt": "2018-03-08T15:31:12.749Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "RXqCYMRwi8"
+    },
+    "status": true
+  },
+  {
+    "objectId": "SdmkOkz65d",
+    "title": "VIP Services ",
+    "createdAt": "2018-03-08T15:31:09.013Z",
+    "updatedAt": "2018-03-08T15:31:29.617Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "RXqCYMRwi8"
+    },
+    "status": true
+  },
+  {
+    "objectId": "ixvPcN4L5r",
+    "title": "Meet & Greet Services",
+    "createdAt": "2018-03-08T15:31:23.756Z",
+    "updatedAt": "2018-03-08T15:32:11.228Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "RXqCYMRwi8"
+    },
+    "status": true
+  },
+  {
+    "objectId": "NYiBgps4NA",
+    "createdAt": "2018-03-08T15:31:45.413Z",
+    "updatedAt": "2018-03-08T15:31:55.744Z",
+    "title": "VIP Lounge Service",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "RXqCYMRwi8"
+    },
+    "status": true
+  },
+  {
+    "objectId": "Gayvo3XagD",
+    "title": "Fast Track Services",
+    "createdAt": "2018-03-08T15:32:06.639Z",
+    "updatedAt": "2018-03-08T15:33:16.004Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "RXqCYMRwi8"
+    },
+    "status": true
+  },
+  {
+    "objectId": "lMc5eTubER",
+    "title": "VIP Lounge Service",
+    "createdAt": "2018-03-08T15:32:47.572Z",
+    "updatedAt": "2018-03-08T15:33:56.092Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "cuRO5ta4bN"
+    },
+    "status": true
+  },
+  {
+    "objectId": "c0qpHMCcls",
+    "title": "Connection - Domestic to International ",
+    "createdAt": "2018-03-08T15:33:26.342Z",
+    "updatedAt": "2018-03-08T15:34:06.520Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "cuRO5ta4bN"
+    },
+    "status": true
+  },
+  {
+    "objectId": "nZBo0Vz51a",
+    "title": "Connection - Domestic to Domestic ",
+    "createdAt": "2018-03-08T15:33:32.920Z",
+    "updatedAt": "2018-03-08T15:34:04.799Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "cuRO5ta4bN"
+    },
+    "status": true
+  },
+  {
+    "objectId": "3yqqk6RE1c",
+    "title": "Connection - International to International ",
+    "createdAt": "2018-03-08T15:33:44.876Z",
+    "updatedAt": "2018-03-08T15:34:03.524Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "cuRO5ta4bN"
+    },
+    "status": true
+  },
+  {
+    "objectId": "QuVXrFqBVz",
+    "title": "Connection - International to Domestic ",
+    "createdAt": "2018-03-08T15:33:53.233Z",
+    "updatedAt": "2018-03-08T15:34:02.273Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "cuRO5ta4bN"
+    },
+    "status": true
+  },
+  {
+    "objectId": "a2U9uptcOM",
+    "title": "Escort to Lounge",
+    "createdAt": "2018-03-08T15:35:05.733Z",
+    "updatedAt": "2018-03-08T15:39:22.152Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "aNsrmcngGs"
+    },
+    "status": false
+  },
+  {
+    "objectId": "EpYfQ4gxEM",
+    "title": "Free WIFI",
+    "createdAt": "2018-03-08T15:35:23.513Z",
+    "updatedAt": "2018-03-08T15:39:19.753Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "aNsrmcngGs"
+    },
+    "status": false
+  },
+  {
+    "objectId": "DVgVaA9MvE",
+    "title": "Variety of hot and cold meals and unlimited supply of beverages",
+    "createdAt": "2018-03-08T15:35:30.620Z",
+    "updatedAt": "2018-03-08T15:39:18.004Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "aNsrmcngGs"
+    },
+    "status": false
+  },
+  {
+    "objectId": "atjQk7Y3fE",
+    "title": "Lounges manned by specially-trained hosts and hostesses",
+    "createdAt": "2018-03-08T15:35:39.409Z",
+    "updatedAt": "2018-03-08T15:39:16.440Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "aNsrmcngGs"
+    },
+    "status": false
+  },
+  {
+    "objectId": "TYSLmJQDO9",
+    "title": "Range of reading material / television programs",
+    "createdAt": "2018-03-08T15:35:49.712Z",
+    "updatedAt": "2018-03-08T15:39:14.824Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "aNsrmcngGs"
+    },
+    "status": false
+  },
+  {
+    "objectId": "dci3ORWAVu",
+    "title": "Business Centre equipped with PCs, outlets for personal laptops, etc.",
+    "createdAt": "2018-03-08T15:35:58.284Z",
+    "updatedAt": "2018-03-08T15:39:12.129Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "aNsrmcngGs"
+    },
+    "status": false
+  },
+  {
+    "objectId": "YP46D6laB4",
+    "title": "VIP Terminal Services",
+    "createdAt": "2018-03-08T15:37:11.240Z",
+    "updatedAt": "2018-03-08T19:20:20.686Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "GP0yUjsI2u"
+    },
+    "status": true
+  },
+  {
+    "objectId": "HAaiggo1jA",
+    "title": "VIP Services",
+    "createdAt": "2018-03-08T15:37:33.380Z",
+    "updatedAt": "2018-03-08T15:38:04.644Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "GP0yUjsI2u"
+    },
+    "status": true
+  },
+  {
+    "objectId": "mPEHC4AGci",
+    "title": "VIP Lounge Service",
+    "createdAt": "2018-03-08T15:37:36.830Z",
+    "updatedAt": "2018-03-08T15:38:05.930Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "GP0yUjsI2u"
+    },
+    "status": true
+  },
+  {
+    "objectId": "K0JLbjlola",
+    "title": "Fast Track Services",
+    "createdAt": "2018-03-08T15:37:45.132Z",
+    "updatedAt": "2018-03-08T15:38:07.040Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "GP0yUjsI2u"
+    },
+    "status": true
+  },
+  {
+    "objectId": "EoquE2BJPA",
+    "title": "Meet & Greet Services",
+    "createdAt": "2018-03-08T15:37:53.809Z",
+    "updatedAt": "2018-03-08T15:38:08.145Z",
+    "serviceType": {
+      "__type": "Pointer",
+      "className": "Services",
+      "objectId": "GP0yUjsI2u"
+    },
+    "status": true
+  }
+]
+}

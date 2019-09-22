@@ -1,0 +1,517 @@
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  #departure .timeline ul li div {
+    width: 250px;
+}
+#departure .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+}
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    /* navbar */
+    header.MUA-main-header .navbar{
+        padding: 0;
+    }
+    header.MUA-main-header .navbar-brand{
+        margin-left: 1rem;
+    }
+    header.MUA-main-header .navbar .nav-link {
+        padding: .5rem 1rem;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    header.MUA-main-header .navbar-toggler{
+        padding: 0;
+        border: inherit;
+        border-color: inherit;
+    }
+
+    header.MUA-main-header .navbar-toggler img{
+        width: 70px;
+    }
+
+    header.MUA-main-header .header-menu-box{
+        display: none;
+    }
+
+
+    .MUA-main-header{
+        padding-bottom: 4rem !important;
+    }
+
+    /* landing slider */
+    header.MUA-main-header .navbar .nav-item{
+        text-align: center;
+    }
+    #home-slider-carousel.carousel .carousel-inner .carousel-item > div{
+        height: 80vh;
+    }
+    #home-slider-carousel .carousel-indicators{
+        margin-left: 0%;
+        margin-right: 0%;
+        display: none;
+    }
+
+    #home-slider-carousel .carousel-control-next{
+        right: 3%;
+    }
+
+    #home-slider-carousel .carousel-control-prev{
+        left: 70%;
+    }
+
+    /* Landing Red Banner  */
+
+    .banner-header #MUA-Band-Banner{
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+
+    .banner-header #MUA-Band-Banner .MUA-Band-one{
+        height: auto;
+        width: 100%;
+        transform: skewX(0);
+        border-left: inherit;
+    }
+    .banner-header #MUA-Band-Banner .MUA-Band-one-White{
+        height: auto;
+        width: 100%;
+        transform: skewX(0);
+        border-left: inherit;
+    }
+
+    .banner-header .four-features{
+        position: absolute;
+        top: 0;
+    }
+
+    .banner-header #home-slider-carousel .slider-cap{
+        font-size: .8rem;
+        top: 79%;
+    }
+
+    .MUA-band-content{
+        padding-bottom: 2rem;
+    }
+
+    .banner-header .MUA-band-content .row:first-child .col-md-6:first-child{
+        transform: skewX(0);
+    }
+
+    .banner-header .MUA-band-content .p1{
+        float: inherit !important;
+    }
+
+    .banner-header .MUA-band-content .p2{
+        text-align: center;
+    }
+
+    .text-skewToNormal{
+        transform: skewX(0);
+    }
+
+    .banner-header #MUA-Band-Banner .MUA-Band-Panel .p1{
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+
+    .banner-header #MUA-Band-Banner .MUA-Band-Panel{
+        padding-top: 2rem;
+        border-top: 5px solid #B2192C;
+    }
+
+    .banner-header .MUA-band-content p.fast-easy-hassle{
+        margin-left: inherit !important;
+    }
+
+    /* about section */
+
+    .About-MUA h1{
+        font-size: 1.5rem;
+    }
+
+    /* book MUA Section */
+
+    .bookNow-MUA h1{
+        font-size: 1.5rem;
+    }
+
+    .bookNow-MUA .form-section {
+        width: 100% !important;
+    }
+
+    /* what we offer section */
+    
+    .WWO-MUA .brand-header{
+        font-size: 1.5rem;
+    }
+
+    .WWO-MUA h1{
+        font-size: 1.5rem;
+    }
+
+    .WWO-MUA img.wwd-img {
+        width: 100%;
+        margin-bottom:2rem !important;
+    }
+
+    .WWO-MUA .one > .col-md-6:first-child {
+        order: 2;
+        margin-left: 2rem;
+    }
+
+    .WWO-MUA li.mt-2 .m-l-2{
+        margin-left: 0;
+    }
+    
+    .WWO-MUA section.container{
+        margin-top: 0 !important;
+        margin-bottom: 0rem !important;
+        padding-bottom: 2rem;
+    }
+
+    /* MUA download section */
+
+    .MUA-download-section ul{
+        display: inline-block;
+        text-align: center;
+    }
+
+    /* testimonial */
+
+    .MUA-Testimonial .youtube-video{
+        display: none;
+    }
+
+    #testimonial-carousel .carousel-control-prev{
+        margin-left: -8%;
+    }
+
+    /*campaign page*/
+.campaign-wrapper .header-text{
+    width:95%;
+}
+
+    .campaign-wrapper h1{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .campaign-wrapper .tag-line{
+        font-size: .8rem;
+    }
+
+.campaign-wrapper .header-text h3{
+font-size:1.2rem;
+}
+
+    .campaign-wrapper .header-text{
+        margin:2rem auto;
+    }
+
+
+.campaign-wrapper .header-text .dv{
+ display:none;
+}
+
+.campaign-wrapper .header-text .mv{
+ display:block;
+}
+
+    .campaign-wrapper h1 span{
+        font-size: 1rem;
+    }
+
+    .campaign-main-section .campaign-wrapper-tabs .content-wrapper{
+        width:100%;
+        padding-left: 0% !important;
+    }
+
+    /* footer */
+
+
+    footer.MUA-MainFooter .foot-1 h5{
+        font-size: 1rem;
+        margin-left: inherit !important;
+    }
+
+    footer.MUA-MainFooter .foot-1 img{
+        bottom: 0%;
+    }
+
+    /* services form section  */
+    .service-form-wrapper .bg-image{
+        height: 20rem;
+    }
+    .our-services-wrapper h1{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .our-services-wrapper .form-wrapper{
+        width: 100%;
+    }
+
+    .our-services-main-section .our-service-request-service-wrapper{
+        background: #f41d24;
+    }
+
+    .ground-handling-wrapper h1{
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+    .ground-handling-main-section .ground-handling-request-service-wrapper{
+        background: #bc2a2a;
+    }
+
+    .ground-handling-main-section{
+        padding-bottom: 1rem;
+    }
+
+    /*airport served  page*/
+    .airport-served-wrapper{
+        background: #222222;
+        height: 80vh
+    }
+    .airport-served-wrapper img{
+        display: none;
+    }
+    .airport-served-wrapper .content-wrapper{
+        top: 5%;
+        left: 3%;
+        right: 3%;
+    }
+
+    .airport-served-wrapper .content-wrapper h1{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .airport-served-location-detector .form-wrappper{
+        width: 95%;
+    }
+
+    .country-airport-served-wrapper p.centered{
+        top: 50%;
+    }
+    
+    .airport-served-request-service-wrapper .image-wrapper{
+        background: #F41D24;
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    .airport-served-request-service-wrapper .image-wrapper h1{
+        margin-top: 3rem;
+    }
+
+    /*blog part*/
+
+    .blog-wrapper h1{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .blog-wrapper .subscribe-email{
+        width:100% !important;
+    }
+
+    .blog-wrapper .subscribe-email input[type="email"]{
+        height: 38px;
+        font-size: 12px;
+    }
+    .blog-wrapper .subscribe-email button{
+        font-size: 1rem;
+    }
+
+    /*blog-detail page style*/
+    .blog-detailed-wrapper h1{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .blog-detailed-wrapper .subscribe-email{
+        width:100% !important;
+    }
+
+    .blog-detailed-wrapper .subscribe-email input[type="email"]{
+        height: 38px;
+        font-size: 12px;
+    }
+    .blog-detailed-wrapper .subscribe-email button{
+        font-size: 1rem;
+    }
+
+    .blog-detailed-section .blog-content h1{
+        font-size: 1.5rem;
+    }
+
+    /*ground handing services form*/
+
+    .groundhandlingFormService-wrapper h1{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    #msform fieldset{
+        width: 100%;
+        margin:0;
+    }
+
+    /*contact us responisveness*/
+
+    .contact-us-form-section .bg-image{
+        height: 60vh;
+    }
+
+    .contact-us-form-section .form-wrapper h1{
+        font-size: 1.5rem;
+    }
+
+    /*partner-with us responsiveness*/
+
+    .partner-with-us-form-section .bg-image > .bg-img-text > span{
+        padding: .5rem .2rem;
+    font-size: 12px;
+    }
+
+    .partner-with-us-form-section h1{
+        font-size: 1.5rem;
+    }
+
+    .corporate-agent-form-section .bg-image{
+        height: 60vh;
+    }
+
+    .corporate-agent-form-section h1{
+        font-size: 1.5rem;
+    }
+
+    .airport-assistance-form-section .bg-image{
+        height: 60vh;
+    }
+
+    .airport-assistance-form-section h1{
+        font-size: 1.5rem;
+    }
+
+    /*campaign styles*/
+
+    .campaign-products-wrapper .price-tag-top{
+        margin-left: -3rem;
+    }
+    
+    .campaign-products-wrapper .price-tag-top p{
+        font-size: 1.5rem;
+    }
+
+    .campaign-products-wrapper .vertical-line-img{
+        display: none;
+    }
+
+    .campaign-products-wrapper .campaign-product{
+        margin-top: 3rem;
+    }
+
+    .campaign-products-wrapper .bottom-tag{
+        transform: skew(0,0);
+        margin-right: 0;
+        float: inherit;
+        width: 100%;
+    }
+
+    .campaign-products-wrapper .bottom-tag p{
+        transform: skew(0,0);
+        margin-left: 0;
+        font-size: 0;
+    }
+
+    .weather-details-section .sevendaystemp ul li{
+        width: 48%;
+        margin-top: 1rem;
+    }
+
+    .weather-details-section .weather-details-card form{
+        width: 100% !important;
+        float: inherit !important;
+    }
+
+    .weather-details-section .temp-wrapper p{
+        font-size: 3rem;
+    }
+
+    .weather-details-section .temp-wrapper ul{
+        float: inherit !important;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+      #departure .timeline ul li {
+        margin-left: 20px;
+    }
+    #departure .timeline ul li div {
+        width: calc(100vw - 91px);
+    }
+    #departure .timeline ul li:nth-child(odd) div h4{
+        text-align: inherit;
+    }
+    #departure .timeline ul li:nth-child(odd) div p{
+        text-align: inherit;
+    }
+    #departure .timeline ul li:nth-child(odd) div {
+        left: 45px;
+    }
+    #departure .timeline ul li:nth-child(odd) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #F45B69 transparent transparent;
+    }
+    #departure .timeline ul li:nth-child(even) div {
+        left: 45px;
+    }
+    #departure .timeline ul li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #F45B69 transparent transparent;
+    }
+
+    .timeline ul li {
+        margin-left: 20px;
+    }
+    .timeline ul li div {
+        width: calc(100vw - 91px);
+    }
+    .timeline ul li:nth-child(odd) div h4{
+        text-align: inherit;
+    }
+    .timeline ul li:nth-child(odd) div p{
+        text-align: inherit;
+    }
+    .timeline ul li:nth-child(odd) div {
+        left: 45px;
+    }
+    .timeline ul li:nth-child(odd) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #F45B69 transparent transparent;
+    }
+    .timeline ul li:nth-child(even) div {
+        left: 45px;
+    }
+    .timeline ul li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #F45B69 transparent transparent;
+    }
+}

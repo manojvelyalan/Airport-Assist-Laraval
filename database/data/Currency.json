@@ -1,0 +1,979 @@
+{
+"results" : [
+
+  {
+    "objectId": "kjUObjvu0j",
+    "currencyCode": "GMD",
+    "currencyName": "Gambian Dalasi",
+    "createdAt": "2018-03-14T11:25:27.884Z",
+    "updatedAt": "2018-03-14T11:25:27.884Z"
+  },
+  {
+    "objectId": "DfNezXJUrR",
+    "currencyName": "São Tomé and Príncipe Dobra",
+    "currencyCode": "STD",
+    "createdAt": "2018-03-14T11:25:27.891Z",
+    "updatedAt": "2018-03-14T11:25:27.891Z"
+  },
+  {
+    "objectId": "BGuNZr2jiw",
+    "currencyName": "Nepalese Rupee",
+    "currencyCode": "NPR",
+    "createdAt": "2018-03-14T11:25:27.783Z",
+    "updatedAt": "2018-03-14T11:25:27.783Z"
+  },
+  {
+    "objectId": "KGy0wgEt3F",
+    "currencyCode": "BSD",
+    "currencyName": "Bahamian Dollar",
+    "createdAt": "2018-03-14T11:25:27.627Z",
+    "updatedAt": "2018-03-14T11:25:27.627Z"
+  },
+  {
+    "objectId": "4ZzpSyGpXr",
+    "currencyCode": "HTG",
+    "currencyName": "Haitian Gourde",
+    "createdAt": "2018-03-14T11:25:27.662Z",
+    "updatedAt": "2018-03-14T11:25:27.662Z"
+  },
+  {
+    "objectId": "PztKmOFCov",
+    "currencyCode": "SRD",
+    "currencyName": "Surinamese Dollar",
+    "createdAt": "2018-03-14T11:25:27.765Z",
+    "updatedAt": "2018-03-14T11:25:27.765Z"
+  },
+  {
+    "objectId": "6xUtZ5PZTm",
+    "currencyName": "Cfp Franc ",
+    "currencyCode": "XPF",
+    "createdAt": "2018-03-14T11:25:27.935Z",
+    "updatedAt": "2018-03-14T11:25:27.935Z"
+  },
+  {
+    "objectId": "dMEFTiKNV7",
+    "currencyCode": "PHP",
+    "currencyName": "Philippine Peso",
+    "createdAt": "2018-03-14T11:25:28.104Z",
+    "updatedAt": "2018-03-14T11:25:28.104Z"
+  },
+  {
+    "objectId": "6naOhZRIFx",
+    "currencyCode": "FJD",
+    "currencyName": " Fijian Dollar",
+    "createdAt": "2018-03-14T11:25:27.926Z",
+    "updatedAt": "2018-03-14T11:25:27.926Z"
+  },
+  {
+    "objectId": "c5DhcFYnyH",
+    "currencyCode": "LBP",
+    "currencyName": " Lebanese Pound",
+    "createdAt": "2018-03-14T11:25:28.115Z",
+    "updatedAt": "2018-03-14T11:25:28.115Z"
+  },
+  {
+    "objectId": "DbCKHjOBYG",
+    "currencyCode": "SLL",
+    "currencyName": "Sierra Leonean Leone",
+    "createdAt": "2018-03-14T11:25:28.088Z",
+    "updatedAt": "2018-03-14T11:25:28.088Z"
+  },
+  {
+    "objectId": "YENMtDPX1m",
+    "currencyCode": "EGP",
+    "currencyName": "Egyptian Pound",
+    "createdAt": "2018-03-14T11:25:28.112Z",
+    "updatedAt": "2018-03-14T11:25:28.112Z"
+  },
+  {
+    "objectId": "kU5zFdsvH5",
+    "currencyCode": "QAR",
+    "currencyName": "Qatari Riyal",
+    "createdAt": "2018-03-14T11:25:27.933Z",
+    "updatedAt": "2018-03-14T11:25:27.933Z"
+  },
+  {
+    "objectId": "7Q9TVodW0e",
+    "currencyName": "Ethiopian Birr",
+    "currencyCode": "ETB",
+    "createdAt": "2018-03-14T11:25:27.934Z",
+    "updatedAt": "2018-03-14T11:25:27.934Z"
+  },
+  {
+    "objectId": "1uaoW3MTl9",
+    "currencyCode": "PGK",
+    "currencyName": "Papua New Guinean Kina",
+    "createdAt": "2018-03-14T11:25:27.916Z",
+    "updatedAt": "2018-03-14T11:25:27.916Z"
+  },
+  {
+    "objectId": "9Owkq0h2mH",
+    "currencyCode": "MXN",
+    "currencyName": "Mexican Peso",
+    "createdAt": "2018-03-14T11:25:27.921Z",
+    "updatedAt": "2018-03-14T11:25:27.921Z"
+  },
+  {
+    "objectId": "K2oQ2x6UCy",
+    "currencyCode": "ISK",
+    "currencyName": " Icelandic Króna",
+    "createdAt": "2018-03-14T11:25:27.934Z",
+    "updatedAt": "2018-03-14T11:25:27.934Z"
+  },
+  {
+    "objectId": "7xJkDZ8ifS",
+    "currencyName": "Kenyan Shilling",
+    "currencyCode": "KES",
+    "createdAt": "2018-03-14T11:25:28.101Z",
+    "updatedAt": "2018-03-14T11:25:28.101Z"
+  },
+  {
+    "objectId": "UifQuCYBze",
+    "currencyName": "Moldovan Leu",
+    "currencyCode": "MDL",
+    "createdAt": "2018-03-14T11:25:28.114Z",
+    "updatedAt": "2018-03-14T11:25:28.114Z"
+  },
+  {
+    "objectId": "E1qZzemLP5",
+    "currencyCode": "BND",
+    "currencyName": "Brunei Dollar",
+    "createdAt": "2018-03-14T11:25:27.935Z",
+    "updatedAt": "2018-03-14T11:25:27.935Z"
+  },
+  {
+    "objectId": "djzz9Mb8tJ",
+    "currencyCode": "SZL",
+    "currencyName": "Swazi Lilangeni",
+    "createdAt": "2018-03-14T11:25:28.099Z",
+    "updatedAt": "2018-03-14T11:25:28.099Z"
+  },
+  {
+    "objectId": "UVpAla4jED",
+    "currencyCode": "GEL",
+    "currencyName": "Georgian Lari",
+    "createdAt": "2018-03-14T11:25:28.115Z",
+    "updatedAt": "2018-03-14T11:25:28.115Z"
+  },
+  {
+    "objectId": "5C6TSFRYoD",
+    "currencyCode": "TWD",
+    "currencyName": "New Taiwan Dollar",
+    "createdAt": "2018-03-14T11:25:28.117Z",
+    "updatedAt": "2018-03-14T11:25:28.117Z"
+  },
+  {
+    "objectId": "UcahKqrXmR",
+    "currencyCode": "LTL",
+    "currencyName": "Lithuanian Litas ",
+    "createdAt": "2018-03-14T11:25:28.099Z",
+    "updatedAt": "2018-03-14T11:25:28.099Z"
+  },
+  {
+    "objectId": "0ZUJbkiYHd",
+    "currencyName": "Botswana Pula",
+    "currencyCode": "BWP",
+    "createdAt": "2018-03-14T11:25:28.113Z",
+    "updatedAt": "2018-03-14T11:25:28.113Z"
+  },
+  {
+    "objectId": "arlYLJ6dOD",
+    "currencyCode": "MNT",
+    "currencyName": "Mongolian Tögrög",
+    "createdAt": "2018-03-14T11:25:28.127Z",
+    "updatedAt": "2018-03-14T11:25:28.127Z"
+  },
+  {
+    "objectId": "BYOcLndA4q",
+    "currencyCode": "THB",
+    "currencyName": "Thai Baht",
+    "createdAt": "2018-03-14T11:25:28.128Z",
+    "updatedAt": "2018-03-14T11:25:28.128Z"
+  },
+  {
+    "objectId": "aV9jQoKlRx",
+    "currencyCode": "MWK",
+    "currencyName": "Malawian Kwacha",
+    "createdAt": "2018-03-14T11:25:28.128Z",
+    "updatedAt": "2018-03-14T11:25:28.128Z"
+  },
+  {
+    "objectId": "g7SADGQTtL",
+    "currencyCode": "ZAR",
+    "currencyName": "South African Rand",
+    "createdAt": "2018-03-14T11:25:27.750Z",
+    "updatedAt": "2018-03-14T11:25:27.750Z"
+  },
+  {
+    "objectId": "OBUELoAknH",
+    "currencyName": "Cayman Islands Dollar",
+    "currencyCode": "KYD",
+    "createdAt": "2018-03-14T11:25:28.132Z",
+    "updatedAt": "2018-03-14T11:25:28.132Z"
+  },
+  {
+    "objectId": "Mta58T2kkO",
+    "currencyName": "Nigerian Naira",
+    "currencyCode": "NGN",
+    "createdAt": "2018-03-14T11:25:28.134Z",
+    "updatedAt": "2018-03-14T11:25:28.134Z"
+  },
+  {
+    "objectId": "4YnecyRHO5",
+    "currencyCode": "HUF",
+    "currencyName": "Hungarian Forint*",
+    "createdAt": "2018-03-14T11:25:28.137Z",
+    "updatedAt": "2018-03-14T11:25:28.137Z"
+  },
+  {
+    "objectId": "7vsJ9c0B58",
+    "currencyCode": "XOF",
+    "currencyName": "West Afriacan Cfa Franc",
+    "createdAt": "2018-03-14T11:25:28.138Z",
+    "updatedAt": "2018-03-14T11:25:28.138Z"
+  },
+  {
+    "objectId": "mfDyVpEcL5",
+    "currencyCode": "PKR",
+    "currencyName": "Pakistani Rupee",
+    "createdAt": "2018-03-14T11:25:28.141Z",
+    "updatedAt": "2018-03-14T11:25:28.141Z"
+  },
+  {
+    "objectId": "jNw84f4QvG",
+    "currencyCode": "AMD",
+    "currencyName": "Armenian Dram",
+    "createdAt": "2018-03-14T11:25:28.143Z",
+    "updatedAt": "2018-03-14T11:25:28.143Z"
+  },
+  {
+    "objectId": "NxIDMx2o9Y",
+    "currencyCode": "CLP",
+    "currencyName": "Chilean Peso",
+    "createdAt": "2018-03-14T11:25:27.979Z",
+    "updatedAt": "2018-03-14T11:25:27.979Z"
+  },
+  {
+    "objectId": "ASSAWBrMOY",
+    "currencyCode": "TOP",
+    "currencyName": "Tongan Paʻanga",
+    "createdAt": "2018-03-14T11:25:28.035Z",
+    "updatedAt": "2018-03-14T11:25:28.035Z"
+  },
+  {
+    "objectId": "b7iG01jxyg",
+    "currencyCode": "IDR",
+    "currencyName": " Indonesian Rupiah",
+    "createdAt": "2018-03-14T11:25:28.065Z",
+    "updatedAt": "2018-03-14T11:25:28.065Z"
+  },
+  {
+    "objectId": "OBivoSDrI6",
+    "currencyCode": "RWF",
+    "currencyName": "Rwandan Franc",
+    "createdAt": "2018-03-14T11:25:28.042Z",
+    "updatedAt": "2018-03-14T11:25:28.042Z"
+  },
+  {
+    "objectId": "MJcvc6TWv2",
+    "currencyCode": "RUB",
+    "currencyName": "Russian Ruble",
+    "createdAt": "2018-03-14T11:25:27.955Z",
+    "updatedAt": "2018-03-14T11:25:27.955Z"
+  },
+  {
+    "objectId": "LPr6fBdirX",
+    "currencyCode": "SAR",
+    "currencyName": "Saudi Riyal",
+    "createdAt": "2018-03-14T11:25:27.985Z",
+    "updatedAt": "2018-03-14T11:25:27.985Z"
+  },
+  {
+    "objectId": "ekdObgxUTY",
+    "currencyName": "Ugandan Shilling",
+    "currencyCode": "UGX",
+    "createdAt": "2018-03-14T11:25:27.955Z",
+    "updatedAt": "2018-03-14T11:25:27.955Z"
+  },
+  {
+    "objectId": "jhIq8ysHGw",
+    "currencyName": " Dominican Peso",
+    "currencyCode": "DOP",
+    "createdAt": "2018-03-14T11:25:28.153Z",
+    "updatedAt": "2018-03-14T11:25:28.153Z"
+  },
+  {
+    "objectId": "5cHo0ITTCA",
+    "currencyName": "British Pound",
+    "currencyCode": "GBP",
+    "createdAt": "2018-03-14T11:25:28.045Z",
+    "updatedAt": "2018-03-14T11:25:28.045Z"
+  },
+  {
+    "objectId": "Mupoe3qGdw",
+    "currencyCode": "UZS",
+    "currencyName": "Uzbekistani Som",
+    "createdAt": "2018-03-14T11:25:28.065Z",
+    "updatedAt": "2018-03-14T11:25:28.065Z"
+  },
+  {
+    "objectId": "jBjZOliWyC",
+    "currencyCode": "CDF",
+    "currencyName": "Congolese Franc",
+    "createdAt": "2018-03-14T11:25:28.028Z",
+    "updatedAt": "2018-03-14T11:25:28.028Z"
+  },
+  {
+    "objectId": "bdG5WZ3OD7",
+    "currencyCode": "EUR",
+    "currencyName": " Euro",
+    "createdAt": "2018-03-14T11:25:27.964Z",
+    "updatedAt": "2018-03-14T11:25:27.964Z"
+  },
+  {
+    "objectId": "RrELMOD2iZ",
+    "currencyCode": "LRD",
+    "currencyName": "Liberian Dollar",
+    "createdAt": "2018-03-14T11:25:28.169Z",
+    "updatedAt": "2018-03-14T11:25:28.169Z"
+  },
+  {
+    "objectId": "RcbgABtLTP",
+    "currencyCode": "DZD",
+    "currencyName": "Algerian Dinar",
+    "createdAt": "2018-03-14T11:25:28.039Z",
+    "updatedAt": "2018-03-14T11:25:28.039Z"
+  },
+  {
+    "objectId": "NJHqJEVnf6",
+    "currencyCode": "KRW",
+    "currencyName": "South Korean Won",
+    "createdAt": "2018-03-14T11:25:28.148Z",
+    "updatedAt": "2018-03-14T11:25:28.148Z"
+  },
+  {
+    "objectId": "Ni8GfmnoW2",
+    "currencyCode": "ARS",
+    "currencyName": "Argentine Peso",
+    "createdAt": "2018-03-14T11:25:27.946Z",
+    "updatedAt": "2018-03-14T11:25:27.946Z"
+  },
+  {
+    "objectId": "kiqvvPo4Fs",
+    "currencyCode": "MYR",
+    "currencyName": "Malaysian Ringgit",
+    "createdAt": "2018-03-14T11:25:28.039Z",
+    "updatedAt": "2018-03-14T11:25:28.039Z"
+  },
+  {
+    "objectId": "JfD5W6GaGz",
+    "currencyCode": "AWG",
+    "currencyName": " Aruban Florin",
+    "createdAt": "2018-03-14T11:25:28.082Z",
+    "updatedAt": "2018-03-14T11:25:28.082Z"
+  },
+  {
+    "objectId": "aU3Jqh5ao9",
+    "currencyCode": "TTD",
+    "currencyName": "Trinidad and Tobago Dollar",
+    "createdAt": "2018-03-14T11:25:28.149Z",
+    "updatedAt": "2018-03-14T11:25:28.149Z"
+  },
+  {
+    "objectId": "fFbotwED1k",
+    "currencyName": "United Arab Emirates Dirham",
+    "currencyCode": "AED",
+    "createdAt": "2018-03-14T11:25:28.031Z",
+    "updatedAt": "2018-03-14T11:25:28.031Z"
+  },
+  {
+    "objectId": "n1hVD2TE5i",
+    "currencyCode": "MUR",
+    "currencyName": "Mauritian Rupee",
+    "createdAt": "2018-03-14T11:25:28.071Z",
+    "updatedAt": "2018-03-14T11:25:28.071Z"
+  },
+  {
+    "objectId": "OFksLseVej",
+    "currencyName": " Romanian Leu",
+    "currencyCode": "RON",
+    "createdAt": "2018-03-14T11:25:27.971Z",
+    "updatedAt": "2018-03-14T11:25:27.971Z"
+  },
+  {
+    "objectId": "J2nANkmIXk",
+    "currencyCode": "WST",
+    "currencyName": "Samoan Tala",
+    "createdAt": "2018-03-14T11:25:27.972Z",
+    "updatedAt": "2018-03-14T11:25:27.972Z"
+  },
+  {
+    "objectId": "TaKbDRftYU",
+    "currencyCode": "BZD",
+    "currencyName": "Belize Dollar",
+    "createdAt": "2018-03-14T11:25:28.146Z",
+    "updatedAt": "2018-03-14T11:25:28.146Z"
+  },
+  {
+    "objectId": "YvIBtCqKLQ",
+    "currencyName": "Bosnia & Herzegovina Convertible Mark",
+    "currencyCode": "BAM",
+    "createdAt": "2018-03-14T11:25:28.039Z",
+    "updatedAt": "2018-03-14T11:25:28.039Z"
+  },
+  {
+    "objectId": "WEz5scj6fW",
+    "currencyName": "Serbian Dinar",
+    "currencyCode": "RSD",
+    "createdAt": "2018-03-14T11:25:28.059Z",
+    "updatedAt": "2018-03-14T11:25:28.059Z"
+  },
+  {
+    "objectId": "0jhhbMupHf",
+    "currencyName": "Albanian Lek",
+    "currencyCode": "ALL",
+    "createdAt": "2018-03-14T11:25:28.082Z",
+    "updatedAt": "2018-03-14T11:25:28.082Z"
+  },
+  {
+    "objectId": "VIGtyw2ocm",
+    "currencyCode": "XCD",
+    "currencyName": "East Caribbean Dollar",
+    "createdAt": "2018-03-14T11:25:28.150Z",
+    "updatedAt": "2018-03-14T11:25:28.150Z"
+  },
+  {
+    "objectId": "Ee2d43TSRe",
+    "currencyCode": "GYD",
+    "currencyName": "Guyanese Dollar",
+    "createdAt": "2018-03-14T11:25:28.035Z",
+    "updatedAt": "2018-03-14T11:25:28.035Z"
+  },
+  {
+    "objectId": "jbmuLuUMoh",
+    "currencyName": " Solomon Islands Dollar",
+    "currencyCode": "SBD",
+    "createdAt": "2018-03-14T11:25:28.171Z",
+    "updatedAt": "2018-03-14T11:25:28.171Z"
+  },
+  {
+    "objectId": "N41zI4tzEh",
+    "currencyName": "Peruvian Nuevo Sol",
+    "currencyCode": "PEN",
+    "createdAt": "2018-03-14T11:25:27.951Z",
+    "updatedAt": "2018-03-14T11:25:27.951Z"
+  },
+  {
+    "objectId": "EendUWrR02",
+    "currencyName": " Lesotho Loti",
+    "currencyCode": "LSL",
+    "createdAt": "2018-03-14T11:25:28.065Z",
+    "updatedAt": "2018-03-14T11:25:28.065Z"
+  },
+  {
+    "objectId": "5Its4Gu1wi",
+    "currencyCode": "BDT",
+    "currencyName": "Bangladeshi Taka",
+    "createdAt": "2018-03-14T11:25:28.150Z",
+    "updatedAt": "2018-03-14T11:25:28.150Z"
+  },
+  {
+    "objectId": "Z9kve7kBRF",
+    "currencyCode": "BOB",
+    "currencyName": "Bolivian Boliviano",
+    "createdAt": "2018-03-14T11:25:28.048Z",
+    "updatedAt": "2018-03-14T11:25:28.048Z"
+  },
+  {
+    "objectId": "3Wg4EOkwWM",
+    "currencyName": "Japenese Yen",
+    "currencyCode": "JPY",
+    "createdAt": "2018-03-14T11:25:28.156Z",
+    "updatedAt": "2018-03-14T11:25:28.156Z"
+  },
+  {
+    "objectId": "hUgpGghvvG",
+    "currencyCode": "SEK",
+    "currencyName": "Swedish Krona",
+    "createdAt": "2018-03-14T11:25:28.160Z",
+    "updatedAt": "2018-03-14T11:25:28.160Z"
+  },
+  {
+    "objectId": "LHleEQBZPb",
+    "currencyName": "Colombian Peso",
+    "currencyCode": "COP",
+    "createdAt": "2018-03-14T11:25:28.053Z",
+    "updatedAt": "2018-03-14T11:25:28.053Z"
+  },
+  {
+    "objectId": "dmgJXVfs4u",
+    "currencyCode": "ILS",
+    "currencyName": "Israeli New Sheqel",
+    "createdAt": "2018-03-14T11:25:28.150Z",
+    "updatedAt": "2018-03-14T11:25:28.150Z"
+  },
+  {
+    "objectId": "7Q2fE1k2NJ",
+    "currencyCode": "NIO",
+    "currencyName": "Nicaraguan Córdoba",
+    "createdAt": "2018-03-14T11:25:28.149Z",
+    "updatedAt": "2018-03-14T11:25:28.149Z"
+  },
+  {
+    "objectId": "iKGFmpKGgD",
+    "currencyCode": "SHP",
+    "currencyName": "Saint Helenian Pound",
+    "createdAt": "2018-03-14T11:25:28.169Z",
+    "updatedAt": "2018-03-14T11:25:28.169Z"
+  },
+  {
+    "objectId": "KHIgk2cHeu",
+    "currencyCode": "LKR",
+    "currencyName": "Sri Lankan Rupee",
+    "createdAt": "2018-03-14T11:25:28.155Z",
+    "updatedAt": "2018-03-14T11:25:28.155Z"
+  },
+  {
+    "objectId": "HfDfMGug54",
+    "currencyCode": "SOS",
+    "currencyName": "Somali Shilling",
+    "createdAt": "2018-03-14T11:25:28.191Z",
+    "updatedAt": "2018-03-14T11:25:28.191Z"
+  },
+  {
+    "objectId": "UZs4AKxx1k",
+    "currencyCode": "AOA",
+    "currencyName": "Angolan Kwanza",
+    "createdAt": "2018-03-14T11:25:28.174Z",
+    "updatedAt": "2018-03-14T11:25:28.174Z"
+  },
+  {
+    "objectId": "Th8UHt8IuP",
+    "currencyCode": "MRO",
+    "currencyName": "Mauritanian Ouguiya",
+    "createdAt": "2018-03-14T11:25:28.175Z",
+    "updatedAt": "2018-03-14T11:25:28.175Z"
+  },
+  {
+    "objectId": "7ddz5hMbFA",
+    "currencyName": "Maldivian Rufiyaa",
+    "currencyCode": "MVR",
+    "createdAt": "2018-03-14T11:25:28.149Z",
+    "updatedAt": "2018-03-14T11:25:28.149Z"
+  },
+  {
+    "objectId": "epLD8XchgV",
+    "currencyName": " Indian Rupee",
+    "currencyCode": "INR",
+    "createdAt": "2018-03-14T11:25:28.194Z",
+    "updatedAt": "2018-03-14T11:25:28.194Z"
+  },
+  {
+    "objectId": "R3XKCVDXh4",
+    "currencyCode": "HKD",
+    "currencyName": "Hong Kong Dollar",
+    "createdAt": "2018-03-14T11:25:28.032Z",
+    "updatedAt": "2018-03-14T11:25:28.032Z"
+  },
+  {
+    "objectId": "DaTmaPLuv7",
+    "currencyName": "Bermudian Dollar",
+    "currencyCode": "BMD",
+    "createdAt": "2018-03-14T11:25:28.196Z",
+    "updatedAt": "2018-03-14T11:25:28.196Z"
+  },
+  {
+    "objectId": "5OFi3D9GQU",
+    "currencyName": "Namibian Dollar",
+    "currencyCode": "NAD",
+    "createdAt": "2018-03-14T11:25:28.151Z",
+    "updatedAt": "2018-03-14T11:25:28.151Z"
+  },
+  {
+    "objectId": "1d52cI765W",
+    "currencyCode": "BGN",
+    "currencyName": "Bulgarian Lev",
+    "createdAt": "2018-03-14T11:25:28.198Z",
+    "updatedAt": "2018-03-14T11:25:28.198Z"
+  },
+  {
+    "objectId": "QvoleOx03O",
+    "currencyName": "Vietnamese Dong",
+    "currencyCode": "VND",
+    "createdAt": "2018-03-14T11:25:28.198Z",
+    "updatedAt": "2018-03-14T11:25:28.198Z"
+  },
+  {
+    "objectId": "WtNLYXhxu5",
+    "currencyCode": "SCR",
+    "currencyName": "Seychellois Rupee",
+    "createdAt": "2018-03-14T11:25:28.200Z",
+    "updatedAt": "2018-03-14T11:25:28.200Z"
+  },
+  {
+    "objectId": "DF4fbiokMP",
+    "currencyName": "Chinese Renminbi Yuan",
+    "currencyCode": "CNY",
+    "createdAt": "2018-03-14T11:25:28.202Z",
+    "updatedAt": "2018-03-14T11:25:28.202Z"
+  },
+  {
+    "objectId": "Mv6ZauXAd2",
+    "currencyCode": "ZMW",
+    "currencyName": "Zambian Kwacha",
+    "createdAt": "2018-03-14T11:25:28.204Z",
+    "updatedAt": "2018-03-14T11:25:28.204Z"
+  },
+  {
+    "objectId": "lC2tuzRsNw",
+    "currencyCode": "SGD",
+    "currencyName": "Singapore Dollar",
+    "createdAt": "2018-03-14T11:25:28.206Z",
+    "updatedAt": "2018-03-14T11:25:28.206Z"
+  },
+  {
+    "objectId": "TOQFUA51L2",
+    "currencyCode": "PYG",
+    "currencyName": "Paraguayan Guarani",
+    "createdAt": "2018-03-14T11:25:28.209Z",
+    "updatedAt": "2018-03-14T11:25:28.209Z"
+  },
+  {
+    "objectId": "14HfR28u2x",
+    "currencyCode": "KHR",
+    "currencyName": "Cambodian Riel",
+    "createdAt": "2018-03-14T11:25:28.211Z",
+    "updatedAt": "2018-03-14T11:25:28.211Z"
+  },
+  {
+    "objectId": "PLrgNgLxu8",
+    "currencyCode": "MZN",
+    "currencyName": "Mozambican Metical",
+    "createdAt": "2018-03-14T11:25:28.215Z",
+    "updatedAt": "2018-03-14T11:25:28.215Z"
+  },
+  {
+    "objectId": "eyClzVyLub",
+    "currencyCode": "FKP",
+    "currencyName": "Falkland Islands Pound",
+    "createdAt": "2018-03-14T11:25:28.217Z",
+    "updatedAt": "2018-03-14T11:25:28.217Z"
+  },
+  {
+    "objectId": "9u5cghzoRI",
+    "currencyCode": "CVE",
+    "currencyName": "Cape Verdean Escudo",
+    "createdAt": "2018-03-14T11:25:28.222Z",
+    "updatedAt": "2018-03-14T11:25:28.222Z"
+  },
+  {
+    "objectId": "cQRHxk3toI",
+    "currencyCode": "MAD",
+    "currencyName": "Moroccan Dirham",
+    "createdAt": "2018-03-14T11:25:28.224Z",
+    "updatedAt": "2018-03-14T11:25:28.224Z"
+  },
+  {
+    "objectId": "XeszMITv4R",
+    "currencyCode": "UYU",
+    "currencyName": "Uruguayan Peso",
+    "createdAt": "2018-03-14T11:25:28.227Z",
+    "updatedAt": "2018-03-14T11:25:28.227Z"
+  },
+  {
+    "objectId": "SB08XllUWN",
+    "currencyName": "Latvian Lats",
+    "currencyCode": "LVL",
+    "createdAt": "2018-03-14T11:25:28.229Z",
+    "updatedAt": "2018-03-14T11:25:28.229Z"
+  },
+  {
+    "objectId": "QhhuxJXs6i",
+    "currencyName": "Danish Krone",
+    "currencyCode": "DKK",
+    "createdAt": "2018-03-14T11:25:28.231Z",
+    "updatedAt": "2018-03-14T11:25:28.231Z"
+  },
+  {
+    "objectId": "8L7lJeEnD3",
+    "currencyCode": "EEK",
+    "currencyName": "Estonian Kroon",
+    "createdAt": "2018-03-14T11:25:28.233Z",
+    "updatedAt": "2018-03-14T11:25:28.233Z"
+  },
+  {
+    "objectId": "hiNMGa6JTX",
+    "currencyName": "Czech Koruna",
+    "currencyCode": "CZK",
+    "createdAt": "2018-03-14T11:25:28.235Z",
+    "updatedAt": "2018-03-14T11:25:28.235Z"
+  },
+  {
+    "objectId": "uPXJW2Cw5M",
+    "currencyCode": "BBD",
+    "currencyName": "Barbadian Dollar",
+    "createdAt": "2018-03-14T11:25:28.260Z",
+    "updatedAt": "2018-03-14T11:25:28.260Z"
+  },
+  {
+    "objectId": "ycdQsBONfM",
+    "currencyCode": "CRC",
+    "currencyName": "Costa Rican Colón",
+    "createdAt": "2018-03-14T11:25:28.264Z",
+    "updatedAt": "2018-03-14T11:25:28.264Z"
+  },
+  {
+    "objectId": "n4O6SyExeE",
+    "currencyCode": "KMF",
+    "currencyName": "Comorian Franc",
+    "createdAt": "2018-03-14T11:25:28.264Z",
+    "updatedAt": "2018-03-14T11:25:28.264Z"
+  },
+  {
+    "objectId": "suHSlsqJRJ",
+    "currencyName": "Honduran Lempira",
+    "currencyCode": "HNL",
+    "createdAt": "2018-03-14T11:25:28.269Z",
+    "updatedAt": "2018-03-14T11:25:28.269Z"
+  },
+  {
+    "objectId": "wsXW3SEuq8",
+    "currencyCode": "UAH",
+    "currencyName": "Ukrainian Hryvnia",
+    "createdAt": "2018-03-14T11:25:28.269Z",
+    "updatedAt": "2018-03-14T11:25:28.269Z"
+  },
+  {
+    "objectId": "oDRGFyY5V7",
+    "currencyName": "Croatian Kuna",
+    "currencyCode": "HRK",
+    "createdAt": "2018-03-14T11:25:28.273Z",
+    "updatedAt": "2018-03-14T11:25:28.273Z"
+  },
+  {
+    "objectId": "qsR1ztIwfb",
+    "currencyCode": "GTQ",
+    "currencyName": "Guatemalan Quetzal",
+    "createdAt": "2018-03-14T11:25:28.275Z",
+    "updatedAt": "2018-03-14T11:25:28.275Z"
+  },
+  {
+    "objectId": "ngofqe3W75",
+    "currencyName": "Turkish Lira",
+    "currencyCode": "TRY",
+    "createdAt": "2018-03-14T11:25:28.277Z",
+    "updatedAt": "2018-03-14T11:25:28.277Z"
+  },
+  {
+    "objectId": "yurIffOeXD",
+    "currencyCode": "AFN",
+    "currencyName": "Afghan Afghani",
+    "createdAt": "2018-03-14T11:25:28.277Z",
+    "updatedAt": "2018-03-14T11:25:28.277Z"
+  },
+  {
+    "objectId": "uV4hKpGO7A",
+    "currencyCode": "TZS",
+    "currencyName": "Tanzanian Shilling",
+    "createdAt": "2018-03-14T11:25:28.280Z",
+    "updatedAt": "2018-03-14T11:25:28.280Z"
+  },
+  {
+    "objectId": "xBnRLJTQDO",
+    "currencyCode": "BRL",
+    "currencyName": "Brazilian Real",
+    "createdAt": "2018-03-14T11:25:28.282Z",
+    "updatedAt": "2018-03-14T11:25:28.282Z"
+  },
+  {
+    "objectId": "tghwffL6QL",
+    "currencyCode": "GNF",
+    "currencyName": "Guinean Franc ",
+    "createdAt": "2018-03-14T11:25:28.282Z",
+    "updatedAt": "2018-03-14T11:25:28.282Z"
+  },
+  {
+    "objectId": "r5ASC45iM7",
+    "currencyName": "Swiss Franc",
+    "currencyCode": "CHF",
+    "createdAt": "2018-03-14T11:25:28.285Z",
+    "updatedAt": "2018-03-14T11:25:28.285Z"
+  },
+  {
+    "objectId": "oqolWy0ZdU",
+    "currencyName": "Burundian Franc",
+    "currencyCode": "BIF",
+    "createdAt": "2018-03-14T11:25:28.287Z",
+    "updatedAt": "2018-03-14T11:25:28.287Z"
+  },
+  {
+    "objectId": "vhocLxMCbw",
+    "currencyName": " Gibraltar Pound",
+    "currencyCode": "GIP",
+    "createdAt": "2018-03-14T11:25:28.289Z",
+    "updatedAt": "2018-03-14T11:25:28.289Z"
+  },
+  {
+    "objectId": "o46jrlFERL",
+    "currencyName": "Panamanian Balboa",
+    "currencyCode": "PAB",
+    "createdAt": "2018-03-14T11:25:28.291Z",
+    "updatedAt": "2018-03-14T11:25:28.291Z"
+  },
+  {
+    "objectId": "zwAMlhsYHV",
+    "currencyCode": "PLN",
+    "currencyName": "Polish Złoty",
+    "createdAt": "2018-03-14T11:25:28.291Z",
+    "updatedAt": "2018-03-14T11:25:28.291Z"
+  },
+  {
+    "objectId": "otkfOZ9gHl",
+    "currencyCode": "KZT",
+    "currencyName": "Kazakhstani Tenge",
+    "createdAt": "2018-03-14T11:25:28.295Z",
+    "updatedAt": "2018-03-14T11:25:28.295Z"
+  },
+  {
+    "objectId": "sNMCOGtJUg",
+    "currencyCode": "CAD",
+    "currencyName": "Canadian Dollar",
+    "createdAt": "2018-03-14T11:25:28.297Z",
+    "updatedAt": "2018-03-14T11:25:28.297Z"
+  },
+  {
+    "objectId": "xzHiAIKIwH",
+    "currencyCode": "NZD",
+    "currencyName": " New Zealand Dollar",
+    "createdAt": "2018-03-14T11:25:28.297Z",
+    "updatedAt": "2018-03-14T11:25:28.297Z"
+  },
+  {
+    "objectId": "tz3KPpN7tq",
+    "currencyCode": "MKD",
+    "currencyName": "Macedonian Denar",
+    "createdAt": "2018-03-14T11:25:28.302Z",
+    "updatedAt": "2018-03-14T11:25:28.302Z"
+  },
+  {
+    "objectId": "o6qoL7Gtct",
+    "currencyName": "Malagasy Ariary",
+    "currencyCode": "MGA",
+    "createdAt": "2018-03-14T11:25:28.304Z",
+    "updatedAt": "2018-03-14T11:25:28.304Z"
+  },
+  {
+    "objectId": "zwZiroWq5v",
+    "currencyCode": "XAF",
+    "currencyName": "Central Afriacan Cfa Franc",
+    "createdAt": "2018-03-14T11:25:28.304Z",
+    "updatedAt": "2018-03-14T11:25:28.304Z"
+  },
+  {
+    "objectId": "vxnVmQoX9V",
+    "currencyCode": "TJS",
+    "currencyName": "Tajikistani Somoni",
+    "createdAt": "2018-03-14T11:25:28.308Z",
+    "updatedAt": "2018-03-14T11:25:28.308Z"
+  },
+  {
+    "objectId": "qFt3Zhrirk",
+    "currencyCode": "YER",
+    "currencyName": "Yemeni Rial",
+    "createdAt": "2018-03-14T11:25:28.311Z",
+    "updatedAt": "2018-03-14T11:25:28.311Z"
+  },
+  {
+    "objectId": "spYLkormne",
+    "currencyName": "Azerbaijani Manat",
+    "currencyCode": "AZN",
+    "createdAt": "2018-03-14T11:25:28.312Z",
+    "updatedAt": "2018-03-14T11:25:28.312Z"
+  },
+  {
+    "objectId": "u9cSv2VsfU",
+    "currencyCode": "VUV",
+    "currencyName": "Vanuatu Vatu",
+    "createdAt": "2018-03-14T11:25:28.318Z",
+    "updatedAt": "2018-03-14T11:25:28.318Z"
+  },
+  {
+    "objectId": "y1OCd1yfPv",
+    "currencyCode": "AUD",
+    "currencyName": "Australian Dollar",
+    "createdAt": "2018-03-14T11:25:28.318Z",
+    "updatedAt": "2018-03-14T11:25:28.318Z"
+  },
+  {
+    "objectId": "wodn0GMJjJ",
+    "currencyName": "Macanese Pataca",
+    "currencyCode": "MOP",
+    "createdAt": "2018-03-14T11:25:28.321Z",
+    "updatedAt": "2018-03-14T11:25:28.321Z"
+  },
+  {
+    "objectId": "qhbNDyzUwx",
+    "currencyCode": "JMD",
+    "currencyName": "Jamaican Dollar",
+    "createdAt": "2018-03-14T11:25:28.323Z",
+    "updatedAt": "2018-03-14T11:25:28.323Z"
+  },
+  {
+    "objectId": "oB4XUa0Nyc",
+    "currencyCode": "ANG",
+    "currencyName": "Netherlands Antillean Gulden",
+    "createdAt": "2018-03-14T11:25:28.326Z",
+    "updatedAt": "2018-03-14T11:25:28.326Z"
+  },
+  {
+    "objectId": "Vjg3DttfJ3",
+    "currencyName": "Omani Rial",
+    "currencyCode": "OMR",
+    "createdAt": "2018-03-14T11:25:28.326Z",
+    "updatedAt": "2018-03-14T11:25:28.326Z"
+  },
+  {
+    "objectId": "sqv1iDZsP8",
+    "currencyName": "Djiboutian Frac",
+    "currencyCode": "DJF",
+    "createdAt": "2018-03-14T11:25:28.329Z",
+    "updatedAt": "2018-03-14T11:25:28.329Z"
+  },
+  {
+    "objectId": "uIdA3eDvV0",
+    "currencyCode": "NOK",
+    "currencyName": "Norwegian Krone",
+    "createdAt": "2018-03-14T11:25:28.331Z",
+    "updatedAt": "2018-03-14T11:25:28.331Z"
+  },
+  {
+    "objectId": "y8NnEvLDBI",
+    "currencyCode": "LAK",
+    "currencyName": "Lao Kip",
+    "createdAt": "2018-03-14T11:25:28.331Z",
+    "updatedAt": "2018-03-14T11:25:28.331Z"
+  },
+  {
+    "objectId": "yHVgdg8pRD",
+    "currencyName": "United States Dollar",
+    "currencyCode": "USD",
+    "status": true,
+    "createdAt": "2018-03-14T11:25:28.342Z",
+    "updatedAt": "2018-03-14T11:25:28.342Z"
+  },
+  {
+    "objectId": "1H7H8v8Zj3",
+    "currencyName": "Jordanian Dinar",
+    "createdAt": "2018-07-12T13:35:28.409Z",
+    "updatedAt": "2018-07-12T13:35:32.969Z",
+    "currencyCode": "JOD"
+  },
+  {
+    "objectId": "0gMpE91siF",
+    "currencyName": "Bahraini Dinar",
+    "createdAt": "2018-09-25T13:20:01.164Z",
+    "updatedAt": "2018-09-25T13:20:07.148Z",
+    "currencyCode": "BHD"
+  }
+]
+}

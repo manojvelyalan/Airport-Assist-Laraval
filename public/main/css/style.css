@@ -1,0 +1,2403 @@
+/*main style MUrgency Airport Assistance*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.btn.focus, .btn:focus{
+    outline:0;
+    box-shadow: inherit;
+}
+
+area, area:hover, area:focus{
+    outline: 0;
+}
+
+button, button:hover, button:focus{
+    outline: inherit;
+}
+
+
+a, a:hover, a:focus,
+button, button:hover, button:focus,
+input[type="button"], input[type="button"]:hover, input[type="button"]:focus,
+input[type="submit"], input[type="submit"]:hover, input[type="submit"]:focus{
+    text-decoration: none;
+    cursor: pointer;
+    outline: inherit;
+}
+
+/*jquery ui actuve blue color */
+
+.groundhandlingFormService-main-section .ui-state-active, 
+.groundhandlingFormService-main-section .ui-widget-content .ui-state-active, 
+.groundhandlingFormService-main-section .ui-widget-header .ui-state-active, 
+.groundhandlingFormService-main-section a.ui-button:active, 
+.groundhandlingFormService-main-section .ui-button:active, 
+.groundhandlingFormService-main-section .ui-button.ui-state-active:hover{
+    border: 1px solid #003eff;
+    background: #007fff;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.text-black{
+    color: #000000 !important;
+}
+
+.plr-clear {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.disp-none {
+    display: none;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.font-weight-light {
+    font-weight: lighter;
+}
+
+
+/*box shadow effects*/
+
+
+.bs-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.bs-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.bs-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.bs-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.bs-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.bs-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+
+
+/* .form-control:focus,
+.form-control:hover,
+.form-control:active,
+.form-control:visited{
+border-color: #ccc !important;
+} */
+
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: inherit;
+}
+
+p {
+    font-size: 12pt;
+}
+
+.MUA-hr {
+    width: 100%;
+    height: 1px;
+    background-color: #E3E3E3;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.ls-none {
+    list-style: none;
+}
+
+
+.brand-text-red {
+    color: #c52127;
+}
+
+.brand-skyblue {
+    background-color: #33ACE8;
+}
+
+.brand-text-skyblue {
+    color: #33ACE8;
+}
+
+.brand-text-grey {
+    color: #6B6B6B;
+}
+
+.brand-header {
+    font-size: 22pt;
+    /* brand black */
+    color: #323232;
+}
+
+/*style reset*/
+.img-circle {
+    border-radius: 50%;
+}
+
+.no-border {
+    border: inherit;
+}
+
+.hr-dotted {
+    background: linear-gradient(to right, #999 33%, rgba(255, 255, 255, 0) 0%) repeat-x bottom;
+    background-size: 5px 1px;
+}
+
+.hr-grey {
+    background-color: grey;
+}
+
+.mt-6{
+    margin-top: 6rem;    
+}
+
+.mt-7{
+    margin-top: 7rem;    
+}
+
+.mt-8{
+    margin-top: 8rem;    
+}
+
+.mt-9{
+    margin-top: 9rem;    
+}
+
+.mt-10{
+    margin-top: 10rem;    
+}
+
+.mb-6{
+    margin-bottom: 6rem;    
+}
+
+.mb-7{
+    margin-bottom: 7rem;    
+}
+
+.mb-8{
+    margin-bottom: 8rem;    
+}
+
+.mb-9{
+    margin-bottom: 9rem;    
+}
+
+.mb-10{
+    margin-bottom: 10rem;    
+}
+
+.m-l-2 {
+    margin-left: 2rem;
+}
+
+.p-t-5 {
+    padding-top: 5rem;
+}
+
+.pt-6 {
+    padding-top: 6rem;
+}
+
+.pt-7 {
+    padding-top: 7rem;
+}
+
+.pt-8 {
+    padding-top: 8rem;
+}
+
+.pt-9 {
+    padding-top: 9rem;
+}
+
+.pt-10 {
+    padding-top: 10rem;
+}
+
+.p-b-5 {
+    padding-bottom: 5rem;
+}
+
+.pb-6 {
+    padding-bottom: 6rem;
+}
+
+.pb-7 {
+    padding-bottom: 7rem;
+}
+
+.pb-8 {
+    padding-bottom: 8rem;
+}
+
+.pb-9 {
+    padding-bottom: 9rem;
+}
+
+.pb-10 {
+    padding-bottom: 10rem;
+}
+
+.w-5{
+    width: 5%;
+}
+
+.w-10{
+    width: 10%;
+}
+
+.w-15{
+    width: 15%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-35{
+    width: 35%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.w-45{
+    width: 45%;
+}
+
+.w-55{
+    width: 55%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-85{
+    width: 85%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-95 {
+    width: 95%;
+}
+
+.lh-0 {
+    line-height: 0;
+}
+
+.lh-1 {
+    line-height: 1;
+}
+
+.lh-2 {
+    line-height: 2;
+}
+
+.brand-red {
+    color: #c52127;
+}
+
+.brand-bg-grey{
+    background-color: #323232;
+}
+
+.brand-bg-red {
+    background-color: #c52127;
+    border: inherit;
+}
+
+.bg-grey {
+    background-color: #e6e6e6;
+}
+
+.bg-dark {
+    background-color: #212121 !important;
+}
+
+.no-radius-border {
+    border-radius: inherit;
+}
+
+.btn-MUA-next {
+    color: #fff;
+    width: auto;
+    height: auto;
+    border-radius: inherit;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/*navbar*/
+
+header.MUA-main-header .navbar {
+    padding: 0 0.5rem;
+    box-shadow: 1px 1px 1px rgba(35, 35, 35, .2);
+   
+}
+
+header.MUA-main-header .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 2rem;
+    border-right: 2px solid #e6e6e6;
+}
+
+header.MUA-main-header .navbar .navbar-brand #navbarDropdown-menu {
+    background-color: #BD2026;
+}
+
+header.MUA-main-header .navbar-brand img {
+    padding-right: 2rem;
+}
+
+header.MUA-main-header .navbar .nav-link {
+    padding: 1.5rem .5rem;
+    font-size: 13px;
+}
+
+header.MUA-main-header .navbar .nav-item {
+    line-height: 2.5;
+    /*margin-left: .5rem;
+    margin-right: .5rem;*/
+}
+
+header.MUA-main-header .navbar .nav-link {
+   
+    font-weight: 600;
+}
+
+header.MUA-main-header .navbar .dropdown-item:focus,
+header.MUA-main-header .navbar .dropdown-item:hover {
+    background-color: inherit;
+}
+
+header.MUA-main-header .hvr-overline-from-center:before {
+    border-radius: 0 0 1rem 1rem;
+}
+
+/*carousel home slider*/
+
+.banner-header {
+    position: relative;
+    overflow-x: hidden;
+    border-bottom: .5rem solid #B2192C;
+    border-color: #B2192C;
+}
+
+.banner-header .four-features {
+    position: fixed;
+    z-index: 999;
+    top: 20%;
+    box-shadow: 0px 0px 50px rgba(35, 35, 35, .8);
+}
+
+.banner-header .four-features ul {
+    margin-bottom: inherit;
+    cursor: pointer;
+}
+
+.banner-header .four-features ul li.feature-open > span {
+    display: none;
+}
+
+.banner-header .four-features ul li.feature-open {
+    padding-right: 0;
+}
+
+.banner-header .four-features ul li i {
+    color: #C72A30;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 1rem 0 0 2rem;
+}
+
+.banner-header #home-slider-carousel {
+    position: relative;
+}
+
+.banner-header #home-slider-carousel .slider-cap{
+    position: absolute;
+    top: 70%;
+}
+
+.banner-header #home-slider-carousel .slider-cap img{
+    height: 35px;
+}
+
+
+.banner-header #MUA-Band-Banner {
+    overflow: hidden;
+    position: absolute;
+    height: 88vh;
+    width: 55%;
+    /* background-color: green; */
+    top: 0%;
+    right:0%;
+}
+
+.banner-header #MUA-Band-Banner .MUA-Band-one {
+    height: 88.2vh;
+    width: 86%;
+    background-color: #C51F2D;
+    transform: skewX(-14.5deg);
+    float: right;
+    border-left: .5rem solid #B2192C;
+}
+.banner-header #MUA-Band-Banner .MUA-Band-one-White {
+    height: 88.2vh;
+    width: 86%;
+    background-color: #ffffff;
+    transform: skewX(-14.5deg);
+    float: right;
+    border-left: .5rem solid #B2192C;
+}
+.banner-header #MUA-Band-Banner button,
+.banner-header #MUA-Band-Banner button:hover,
+.banner-header #MUA-Band-Banner button:focus,
+.banner-header #MUA-Band-Banner button:active {
+    cursor: pointer;
+}
+.banner-header #MUA-Band-Banner .MUA-Band-one-White:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    left: 99%;
+    z-index: -1;
+    background: #ffffff;
+    transform-origin: bottom left;
+    -ms-transform: skew(0deg, 0deg);
+    -webkit-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+}
+
+.banner-header #MUA-Band-Banner .MUA-Band-one:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    left: 99%;
+    z-index: -1;
+    background: #C51F2D;
+    transform-origin: bottom left;
+    -ms-transform: skew(0deg, 0deg);
+    -webkit-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+}
+
+.banner-header #MUA-Band-Banner .MUA-Band-Panel {
+    padding-top: 2rem;
+    padding-bottom: .3rem;
+    width: 100%;
+    background-color: #202020;
+}
+
+.banner-header #MUA-Band-Banner .MUA-Band-Panel .p1 {
+    font-size: 1.5rem;
+}
+
+.banner-header .MUA-band-content .row:first-child .col-md-6:first-child {
+    border-right: .5px solid #D14C57;
+    transform: skewX(14.5deg);
+}
+
+.banner-header .MUA-band-content .p1 {
+    font-size: 1.2rem;
+}
+
+.banner-header .MUA-band-content .p2 {
+    font-size: 1.2rem;
+}
+
+.banner-header .MUA-band-content hr {
+    background-color: #d14c57;
+}
+
+.banner-header .MUA-band-content p.fast-easy-hassle {
+    font-size: 1.8rem;
+}
+
+.text-skewToNormal {
+    transform: skewX(14.5deg);
+}
+
+/* slider */
+
+#home-slider-carousel .carousel-control-prev,
+#home-slider-carousel .carousel-control-next {
+    z-index: 999 !important;
+}
+
+#home-slider-carousel .carousel-indicators {
+    margin-left: 0%;
+    margin-right: 50%;
+}
+
+#home-slider-carousel .carousel-control-prev {
+    /* background-color: red !important; */
+    left: 8%;
+}
+
+#home-slider-carousel .carousel-control-next {
+    /* background-color: green !important; */
+    right: 58%;
+}
+
+#home-slider-carousel .carousel-control-next,
+#home-slider-carousel .carousel-control-prev {
+    top: 86%;
+}
+
+#home-slider-carousel .carousel-indicators-numbers li {
+    text-indent: 0;
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 100%;
+    line-height: 30px;
+    color: #fff;
+    background-color: transparent;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    text-align: center;
+}
+
+#home-slider-carousel .carousel-indicators-numbers li.active,
+#home-slider-carousel .carousel-indicators-numbers li:hover {
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    cursor: pointer;
+}
+
+#home-slider-carousel.carousel .carousel-inner .carousel-item > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 88vh;
+    width: 100%;
+}
+
+#home-slider-carousel.carousel .carousel-inner .carousel-item:nth-child(1) div {
+      background-image: url("../images/slider/slider-04.jpg");
+   
+}
+
+#home-slider-carousel.carousel .carousel-inner .carousel-item:nth-child(2) div {
+    background-image: url("../images/slider/slider-03.jpg");
+  /* background-image: url("../images/slider/slider-08.png");*/
+}
+
+#home-slider-carousel.carousel .carousel-inner .carousel-item:nth-child(3) div {
+    background-image: url("../images/slider/slider-01.jpg");
+}
+
+/*#home-slider-carousel.carousel .carousel-inner .carousel-item:nth-child(4) div {
+   
+}*/
+
+/******** win with ammu...*/
+/* win with mmu..*/
+
+#home-slider-carousel.carousel #winwithmmu .carousel-item:nth-child(1) div {
+    background-image: url("../images/slider/slider-08.png");
+}
+
+#home-slider-carousel.carousel #winwithmmu .carousel-item:nth-child(2) div {
+    background-image: url("../images/slider/slider-15.jpg");
+}
+
+#home-slider-carousel.carousel #winwithmmu .carousel-item:nth-child(3) div {
+    background-image: url("../images/slider/slider-17.jpg");
+}
+#home-slider-carousel.carousel #winwithmmu .carousel-item:nth-child(4) div {
+    background-image: url("../images/slider/slider-16.jpg");
+}
+/*------------------*/
+
+/*----------------------------our service-----------*/
+#home-slider-carousel.carousel #ourservice .carousel-item:nth-child(1) div {
+    background-image: url("../images/slider/our-services.jpg");
+}
+
+/*------------------*/
+
+/*----------------------------service-----------*/
+#home-slider-carousel.carousel #service .carousel-item:nth-child(1) div {
+    background-image: url("../images/slider/services.jpg");
+}
+
+/*------------------*/
+/*----------------------------travelagent-----------*/
+#home-slider-carousel.carousel #travelagent .carousel-item:nth-child(1) div {
+    background-image: url("../images/slider/partner-with-us-banner.jpg");
+}
+
+/*----------------------------corporate-----------*/
+#home-slider-carousel.carousel #corporate .carousel-item:nth-child(1) div {
+    background-image: url("../images/slider/partner-with-us-corporate.png");
+}
+/*----------------------------airportassistant-----------*/
+#home-slider-carousel.carousel #airportassistant .carousel-item:nth-child(1) div {
+    background-image: url("../images/slider/partner-with-us-airport-assistance.jpg");
+}
+
+/*------------------*/
+/*----------------------------airportserved-----------*/
+#home-slider-carousel.carousel #groundhandling .carousel-item:nth-child(1) div {
+    background-image: url("../images/slider/ground-handling-slider.png");
+}
+
+/*------------------*/
+
+/*----------------------------groundhandling-----------*/
+#home-slider-carousel.carousel #airportserved .carousel-item:nth-child(1) div {
+    background-image: url("../images/slider/airport-served-banner.png");
+}
+
+/*------------------*/
+
+/*----------------------------traveltips-----------*/
+#home-slider-carousel.carousel #traveltips .carousel-item:nth-child(1) div {
+    background-image: url("../images/slider/blog-wrapper.jpg");
+}
+
+/*------------------*/
+
+/*----------------------------faq-----------*/
+#home-slider-carousel.carousel #faq .carousel-item:nth-child(1) div {
+    background-image: url("../images/slider/faq-banner.jpg");
+}
+
+/*------------------*/
+
+/*----------------------------contactus-----------*/
+#home-slider-carousel.carousel #contactus .carousel-item:nth-child(1) div {
+    background-image: url("../images/slider/contact-us-bg.png");
+}
+
+/*------------------*/
+
+#testimonial-carousel.carousel .carousel-inner .card {
+    background-color: #ffffff;
+}
+
+#testimonial-carousel.carousel .carousel-inner .card img {
+    box-shadow: 0px 0px 60px rgba(34, 34, 34, 0.5);
+}
+
+#testimonial-carousel.carousel .carousel-inner img {
+    margin-top: -200px;
+}
+
+/* about section */
+
+.About-MUA {
+    background-color: #F3F3F3;
+}
+
+/* book now section */
+
+.bookNow-MUA form .form-control {
+    box-shadow: 0 5px 20px -6px rgba(35, 35, 35, .8);
+    border-radius: inherit;
+    height: 50px;
+}
+
+.bookNow-MUA .intl-tel-input .flag-dropdown .selected-flag{
+    margin:8px 0 0 0;
+}
+
+.bookNow-MUA form select.form-control {
+    height: 50px !important;
+}
+
+/*MUA download section*/
+.MUA-download-section {
+    background: url("../images/banner/download-app-lady-banner.png");
+    background-size: cover;
+}
+
+.MUA-download-section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.MUA-download-section ul li {
+    display: inline;
+}
+
+/* what we do */
+.WWO-MUA img.wwd-img {
+    width: 85%;
+}
+
+/* testimonial section */
+
+.MUA-Testimonial {
+    background-color: #f6f6f6;
+}
+
+/*partner with us section*/
+
+.MUA-partnerWithUs {
+    background: url("../images/partner-with-us-banner.png");
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+.MUA-partnerWithUs form .form-control {
+    box-shadow: 0 5px 20px -6px rgba(35, 35, 35, .8);
+    border-radius: inherit;
+    height: 50px;
+}
+
+.MUA-partnerWithUs form select.form-control {
+    height: 50px !important;
+}
+
+.MUA-partnerWithUs form button {
+    border-radius: inherit;
+    padding: 1rem 3.5rem;
+}
+
+.MUA-partnerWithUs form button:hover,
+.MUA-partnerWithUs form button:active,
+.MUA-partnerWithUs form button:focus,
+.MUA-partnerWithUs form button:visited {
+    background-color: #c52127;
+
+}
+
+/* find airport service */
+
+#airport-autocomplete .airport-code {
+    background-color: #c52127;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    border-radius: 3px;
+}
+
+#airport-autocomplete .airport-name {
+    clear: both;
+    background-color: transparent;
+    color: #5F7078;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+#airport-autocomplete .easy-autocomplete {
+    width: 100% !important;
+}
+
+/* ----------------------------------------------- */
+/* service form wrapper / services page form style */
+/* ----------------------------------------------- */
+
+.service-form-wrapper button {
+    cursor: pointer;
+}
+
+.service-form-wrapper {
+    padding-bottom: 10rem;
+}
+
+.service-form-wrapper > .container-fluid > .row {
+    box-shadow: 1px 1px 1px rgba(35, 35, 35, .2);
+}
+
+.service-form-wrapper .bg-image {
+    height: 100%;
+    width: 100%;
+    background: url("../images/backgrounds/book-a-service.jpg");
+    background-size: cover;
+}
+.service-form-wrapper .bg-umrah-image {
+    height: 100%;
+    width: 100%;
+    background: url("../images/backgrounds/umrah.jpg");
+    background-size: cover;
+}
+
+.service-form-wrapper .form-wrapper {
+    padding: 2rem 2rem;
+}
+
+.service-form-wrapper .request-call-back-btn {
+    background-color: #3A3A3A;
+}
+
+.service-form-wrapper .request-call-back-btn i {
+    background-color: #2D2D2D;
+}
+
+.service-form-wrapper form .form-control {
+    border-radius: inherit;
+    height: 45px;
+    box-shadow: 1px 1px 5px rgba(35, 35, 35, .2);
+}
+
+.service-form-wrapper form select.form-control {
+    height: 45px !important;
+}
+
+.service-form-wrapper form textarea.form-control {
+    height: inherit;
+}
+
+/* --------------------------------------- */
+/* our services page style */
+/* --------------------------------------- */
+
+.our-services-main-section {
+    padding-bottom: 10rem;
+}
+
+.our-services-wrapper {
+    background-image: url("../images/backgrounds/our-services-banner.png");
+    height: 75vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.our-services-wrapper h1 {
+    background: #323232;
+    width: 40%;
+}
+
+/* tabs */
+.our-services-tabs ul li:nth-child(odd) {
+    background-color: #E4E4E4;
+}
+
+.our-services-tabs ul li:nth-child(even) {
+    background-color: #F3F3F3;
+}
+
+.our-services-tabs .nav-item a {
+    color: #373737;
+}
+
+.our-services-tabs .nav-tabs .nav-link.active {
+    border-bottom: 5px solid #F41D24;
+    background-color: inherit;
+}
+
+.our-services-tabs .nav-tabs .nav-link.active:after {
+    content: '';
+    position: absolute;
+    left: 47%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #f00;
+    clear: both;
+}
+
+.our-services-tabs .nav-tabs .nav-link {
+    border: inherit;
+    border-radius: inherit;
+}
+
+.our-services-tabs .nav-tabs .nav-link.active h3 {
+    color: #F41E25;
+    background-color: inherit;
+    border-color: inherit;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+    background: transparent;
+    padding: 50px 0;
+}
+
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 0px;
+    margin: 0 auto;
+    padding-top: 0;
+    background: transparent;
+    border-left: 3px dashed #dcdcdc;
+}
+
+.timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: inherit;
+}
+
+.timeline ul li div {
+    position: relative;
+    top: 0;
+    width: 500px;
+    padding: 0 15px 15px 15px;
+    background: transparent;
+}
+
+.timeline ul li div::before {
+    content: '';
+    position: absolute;
+    top: 2%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline ul li:nth-child(even) div {
+    left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div h4 {
+    text-align: end;
+}
+
+.timeline ul li:nth-child(odd) div p {
+    text-align: end;
+}
+
+.timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #D2D2D2;
+}
+
+.timeline ul li:nth-child(odd) div {
+    left: -540px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+    right: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #D2D2D2 transparent transparent;
+}
+
+.timeline ul li::after {
+    transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+    background: #bd2026;
+}
+
+.timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+    transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+    transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*------------------------------------*/
+/*------Timeline end------------------*/
+/*------------------------------------*/
+
+
+.our-services-main-section .our-service-request-service-wrapper {
+    background:url("../images/backgrounds/lady-with-phone.png");
+    height: auto;
+    width: 100%;
+    background-size: cover; 
+    padding: 5rem 0;
+}
+
+.our-services-main-section .our-service-request-service-wrapper hr {
+    border-style: dashed;
+    border-color: #fff;
+}
+
+.our-services-main-section .our-service-request-service-wrapper .request-call-back-btn {
+    background-color: #3A3A3A;
+}
+
+.our-services-main-section .our-service-request-service-wrapper .request-call-back-btn i {
+    background-color: #2D2D2D;
+}
+
+
+/*-------------------------------------------*/
+/*ground handling page*/
+/*-------------------------------------------*/
+
+
+.ground-handling-main-section {
+    padding-bottom: 10rem;
+}
+
+.ground-handling-wrapper {
+    background-image: url("../images/backgrounds/airport-served-banner.png");
+    height: 75vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.ground-handling-wrapper h1 {
+    background: #323232;
+    width: 40%;
+}
+
+/* tabs */
+.ground-handling-tabs ul li:nth-child(odd) {
+    background-color: #E4E4E4;
+}
+
+.ground-handling-tabs ul li:nth-child(even) {
+    background-color: #F3F3F3;
+}
+
+.ground-handling-tabs .nav-item a {
+    color: #373737;
+}
+
+.ground-handling-tabs .nav-tabs .nav-link.active {
+    border-bottom: 5px solid #F41D24;
+    background-color: inherit;
+}
+
+.ground-handling-tabs .nav-tabs .nav-link.active:after {
+    content: '';
+    position: absolute;
+    left: 47%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #f00;
+    clear: both;
+}
+
+.ground-handling-tabs .nav-tabs .nav-link {
+    border: inherit;
+    border-radius: inherit;
+}
+
+.ground-handling-tabs .nav-tabs .nav-link.active h3 {
+    color: #F41E25;
+    background-color: inherit;
+    border-color: inherit;
+}
+
+.ground-handling-main-section .ground-handling-request-service-wrapper {
+    background: url("../images/backgrounds/lady-with-phone.png");
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    padding: 5rem 0;
+}
+
+.ground-handling-main-section .ground-handling-request-service-wrapper hr {
+    border-style: dashed;
+    border-color: #fff;
+}
+
+.ground-handling-main-section .ground-handling-request-service-wrapper .request-call-back-btn {
+    background-color: #3A3A3A;
+}
+
+.ground-handling-main-section .ground-handling-request-service-wrapper .request-call-back-btn i {
+    background-color: #2D2D2D;
+}
+
+.ground-handling-wrapper .request-call-back-btn{
+    background: #BD2026;
+}
+
+.ground-handling-wrapper .request-call-back-btn i{
+    background: #ffffff;
+    color: #222222;
+}
+
+
+/*---------------------------------------------*/
+/*contact-us page*/
+/*---------------------------------------------*/
+
+
+
+.contact-us-form-section button {
+    cursor: pointer;
+}
+
+.contact-us-form-section > .container-fluid > .row {
+    box-shadow: 1px 1px 1px rgba(35, 35, 35, .2);
+}
+
+.contact-us-form-section .bg-image {
+    height: 100%;
+    width: 100%;
+    background: url("../images/backgrounds/contact-us-bg.jpg");
+    background-size: cover;
+    border-top: 1rem solid #bc2a2a;
+}
+
+.contact-us-form-section .form-wrapper {
+    padding: 2rem 2rem;
+}
+
+.contact-us-form-section form .form-control {
+    border-radius: inherit;
+    height: 45px;
+    box-shadow: 1px 1px 5px rgba(35, 35, 35, .2);
+}
+
+.contact-us-form-section form select.form-control {
+    height: 45px !important;
+}
+
+.contact-us-form-section form textarea.form-control {
+    height: inherit;
+}
+
+/*contact us footer section*/
+
+.contact-us-footer-section {
+    color: #ffffff;
+}
+
+
+.contact-us-footer-section > .container-fluid > .row {
+    box-shadow: 1px 1px 1px rgba(35, 35, 35, .2);
+}
+
+.contact-us-footer-section .bg-image {
+    height: 100%;
+    width: 100%;
+    background: url("../images/backgrounds/footer-bg.jpg");
+    background-size: cover;
+    padding: 3rem 2rem;
+}
+
+.contact-us-footer-section .head-quarters .head-quarters-city{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-top: 5px !important;
+}
+
+.contact-us-footer-section .city-address{
+    color: #9c9c9c;
+}
+
+.contact-us-footer-section .head-quarters a{
+    color: #9c9c9c;
+}
+
+
+
+/*-------------------------------------------*/
+/*airport served style*/
+/*-------------------------------------------*/
+
+.airport-served-wrapper .content-wrapper{
+position: absolute;
+top: 50%;
+left:25%;
+right:25%;
+}
+
+.airport-served-wrapper .content-wrapper > div{
+    background: #222222;
+}
+
+.airport-served-wrapper .content-wrapper > div > h1 > span{
+    font-weight: 100;
+}
+
+.airport-served-location-detector{
+    background-color: #F3F3F3;
+}
+
+.country-airport-served-wrapper p.centered {
+    position: absolute;
+    top: 82%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: #393939;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+.airports-listing-wrapper .nav-tabs .nav-item.show .nav-link, 
+.airports-listing-wrapper .nav-tabs .nav-link.active{
+    color: #ffffff;
+    background-color: #bc2a2a;
+}
+
+.airports-listing-wrapper .nav-tabs{
+    background: #f3f3f3;
+}
+
+
+.airports-listing-wrapper .nav-tabs li a{
+    text-transform: uppercase;
+    color: #222;
+    border-radius: inherit;
+}
+
+/*airports-listing-wrapper for 3 column layout*/
+
+.airports-listing-wrapper-3 table{
+    width: 100%;
+}
+
+.airports-listing-wrapper-3 table td{
+    text-align: left;
+}
+
+.airports-listing-wrapper-3 table i{
+    font-size: 10px;
+    color: #bc2a2a;
+}
+
+
+.airports-listing-wrapper-3 .card{
+    box-shadow: 1px 1px 1px rgba(35, 35, 35, .2);
+}
+
+#airports-lists td:first-child{
+    width: 18%;
+}
+
+#airports-lists td:first-child i{
+    float: right;
+    color: #bc2a2a;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+#airports-lists td:last-child {
+    font-weight: 500;
+}
+
+.airport-served-request-service-wrapper .image-wrapper{
+    background: url("../images/backgrounds/lady-with-bag.png");
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    color: #F0F0F0;
+}
+
+.airport-served-request-service-wrapper .request-call-back-btn{
+    background: #3A3A3A;
+}
+
+.airport-served-request-service-wrapper .request-call-back-btn i{
+    background: #2D2D2D;
+}
+
+
+/*--------------------------------*/
+/*blog section*/
+/*--------------------------------*/
+
+.blog-section{
+    margin-bottom: 5rem;
+}
+
+.blog-wrapper {
+    background-image: url("../images/backgrounds/blog-wrapper.jpg");
+    height: 75vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.blog-wrapper h1 {
+    background: #323232;
+    width: 40%;
+}
+
+.blog-wrapper .subscribe-email input[type="email"]{
+    height: 50px;
+    border-radius: inherit;
+    outline: indianred;
+    text-transform: uppercase;
+}
+
+
+.blog-wrapper .subscribe-email button
+{
+    font-size: 1.5rem;
+    border-radius: inherit;
+    background: #bc2a2a;
+    color: #ffffff;
+    border-color: #bc2a2a;
+}
+
+.blog-nav{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+
+.blog-nav ul li a.nav-link{
+    text-transform: uppercase;  
+    letter-spacing: 4px;
+    line-height: 0;
+    margin: 0 .8rem;
+    color: #222222;
+    padding: 1rem .5rem;
+    font-size: 15px;
+
+}
+
+.blog-nav ul li.active a.nav-link{
+    background: #DB3000;
+    color: #ffffff;
+}
+
+.blog-nav ul li:last-child{
+    border-right: inherit;
+} 
+
+.blog-section .sidebar-panel .social-panel ul li{
+    display: inline;
+    margin: 0 .8rem;
+}
+
+.sidebar-panel .social-panel{
+    padding-top: 1rem;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    width: 95%;
+    margin:0 auto;
+}
+
+
+.sidebar-panel .popular-posts-wrapper{
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #222;
+}
+
+.sidebar-panel .archieves-post-wrapper{
+    padding-top: 5rem;
+}
+
+.blog-section .item {
+  width: 250px;
+  margin: 10px;
+  float: left;
+}
+
+.blog-section .popular-posts{
+    margin:1rem 0;
+}
+
+
+/*--------------------------------*/
+/*blog detailed section*/
+/*--------------------------------*/
+
+.blog-detailed-section{
+    margin-bottom: 5rem;
+}
+
+.blog-detailed-wrapper {
+    background-image: url("../images/backgrounds/blog-wrapper.jpg");
+    height: 75vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.blog-detailed-wrapper h1 {
+    background: #323232;
+    width: 40%;
+}
+
+.blog-detailed-wrapper .subscribe-email input[type="email"]{
+    height: 50px;
+    border-radius: inherit;
+    outline: indianred;
+    text-transform: uppercase;
+}
+
+
+.blog-detailed-wrapper .subscribe-email button
+{
+    font-size: 1.5rem;
+    border-radius: inherit;
+    background: #bc2a2a;
+    color: #ffffff;
+    border-color: #bc2a2a;
+}
+
+
+
+
+/*--------------------------------------*/
+/*partner with us*/
+/*----------------------------------------*/
+
+.partner-with-us-form-section{
+    margin-bottom: 10rem;
+}
+
+
+
+.partner-with-us-form-section .partner-cap  {
+    position: absolute;
+    top: 70%;
+   background: transparent !important;
+}
+
+.partner-with-us-form-section .partner-cap   > span{
+    
+    background-color: #c52127;
+    color: #ffffff;
+    width: auto;
+    padding:.5rem 1rem;
+    
+
+}
+
+.partner-with-us-form-section button {
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: inherit;
+    height: 3rem;
+}
+
+.partner-with-us-form-section > .container-fluid > .row {
+    box-shadow: 1px 1px 1px rgba(35, 35, 35, .2);
+}
+
+.partner-with-us-form-section .bg-image {
+    height: 100%;
+    width: 100%;
+    background: url("../images/backgrounds/partner-with-us-banner.png");
+    background-size: cover;
+    border-top: 1rem solid #bc2a2a;
+}
+
+.partner-with-us-form-section .form-wrapper {
+    padding: 2rem 2rem;
+}
+
+.partner-with-us-form-section form .form-control {
+    border-radius: inherit;
+    height: 45px;
+    box-shadow: 1px 1px 5px rgba(35, 35, 35, .2);
+}
+
+.partner-with-us-form-section form select.form-control {
+    height: 45px !important;
+}
+
+
+.partner-with-us-form-section .intl-tel-input .flag-dropdown .selected-flag{
+margin:8px 0 0 0;
+}
+
+
+
+/*--------------------------------------*/
+/*partner with us -  airport assiatnce -work with us*/
+/*----------------------------------------*/
+
+.airport-assistance-form-section{
+    margin-bottom: 10rem;
+}
+
+.airport-assistance-form-section .bg-image > .bg-img-text{
+    margin-top: 50%;
+}
+
+.airport-assistance-form-section .bg-image > .bg-img-text  > span{
+    background-color: #c52127;
+    color: #ffffff;
+    width: auto;
+    padding:.5rem 1rem;
+
+}
+
+.airport-assistance-form-section button {
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: inherit;
+    height: 3rem;
+}
+
+.airport-assistance-form-section > .container-fluid > .row {
+    box-shadow: 1px 1px 1px rgba(35, 35, 35, .2);
+}
+
+.airport-assistance-form-section .bg-image {
+    height: 100%;
+    width: 100%;
+    background: url("../images/backgrounds/partner-with-us-airport-assistance.jpg");
+    background-size: cover;
+    border-top: 1rem solid #bc2a2a;
+}
+
+.airport-assistance-form-section .form-wrapper {
+    padding: 2rem 2rem;
+}
+
+.airport-assistance-form-section form .form-control {
+    border-radius: inherit;
+    height: 45px;
+    box-shadow: 1px 1px 5px rgba(35, 35, 35, .2);
+}
+
+.airport-assistance-form-section form select.form-control {
+    height: 45px !important;
+}
+
+.airport-assistance-form-section .intl-tel-input .flag-dropdown .selected-flag{
+margin:8px 0 0 0;
+}
+
+
+
+/*--------------------------------------*/
+/*partner with us -  Corporate Agent -work with us*/
+/*----------------------------------------*/
+
+.corporate-agent-form-section{
+    margin-bottom: 10rem;
+}
+
+.corporate-agent-form-section .bg-image > .bg-img-text{
+    margin-top: 50%;
+}
+
+.corporate-agent-form-section .bg-image > .bg-img-text  > span{
+    background-color: #c52127;
+    color: #ffffff;
+    width: auto;
+    padding:.5rem 1rem;
+
+}
+
+.corporate-agent-form-section button {
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: inherit;
+    height: 3rem;
+}
+
+.corporate-agent-form-section > .container-fluid > .row {
+    box-shadow: 1px 1px 1px rgba(35, 35, 35, .2);
+}
+
+.corporate-agent-form-section .bg-image {
+    height: 100%;
+    width: 100%;
+    background: url("../images/backgrounds/partner-with-us-corporate.png");
+    background-size: cover;
+    border-top: 1rem solid #bc2a2a;
+    background-position: center;
+}
+
+.corporate-agent-form-section .form-wrapper {
+    padding: 2rem 2rem;
+}
+
+.corporate-agent-form-section form .form-control {
+    border-radius: inherit;
+    height: 45px;
+    box-shadow: 1px 1px 5px rgba(35, 35, 35, .2);
+}
+
+.corporate-agent-form-section form select.form-control {
+    height: 45px !important;
+}
+
+.corporate-agent-form-section .intl-tel-input .flag-dropdown .selected-flag{
+margin:8px 0 0 0;
+}
+
+/*-----------------------------*/
+/*campaign page style*/
+/*-----------------------------*/
+
+
+.campaign-main-section{
+    padding-bottom: 10rem;
+}
+
+.campaign-main-section a,.campaign-main-section button{
+    cursor:pointer;
+}
+
+.campaign-main-section .book-now-btn{
+    background-color: #F4181D;
+    border-color: #F4181D;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.69);
+    color: #ffffff;
+}
+
+
+
+.campaign-wrapper {
+    background-image: url("../images/backgrounds/raffle-bg.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/*.campaign-wrapper h1 {
+    background: #323232;
+    width: 50%;
+}*/
+
+.campaign-wrapper .header-text{    
+    width: 65%;
+    background: #8080808f;
+    padding: 2rem 0;
+    margin: 10em auto;
+    border-radius: 1rem;
+}
+
+.campaign-wrapper .header-text .mv{
+ display:none;
+}
+
+.campaign-wrapper h1 span{
+    font-size: 2rem;
+}
+
+
+.campaign-wrapper-tabs ul li:nth-child(odd) {
+    background-color: #E4E4E4;
+}
+
+.campaign-wrapper-tabs ul li:nth-child(even) {
+    background-color: #F3F3F3;
+}
+
+.campaign-wrapper-tabs .nav-item a {
+    color: #373737;
+}
+
+.campaign-wrapper-tabs .nav-tabs .nav-link.active {
+    border-bottom: 5px solid #bd2026;
+    background-color: inherit;
+}
+
+.campaign-wrapper-tabs .nav-tabs .nav-link.active:after {
+    content: '';
+    position: absolute;
+    left: 47%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #bd2026;
+    clear: both;
+}
+
+.campaign-wrapper-tabs .nav-tabs .nav-link {
+    border: inherit;
+    border-radius: inherit;
+}
+
+.campaign-wrapper-tabs .nav-tabs .nav-link.active h3 {
+    color: #bd2026;
+    background-color: inherit;
+    border-color: inherit;
+}
+
+.recent-winners-wrapper .card{
+    border:inherit;
+}
+
+.recent-winners-wrapper .owl-nav{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+}
+
+.recent-winners-wrapper .owl-nav .owl-next{
+    float: right;
+}
+
+.recent-winners-wrapper .owl-nav .owl-next,
+.recent-winners-wrapper .owl-nav .owl-prev{
+    color: #bc2a2a;
+}
+
+
+/* --------------------------------------- */
+/* faq page style */
+/* --------------------------------------- */
+
+.faq-main-section {
+    padding-bottom: 10rem;
+}
+
+.faq-wrapper {
+    background-image: url("../images/backgrounds/faq-banner.jpg");
+    height: 75vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.faq-wrapper h1 {
+    background: #323232;
+    width: 40%;
+}
+
+/* tabs */
+.faq-tabs ul li:nth-child(odd) {
+    background-color: #E4E4E4;
+}
+
+.faq-tabs ul li:nth-child(even) {
+    background-color: #F3F3F3;
+}
+
+.faq-tabs .nav-item a {
+    color: #373737;
+}
+
+.faq-tabs .nav-tabs .nav-link.active {
+    border-bottom: 5px solid #F41D24;
+    background-color: inherit;
+}
+
+.faq-tabs .nav-tabs .nav-link.active:after {
+    content: '';
+    position: absolute;
+    left: 47%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #f00;
+    clear: both;
+}
+
+.faq-tabs .nav-tabs .nav-link {
+    border: inherit;
+    border-radius: inherit;
+}
+
+.faq-tabs .nav-tabs .nav-link.active h3 {
+    color: #F41E25;
+    background-color: inherit;
+    border-color: inherit;
+}
+
+
+
+/*-------------------------------------*/
+/*autocomplete styles*/
+
+
+
+.airport-code.ui-menu-item-wrapper{
+    background: #bc2a2a;
+    color: #ffffff;
+    border-radius: .2rem;
+    border:inherit;
+    text-transform: uppercase;
+    margin:1rem;
+}
+
+.ui-autocomplete .ui-menu-item:hover,
+.ui-autocomplete .ui-menu-item:act,
+.ui-autocomplete .ui-menu-item:hover{
+    background: #e6e6e6;
+}
+
+
+.airport-name.ui-menu-item-wrapper{
+    background: #ffffff;
+    color: #222222;
+    border:inherit;
+    text-transform: uppercase;
+}
+
+.ui-autocomplete .ui-menu-item:first-child{
+    padding-top: 1rem;
+}
+
+.autocomplete-divider.ui-menu-item-wrapper,
+.autocomplete-divider.ui-menu-item-wrapper:hover,
+.autocomplete-divider.ui-menu-item-wrapper:active,
+.autocomplete-divider.ui-menu-item-wrapper:visited {
+    border-top:1px solid #e6e6e6;
+    margin:1rem 0;
+    padding:0 0 0 0;
+}
+
+
+/*-------------------------------------------------*/
+/*booking millennium ticket section style*/
+/*-------------------------------------------------*/
+
+.millennium-bookTicket-section .cust-checkbox {
+    display: none;
+}
+.millennium-bookTicket-section .cust-checkbox + span{
+    /*background:red;*/
+    background: #999;
+    height: auto;
+    width: auto;
+    display:block;
+    padding: .2rem;
+    font-size: .7rem;
+    border-radius: .3rem;
+}
+.millennium-bookTicket-section .selected .cust-checkbox + span{
+    background:#bc2a2a;
+    padding:.5rem;
+}
+
+.millennium-bookTicket-section .unselected .cust-checkbox + span{
+ background:#999999;
+    padding:.5rem;   
+}
+
+.millennium-bookTicket-section .cust-checkbox:checked + span{
+    height: auto;
+    width: auto;
+    display:block;
+    padding: .2rem;
+    background:#bc2a2a;
+    color: #ffffff;
+    border-radius: .3rem;
+}
+.millennium-bookTicket-section .ticktes{
+    padding: 0 15px;
+}
+
+.millennium-bookTicket-section .ticktes label{
+    cursor: pointer;
+}
+
+
+
+.millennium-bookTicket-section .info
+{     
+    padding:.5rem;
+    max-width:100%;
+    margin:1rem auto 1rem;
+}
+
+/*---------------------------------------*/
+/*ground handling service form styles*/
+/*---------------------------------------*/
+
+
+.groundhandlingFormService-main-section {
+    padding-bottom: 10rem;
+}
+
+.groundhandlingFormService-wrapper {
+    background-image: url("../images/backgrounds/our-services-banner.png");
+    height: 75vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.groundhandlingFormService-wrapper h1 {
+    background: #323232;
+    width: 60%;
+}
+
+.groundhandlingFormService-main-section .intl-tel-input input{
+    height: 37px;
+}
+
+
+/*form styles*/
+#msform {
+    width: 100%;
+    margin: 50px auto;
+    position: relative;
+}
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+/*buttons*/
+#msform .action-button {
+    width: 100px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+.groundhandlingFormService-main-section .form-four label.checkbox{
+    display: block;
+}
+
+
+.groundhandlingFormService-main-section .form-four label.checkbox > input{
+    margin-right: 1rem;
+}
+/*headings*/
+.fs-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+    text-align: center;
+}
+#progressbar li {
+    list-style-type: none;
+    color: #222;
+    text-transform: uppercase;
+    font-size: 18px;
+    width:25%;
+    float: left;
+    position: relative;
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 2rem;
+    line-height: 2rem;
+    display: block;
+    font-size: 18px;
+    color: #333;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+    background: #bc2a2a;
+    color: white;
+}
+
+/**/
+
+/*-----------------------------------------------*/
+/*payment detailed page style*/
+/*-----------------------------------------------*/
+
+.payment-detailed-section  #payment-detaile-table td:nth-child(1){
+    width: 30%;
+}
+
+
+.payment-detailed-section  #payment-detaile-table td:nth-child(2){
+    width: 70%;
+}
+
+
+
+
+
+/* --------------------------------------- */
+/* common footer style */
+/* --------------------------------------- */
+
+/*footer*/
+footer.MUA-MainFooter .foot-1 {
+    background-color: black;
+    letter-spacing: 2px;
+    padding: 1.8rem 0 1.5rem 0;
+}
+
+footer.MUA-MainFooter .foot-1 img {
+    position: absolute;
+    bottom: -4rem;
+    width: 100%;
+}
+
+footer.MUA-MainFooter .foot-2 {
+    padding-top: 5rem;
+}
+
+footer.MUA-MainFooter .foot-2 ul.social-connect li {
+    display: inline-block;
+}
+
+footer.MUA-MainFooter .foot-2 ul.social-connect li .btn-subscribe {
+    padding: .2rem 1rem;
+    margin: -13px 0 0 5px;
+}
+
+
+/**/
+
+
+.checkout-wrapper .payment-button-wrapper{
+    margin-top:2rem; 
+    margin-bottom: 0;
+}
+
+.checkout-wrapper .payment-button-wrapper h4{
+    padding-top: .3rem;
+    padding-bottom: 1rem;
+}
+
+.checkout-wrapper .payment-card-wrapper .card-body{
+    padding-bottom: 3.5rem;
+}
+
+/*-----------------------*/
+/*welcome page style*/
+/*-----------------------*/
+
+.welcome-section {
+    padding-bottom: 10rem;
+}
+
+.welcome-wrapper {
+    background-image: url("../images/backgrounds/welcome-banner.png");
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+}
+
+
+/*---------------------------------*/
+/*campaign product style*/
+/*---------------------------------*/
+
+.campaign-products-wrapper .mu-product .range-slider
+{
+    background: #999;
+    width: 50%;
+    height: .5rem;
+    border-radius:1rem;
+    display: block;
+    margin:0 auto;
+}
+
+.campaign-products-wrapper .mu-product .range-slider .range{
+    background: #bc2a2a;
+    width: 50%;
+    height: .5rem;
+}
+
+.campaign-products-wrapper .price-tag-top{
+    display: inline-block;
+    margin-left:1rem;
+}
+
+
+.campaign-products-wrapper .price-tag-top p{
+    font-size: 2rem;
+    margin-left: 4rem;
+}
+
+.campaign-products-wrapper .bottom-tag{
+    display: inline-block;
+    float: right;
+}
+
+.campaign-products-wrapper .bottom-tag p
+{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+
+
+.flight-details-section input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: inherit;
+    background-color: #D4D4D4;
+    height: 2px;
+}
+
+.flight-details-section input[type="range"]::-webkit-slider-thumb:hover,
+.flight-details-section input[type="range"]::-moz-range-thumb:hover
+{
+    cursor: pointer;
+}
+
+.flight-details-section .delayRangeClass::-moz-range-thumb {
+    background: url("https://preview.ibb.co/m69Aea/red_airplane_mode_on_512.gif") no-repeat;
+    outline: none;
+    border: none;
+}
+
+.flight-details-section .delayRangeClass::-webkit-slider-thumb {
+    background: url("https://preview.ibb.co/m69Aea/red_airplane_mode_on_512.gif") no-repeat;
+    outline: none;
+    border: none;
+ }
+
+
+.flight-details-section .rangeClass::-moz-range-thumb{
+    background: url("https://image.ibb.co/kwDTza/test_plane.png") no-repeat;
+    outline: none;
+    border: none;
+ }
+
+.flight-details-section .rangeClass::-webkit-slider-thumb {
+    background: url("https://image.ibb.co/kwDTza/test_plane.png") no-repeat;
+    outline: none;
+    border: none;
+ }
+
+
+.flight-details-section input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    opacity: 1.0;
+    width: 35px;
+    height: 35px;
+    background-size: 35px;
+}
+
+.flight-details-section input[type="range"]::-moz-range-thumb {
+    cursor: pointer;
+    -moz-appearance: inherit;
+    border: none;
+    opacity: 1.0;
+    width: 35px;
+    height: 35px;
+    background-size: 35px;
+}
+
+
+.flight-details-section input[type=range]:focus {
+    cursor: pointer;
+    outline: none;
+}
+
+.flight-details-section .search-flight-card button{
+    margin-top: 2rem;
+}
+
+.flight-details-section .flight-details-card span.flight-status {
+    font-size: 12px;
+}
+
+.flight-details-section .flight-details-card .details-table {
+    margin-left: 1.3rem;
+}
+
+
+.weather-details-section .temp-wrapper p{
+    font-size: 6rem;
+}
+
+.weather-details-section .temp-wrapper ul{
+    list-style-type: none;
+    margin-top: 2rem;
+}
+
+.weather-details-section .temp-wrapper ul li{
+    font-size: 1.2rem;
+}
+
+.weather-details-section .sevendaystemp ul li{
+    display: inline-block;
+    width: 12%;
+}
+
+.highcharts-series > path {
+    fill: rgba(200, 35, 40, 0.3) !important;
+}
+
+.highcharts-series > path[stroke-linecap="round"] {
+    stroke: #c82328 !important;
+}
+
+.highcharts-markers > path {
+    fill: #c82328 !important;
+}
+
+.highcharts-legend-item > rect {
+    fill: #c82328 !important;
+}
+
+.highcharts-tooltip > path {
+    stroke: rgba(200, 35, 40, 1) !important;
+}
+
+.highcharts-tooltip text tspan:nth-child(2) {
+    fill: #c82328 !important;
+}
+/* feedback form styles... */
+
+
+.btn-circle{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 5px;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+    color: #fff;
+}
+#feedbackCircle .label {
+    padding-right: 5px;
+    margin-bottom: 15px;
+    border: none;
+    
+}
+#feedbackCircle label:nth-child(1){
+    background: #E60000;
+ 
+}
+#feedbackCircle label:nth-child(2){
+    background: #FF0000;
+}
+#feedbackCircle label:nth-child(3){
+    background: #FF1919;
+}
+#feedbackCircle label:nth-child(4){
+    background: #FFAF56;
+}
+#feedbackCircle label:nth-child(5){
+    background: #FFCC00;
+}
+#feedbackCircle label:nth-child(6){
+    background: #FFD119;
+}
+#feedbackCircle label:nth-child(7){
+    background: #FBD332;
+}
+#feedbackCircle label:nth-child(8){
+    background: #7FCD0D;
+}
+#feedbackCircle label:nth-child(9){
+    background: #00CD00;
+}
+#feedbackCircle label:nth-child(10){
+    background: #009A00;
+}
+.selected-radio{
+    background :  #ac2925 !important;
+}
+.row.col-sm-9 {
+    float: left;
+}
+section.airports-listing-wrapper-3.mt-5.mb-5 {
+    overflow: auto;
+}
+.form-control{
+    font-size: 14px !important;
+}

@@ -1,0 +1,507 @@
+
+/*banner-header-style*/
+
+.banner-header {
+    position: relative;
+    overflow-x: hidden;
+    border-bottom: .5rem solid #B2192C;
+    border-color: #B2192C;
+}
+
+.banner-header .four-features {
+    position: fixed;
+    z-index: 999;
+    top: 30%;
+    box-shadow: 0px 0px 50px rgba(35, 35, 35, .8);
+}
+
+.banner-header .four-features ul {
+    margin-bottom: inherit;
+    cursor: pointer;
+}
+
+.banner-header .four-features ul li.feature-open > span {
+    display: none;
+}
+
+.banner-header .four-features ul li.feature-open {
+    padding-right: 0;
+}
+
+.banner-header .four-features ul li i {
+    color: #C72A30;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 1rem 0 0 2rem;
+}
+
+.banner-header #home-slider-carousel {
+    position: relative;
+}
+
+.banner-header #MUA-Band-Banner {
+    overflow: hidden;
+    position: absolute;
+    height: 88vh;
+    width: 100%;
+    /* background-color: green; */
+    top: 0%;
+}
+
+.banner-header #MUA-Band-Banner .MUA-Band-one {
+    height: 88.2vh;
+    width: 45%;
+    background-color: #C51F2D;
+    transform: skewX(-14.5deg);
+    float: right;
+    border-left: .5rem solid #B2192C;
+}
+
+.banner-header #MUA-Band-Banner button,
+.banner-header #MUA-Band-Banner button:hover,
+.banner-header #MUA-Band-Banner button:focus,
+.banner-header #MUA-Band-Banner button:active {
+    cursor: pointer;
+}
+
+.banner-header #MUA-Band-Banner .MUA-Band-one:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    left: 99%;
+    z-index: -1;
+    background: #C51F2D;
+    transform-origin: bottom left;
+    -ms-transform: skew(0deg, 0deg);
+    -webkit-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+}
+
+.banner-header #MUA-Band-Banner .MUA-Band-Panel {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    background-color: #202020;
+}
+
+.banner-header #MUA-Band-Banner .MUA-Band-Panel .p1 {
+    font-size: 1.8rem;
+}
+
+.banner-header .MUA-band-content .row:first-child .col-md-6:first-child {
+    border-right: .5px solid #D14C57;
+    transform: skewX(14.5deg);
+}
+
+.banner-header .MUA-band-content .p1 {
+    font-size: 1.2rem;
+}
+
+.banner-header .MUA-band-content .p2 {
+    font-size: 1.2rem;
+}
+
+.banner-header .MUA-band-content hr {
+    background-color: #d14c57;
+}
+
+.banner-header .MUA-band-content p.fast-easy-hassle {
+    font-size: 1.8rem;
+}
+
+.text-skewToNormal {
+    transform: skewX(14.5deg);
+}
+
+
+
+
+/*end banner header style*/
+
+.city-request-service-wrapper .request-call-back-btn {
+    background-color: #3A3A3A;
+}
+
+.city-request-service-wrapper .request-call-back-btn i {
+    background-color: #2D2D2D;
+}
+
+
+.city-request-service-wrapper {
+    background:url("../images/backgrounds/lady-with-phone.png");
+    height: auto;
+    width: 100%;
+    background-size: cover; 
+    padding: 5rem 0;
+}
+
+.city-request-service-wrapper hr {
+    border-style: dashed;
+    border-color: #fff;
+}
+
+
+/* tabs */
+.our-services-tabs ul li:nth-child(odd) {
+    background-color: #E4E4E4;
+}
+
+.our-services-tabs ul li:nth-child(even) {
+    background-color: #F3F3F3;
+}
+
+.our-services-tabs .nav-item a {
+    color: #373737;
+}
+
+.our-services-tabs .nav-tabs .nav-link.active {
+    border-bottom: 5px solid #F41D24;
+    background-color: inherit;
+}
+
+.our-services-tabs .nav-tabs .nav-link.active:after {
+    content: '';
+    position: absolute;
+    left: 47%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #f00;
+    clear: both;
+}
+
+.our-services-tabs .nav-tabs .nav-link {
+    border: inherit;
+    border-radius: inherit;
+}
+
+.our-services-tabs .nav-tabs .nav-link.active h3 {
+    color: #F41E25;
+    background-color: inherit;
+    border-color: inherit;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+    background: transparent;
+    padding: 50px 0;
+}
+
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 0px;
+    margin: 0 auto;
+    padding-top: 0;
+    background: transparent;
+    border-left: 3px dashed #dcdcdc;
+}
+
+.timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: inherit;
+}
+
+.timeline ul li div {
+    position: relative;
+    top: 0;
+    width: 500px;
+    padding: 0 15px 15px 15px;
+    background: transparent;
+}
+
+.timeline ul li div::before {
+    content: '';
+    position: absolute;
+    top: 2%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline ul li:nth-child(even) div {
+    left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div h4 {
+    text-align: end;
+}
+
+.timeline ul li:nth-child(odd) div p {
+    text-align: end;
+}
+
+.timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #D2D2D2;
+}
+
+.timeline ul li:nth-child(odd) div {
+    left: -540px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+    right: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #D2D2D2 transparent transparent;
+}
+
+.timeline ul li::after {
+    transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+    background: #F41D24;
+}
+
+.timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+    transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+    transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*------------------------------------*/
+/*------Timeline end------------------*/
+/*------------------------------------*/
+
+/*--------------------------------------*/
+/*why book us section styels*/
+/*-----------------------------------*/
+
+.why-book-our-service ul li{
+    list-style-type: none;
+    margin-top: 2rem;
+}
+
+.book-now-info ul li{
+    list-style-type: none;
+    margin-top: 2rem;
+}
+
+.atlanta.banner-header,
+.chennai.banner-header,
+.brisbane.banner-header,
+.denver.banner-header,
+.dhaka.banner-header,
+.frankfurt.banner-header,
+.dubai.banner-header,
+.heathrow.banner-header,
+.jeddah.banner-header,
+.jeddah.banner-header,
+.johannesburg.banner-header,
+.melbourne.banner-header,
+.mumbai.banner-header,
+.munich.banner-header,
+.muscat.banner-header,
+.paris.banner-header,
+.singapore.banner-header{
+    border:inherit;
+    border-color: inherit;
+}
+
+/*-----------------------*/
+/*Atlanta page style*/
+/*-----------------------*/
+
+
+.atlanta .landing-bg {
+    background: url("../images/cityimages/Atlanta.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+/*-----------------------*/
+/*Brisbane page style*/
+/*-----------------------*/
+.brisbane .landing-bg {
+    background: url("../images/cityimages/Brisbane.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+/*-----------------------*/
+/*Chennai page style*/
+/*-----------------------*/
+.chennai .landing-bg {
+    background: url("../images/cityimages/Chennai.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+/*-----------------------*/
+/*Denver page style*/
+/*-----------------------*/
+.denver .landing-bg {
+    background: url("../images/cityimages/Denver.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+/*-----------------------*/
+/*Dhaka page style*/
+/*-----------------------*/
+.dhaka .landing-bg {
+    background: url("../images/cityimages/Dhaka.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+/*-----------------------*/
+/*Dubai page style*/
+/*-----------------------*/
+.dubai .landing-bg {
+    background: url("../images/cityimages/Dubai.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+/*-----------------------*/
+/*Frankfurt page style*/
+/*-----------------------*/
+.frankfurt .landing-bg {
+    background: url("../images/cityimages/Frankfurt.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+/*-----------------------*/
+/*Heathrow page style*/
+/*-----------------------*/
+.heathrow .landing-bg {
+    background: url("../images/cityimages/Heathrow.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+/*-----------------------*/
+/*Jeddah page style*/
+/*-----------------------*/
+.jeddah .landing-bg {
+    background: url("../images/cityimages/Jeddah.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+
+/*-----------------------*/
+/*Johannesburg page style*/
+/*-----------------------*/
+.johannesburg .landing-bg {
+    background: url("../images/cityimages/Johannesburg.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+/*-----------------------*/
+/*Melbourne page style*/
+/*-----------------------*/
+.melbourne .landing-bg {
+    background: url("../images/cityimages/Melbourne.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+/*-----------------------*/
+/*Mumbai page style*/
+/*-----------------------*/
+.mumbai .landing-bg {
+    background: url("../images/cityimages/Mumbai.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+/*-----------------------*/
+/*Munich page style*/
+/*-----------------------*/
+.munich .landing-bg {
+    background: url("../images/cityimages/Munich.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+/*-----------------------*/
+/*Muscat page style*/
+/*-----------------------*/
+.muscat .landing-bg {
+    background: url("../images/cityimages/Muscat.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+/*-----------------------*/
+/*Paris page style*/
+/*-----------------------*/
+.paris .landing-bg {
+    background: url("../images/cityimages/Paris.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+
+/*-----------------------*/
+/*Singapore page style*/
+/*-----------------------*/
+
+.singapore .landing-bg {
+    background: url("../images/cityimages/Singapore.jpg");
+    background-size: cover;
+    height: 70vh;
+    width:100%;
+}
+
+
+.landing-bg h1:nth-child(1) {
+    background: #323232;
+    width: 40%;
+}
+
+
+.landing-bg h1:nth-child(3) {
+    background: #bc2a2a;
+    width: 40%;
+}
+

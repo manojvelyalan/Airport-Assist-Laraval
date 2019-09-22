@@ -1,0 +1,54 @@
+{
+"results" : [
+
+  {
+    "objectId": "BGVCzYp9tG",
+    "paymentTitle": "Shaffi Emirates NBD",
+    "status": true,
+    "createdAt": "2018-03-14T15:12:34.948Z",
+    "updatedAt": "2018-03-14T15:12:34.948Z"
+  },
+  {
+    "objectId": "5xofaH7VNj",
+    "paymentTitle": "AMEX",
+    "status": true,
+    "createdAt": "2018-03-14T15:12:34.993Z",
+    "updatedAt": "2018-03-14T15:12:34.993Z"
+  },
+  {
+    "objectId": "Em3f1gfGb3",
+    "paymentTitle": "HDFC",
+    "status": true,
+    "createdAt": "2018-03-14T15:12:34.998Z",
+    "updatedAt": "2018-03-14T15:12:34.998Z"
+  },
+  {
+    "objectId": "Fw51ahdrhT",
+    "paymentTitle": "Sunitha Emirates NBD",
+    "status": true,
+    "createdAt": "2018-03-14T15:12:35.005Z",
+    "updatedAt": "2018-03-14T15:12:35.005Z"
+  },
+  {
+    "objectId": "3G90DMl455",
+    "paymentTitle": "Bank of America",
+    "status": true,
+    "createdAt": "2018-03-14T15:12:35.019Z",
+    "updatedAt": "2018-03-14T15:14:04.481Z"
+  },
+  {
+    "objectId": "bazOKR9KjI",
+    "paymentTitle": "CASH",
+    "status": true,
+    "createdAt": "2018-03-14T15:12:35.022Z",
+    "updatedAt": "2018-03-14T15:14:14.041Z"
+  },
+  {
+    "objectId": "GQlBK8vqkf",
+    "paymentTitle": "Bank Transfer",
+    "status": true,
+    "createdAt": "2018-03-14T15:12:35.027Z",
+    "updatedAt": "2018-03-14T15:14:11.418Z"
+  }
+]
+}
