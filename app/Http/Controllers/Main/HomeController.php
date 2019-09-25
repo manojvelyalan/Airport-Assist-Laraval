@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 use App\Testimonial;
 use App\AirportServedList;
 use App\Common;
+use App\User;
+use App\Request as UserRequest;
+
+use Illuminate\Support\Facades\Hash;
 class HomeController extends Controller
 {
     public function __construct(){
@@ -78,19 +82,32 @@ class HomeController extends Controller
         $pageDescription = "Be it London, Dubai, Hong Kong, or Australia, we provide airport assistance & ground handling services in 625 airports in 195 countries across the globe. Find your city here.";
         return view('main.home.legal',['pageTitle'=>$pageTitle,'pageDescription'=>$pageDescription]);
     }
+    public function step1Rule(){
+      return [
+        'email'=>['required','email','confirmed'],
+        'titleName'=>['required'],
+        'firstName'=>['required'],
+        'lastName'=>['required'],
+        'mobile_number_country'=>['required'],
+        'phoneNumber'=>['required'],
+        'originAirport'=>['required'],
+      ];
+    }
 
     public function store(Request $request){
-        $rules = [
-          'email'=>['required','email','confirmed'],
-          'titleName'=>['required'],
-          'firstName'=>['required'],
-          'lastName'=>['required'],
-          'mobile_number_country'=>['required'],
-          'phoneNumber'=>['required'],
-          'originAirport'=>['required'],
-        ];
-        Common::validator($request->all(),$rules,$this->attributes())->validate();
-
+        Common::validator($request->all(),$this->step1Rule(),$this->attributes())->validate();
+        $user = User::where('username',$request->email)->first();
+        if($user == ""){
+          $user = new User();
+          $userid = $user->createUser($request)->id;
+          $isRepeat = false;
+        }else{
+          $userId = $user->id;
+          $isRepeat = true;
+        }
+        $userRequest = new UserRequest;
+        $req = $userRequest->createRequest($request, $userId, $isRepeat);
+        dd($req->id);
     }
 
 }
