@@ -182,5 +182,5 @@ class RegisterController extends Controller
         successFlash('Successfully deleted the administrator.');
         return redirect(route('adminuserlist'));
     }
-    
+
 }

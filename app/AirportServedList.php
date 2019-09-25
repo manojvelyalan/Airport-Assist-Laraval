@@ -10,13 +10,17 @@ class AirportServedList extends Model
         return $this->belongsTo(Country::class,'country_id')->orderBy('title');
     }
 
-    public static function getDispalyName($airportCode){
+    public static function airportDetails($airportCode){
 
       $airportServed = self::where('airportCode',strtolower($airportCode))->first();
       if($airportServed != ""){
-        return $airportServed->displayName;
+          return  ['displayName'=>$airportServed->displayName,
+            'domainName'=>$airportServed->airportLink,
+          ];
       }else{
-        return "Airport Assist";
+          return ['displayName'=>"Airport Assist",
+            'domainName'=>"murgencyairportassistance.com",
+          ];
       }
     }
 }

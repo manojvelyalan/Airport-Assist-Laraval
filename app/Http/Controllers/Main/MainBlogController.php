@@ -13,7 +13,7 @@ class MainBlogController extends Controller
 {
   public function __construct(){
 
-    $this->middleware('airport.name');
+  //  $this->middleware('airport.name');
 
   }
   public function rules(){

@@ -54,7 +54,6 @@ class CreateRequestsTable extends Migration
             $table->unsignedBigInteger('vendorCurrency_id')->unsigned()->nullable();//
             $table->integer('adults')->nullable();
             $table->string('flightNumber',50)->nullable();
-            $table->string('iso2Code',10)->nullable();
             $table->string('firstName')->nullable();
             $table->string('campaignName',100)->nullable();
             $table->float('totalAmount',8,2)->nullable();
@@ -65,7 +64,7 @@ class CreateRequestsTable extends Migration
             $table->string('domainName',100)->nullable();
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
-            
+
             $table->foreign('agent_id')->references('id')->on('users');
             $table->foreign('vendor_payment_mode_id')->references('id')->on('vendor_payment_modes');
             $table->foreign('vendor_list_id')->references('id')->on('vendor_lists');

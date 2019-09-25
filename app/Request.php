@@ -3,7 +3,9 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 class Request extends Model
+
 {
     protected $fillable = [
         'request_status_id',
@@ -44,7 +46,11 @@ class Request extends Model
         'vendorCurrency_id',
         'vendor_payment_mode_id',
         'greeterContactNumber',
-        'greeterName'
+        'greeterName',
+        'serviceCode',
+        'domainName',
+        'isRepeat',
+        'user_id'
     ];
     public function service(){
         return $this->belongsTo(Service::class);
@@ -76,5 +82,23 @@ class Request extends Model
     public function vendorPaymentMode(){
         return $this->belongsTo(VendorPaymentMode::class,'vendor_payment_mode_id');
     }
-    
+
+    public function createRequest($request, $userId, $isRepeat){
+      return $request =  self::create([
+        'serviceCode'=>Str::random(10),
+        'titleName'=>$request->titleName,
+        'firstName'=>strtolower($request->firstName),
+        'lastName'=>strtolower($request->lastName),
+        'email'=>strtolower($request->email),
+        'countryCode'=>$request->mobile_number_country,
+        'contactNumber'=>$request->phoneNumber,
+        'request_status_id'=>1,
+        'isDelete'=>false,
+        'originAirport'=>strtolower($request->originAirport),
+        'user_id'=>$userId,
+        'domainName'=>$request->session()->get('domainName'),
+        'isRepeat'=>$isRepeat
+      ]);
+    }
+
 }
