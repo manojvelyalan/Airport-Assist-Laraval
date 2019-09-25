@@ -81,6 +81,11 @@ class RequestController extends Controller
      */
     public function edit(Req $request)
     {
+        if($request->serviceType == ""){
+          $serviceTypeId = "";
+        }else{
+          $serviceTypeId = $request->serviceType->id;
+        }
         $airportName = strtolower($request->originAirport);
         $classOfTravels = ClassOfTravel::where('status',true)->get();
         $serviceTypes = ServiceType::where('status',true)->get();
@@ -99,6 +104,7 @@ class RequestController extends Controller
                     'vendorCurrencies'=>$vendorCurrencies,
                     'vendorPaymentModes'=>$vendorPaymentModes,
                     'titles'=>$titles,
+                    'serviceTypeId'=>$serviceTypeId,
                 ]);
 
     }

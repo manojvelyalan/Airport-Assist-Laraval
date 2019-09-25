@@ -40,14 +40,14 @@
                                 </thead>
                                 <tbody>
                                 @foreach($requests as $request)
-                                
+
                                 <tr class="{{$request->requestStatus->className}}">
                                     <td>{{++$count}}</td>
                                     <td><a href="{{ URL::to('/admin/request/' . $request->id)}}" class="text-danger">{{$request->serviceCode}}</a></td>
 
                                     <td>{{$request->email}}</td>
                                     <td>{{$request->originAirport}}</td>
-                                    <td>{{$request->serviceType->title}}</td>
+                                    <td>{{($request->serviceType != "")?$request->serviceType->title:"-"}}</td>
                                     <td>{{$request->arrivalDate." ".$request->arrivalTime}}</td>
                                     <td>{{$request->departureDate." ".$request->departureTime}}</td>
                                     <td>{{($request->isRepeat)?"Yes":"No"}}</td>

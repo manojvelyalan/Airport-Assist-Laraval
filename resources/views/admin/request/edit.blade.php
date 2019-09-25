@@ -15,7 +15,7 @@
                     <div class="tile-body">
 					<form id="createAction" action="{{ action('RequestController@update',[$request->id]) }}" method="post">
 					@method('PUT')
-                                @csrf 
+                                @csrf
 							<div class="row">
 								<div class="col-md-4">
 									<label class="form-control-label">Service Provided Airport</label>
@@ -114,21 +114,23 @@
 								</div>
 							</div>
 
-							<div class="row {{($request->serviceType->id == '1')?'d-none':''}}" id="serviceList">
+							<div class="row {{($serviceTypeId == '1')?'d-none':''}}" id="serviceList">
 								<div class="col-md-4">
 									<label class="form-control-label">Service</label>
 								</div>
 								<div class="col-md-8 form-group">
 									<select class="form-control field_color place_holder field_color" name="services" id="services">
 										<option value="">Select service</option>
-											@foreach($request->serviceType->services as $service)
-													<option value="{{$service->id}}" {{($request->service_id == $service->id)?"selected":""}}>{{ucwords($service->title)}}</option>
-											@endforeach                                
+											@if($request->serviceType != "")
+												@foreach($request->serviceType->services as $service)
+														<option value="{{$service->id}}" {{($request->service_id == $service->id)?"selected":""}}>{{ucwords($service->title)}}</option>
+												@endforeach
+											@endif
 									</select>
 								</div>
 							</div>
-							
-							<div class="row {{($request->serviceType->id != '1')?'d-none':''}}" id="limousineField">
+
+							<div class="row {{($serviceTypeId != '1')?'d-none':''}}" id="limousineField">
 								<div class="col-md-4">
 									<label class="form-control-label">Pick Up Or Drop Off</label>
 								</div>
@@ -159,7 +161,7 @@
 										<option value="{{$title->title}}" {{($request->titleName == $title->title)?"selected":""}}>{{ucfirst($title->title)}}</option>
                                         @endforeach
 									</select>
-									
+
 								</div>
 								<div class="col-md-3 form-group">
 									<input type="text" class="form-control label_top" name="firstName" value="{{ucwords($request->firstName)}}" id="firstName">
@@ -274,15 +276,15 @@
 								</div>
 								<div class="col-md-8 form-group">
 									<input type="text" class="form-control" value="{{($request->creditCardCharges != '')?$request->creditCardCharges:'3'}}" id="creditCardCharges" name="creditCardCharges">
-                                 </div>                   
+                                 </div>
 							</div>
 							<div class="row">
 								<div class="col-md-4">
 									<label class="form-control-label">Total Amount (USD)</label>
 								</div>
 								<div class="col-md-8 form-group">
-									<input type="text" class="form-control" value="{{($request->totalAmount != '')?$request->totalAmount:'0'}}" id="totalAmount" name="totalAmount">                                                      
-                                 </div>                   
+									<input type="text" class="form-control" value="{{($request->totalAmount != '')?$request->totalAmount:'0'}}" id="totalAmount" name="totalAmount">
+                                 </div>
 							</div>
 							<div class="row">
 								<div class="col-md-4">
@@ -335,7 +337,7 @@
 									<button class="btn btn-success float-right text-uppercase" type="submit" id="updateRequest" name="updateRequest">update request</button>
 								</div>
 							</div>
-                                                    
+
 						</form>
 					</div>
 				</div>
