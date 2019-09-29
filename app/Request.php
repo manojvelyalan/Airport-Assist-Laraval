@@ -83,22 +83,39 @@ class Request extends Model
         return $this->belongsTo(VendorPaymentMode::class,'vendor_payment_mode_id');
     }
 
-    public function createRequest($request, $userId, $isRepeat){
-      return $request =  self::create([
-        'serviceCode'=>Str::random(10),
-        'titleName'=>$request->titleName,
-        'firstName'=>strtolower($request->firstName),
-        'lastName'=>strtolower($request->lastName),
-        'email'=>strtolower($request->email),
-        'countryCode'=>$request->mobile_number_country,
-        'contactNumber'=>$request->phoneNumber,
-        'request_status_id'=>1,
-        'isDelete'=>false,
-        'originAirport'=>strtolower($request->originAirport),
-        'user_id'=>$userId,
-        'domainName'=>$request->session()->get('domainName'),
-        'isRepeat'=>$isRepeat
-      ]);
+    public function createOrUpdateRequest($request, $userId, $isRepeat){
+      if($request->request_id != ""){
+        $req = self::find($request->request_id);
+
+            $req->update([
+            'titleName'=>$request->titleName,
+            'firstName'=>strtolower($request->firstName),
+            'lastName'=>strtolower($request->lastName),
+            'email'=>strtolower($request->email),
+            'countryCode'=>$request->country_code,
+            'contactNumber'=>$request->mobile_number,
+            'originAirport'=>strtolower($request->originAirport),
+            'user_id'=>$userId,
+          ]);
+          return $req;
+        }else{
+          return $req =  self::create([
+            'serviceCode'=>Str::random(10),
+            'titleName'=>$request->titleName,
+            'firstName'=>strtolower($request->firstName),
+            'lastName'=>strtolower($request->lastName),
+            'email'=>strtolower($request->email),
+            'countryCode'=>$request->country_code,
+            'contactNumber'=>$request->mobile_number,
+            'request_status_id'=>1,
+            'isDelete'=>false,
+            'originAirport'=>strtolower($request->originAirport),
+            'user_id'=>$userId,
+            'domainName'=>$request->session()->get('domainName'),
+            'isRepeat'=>$isRepeat
+          ]);
+      }
+
     }
 
 }

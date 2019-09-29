@@ -30,5 +30,6 @@ class DatabaseSeeder extends Seeder
          $this->call(BlogSeeder::class);
          $this->call(TestimonialSeeder::class);
          $this->call(AirportServedListSeeder::class);
+         $this->call(SubscriptionSeeder::class);
     }
 }
