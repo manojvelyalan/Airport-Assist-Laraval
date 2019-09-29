@@ -35,11 +35,11 @@ input[type="submit"], input[type="submit"]:hover, input[type="submit"]:focus{
 
 /*jquery ui actuve blue color */
 
-.groundhandlingFormService-main-section .ui-state-active, 
-.groundhandlingFormService-main-section .ui-widget-content .ui-state-active, 
-.groundhandlingFormService-main-section .ui-widget-header .ui-state-active, 
-.groundhandlingFormService-main-section a.ui-button:active, 
-.groundhandlingFormService-main-section .ui-button:active, 
+.groundhandlingFormService-main-section .ui-state-active,
+.groundhandlingFormService-main-section .ui-widget-content .ui-state-active,
+.groundhandlingFormService-main-section .ui-widget-header .ui-state-active,
+.groundhandlingFormService-main-section a.ui-button:active,
+.groundhandlingFormService-main-section .ui-button:active,
 .groundhandlingFormService-main-section .ui-button.ui-state-active:hover{
     border: 1px solid #003eff;
     background: #007fff;
@@ -175,43 +175,43 @@ p {
 }
 
 .mt-6{
-    margin-top: 6rem;    
+    margin-top: 6rem;
 }
 
 .mt-7{
-    margin-top: 7rem;    
+    margin-top: 7rem;
 }
 
 .mt-8{
-    margin-top: 8rem;    
+    margin-top: 8rem;
 }
 
 .mt-9{
-    margin-top: 9rem;    
+    margin-top: 9rem;
 }
 
 .mt-10{
-    margin-top: 10rem;    
+    margin-top: 10rem;
 }
 
 .mb-6{
-    margin-bottom: 6rem;    
+    margin-bottom: 6rem;
 }
 
 .mb-7{
-    margin-bottom: 7rem;    
+    margin-bottom: 7rem;
 }
 
 .mb-8{
-    margin-bottom: 8rem;    
+    margin-bottom: 8rem;
 }
 
 .mb-9{
-    margin-bottom: 9rem;    
+    margin-bottom: 9rem;
 }
 
 .mb-10{
-    margin-bottom: 10rem;    
+    margin-bottom: 10rem;
 }
 
 .m-l-2 {
@@ -381,7 +381,7 @@ p {
 header.MUA-main-header .navbar {
     padding: 0 0.5rem;
     box-shadow: 1px 1px 1px rgba(35, 35, 35, .2);
-   
+
 }
 
 header.MUA-main-header .navbar-brand {
@@ -411,7 +411,7 @@ header.MUA-main-header .navbar .nav-item {
 }
 
 header.MUA-main-header .navbar .nav-link {
-   
+
     font-weight: 600;
 }
 
@@ -634,7 +634,7 @@ header.MUA-main-header .hvr-overline-from-center:before {
 
 #home-slider-carousel.carousel .carousel-inner .carousel-item:nth-child(1) div {
       background-image: url("../images/slider/slider-04.jpg");
-   
+
 }
 
 #home-slider-carousel.carousel .carousel-inner .carousel-item:nth-child(2) div {
@@ -647,7 +647,7 @@ header.MUA-main-header .hvr-overline-from-center:before {
 }
 
 /*#home-slider-carousel.carousel .carousel-inner .carousel-item:nth-child(4) div {
-   
+
 }*/
 
 /******** win with ammu...*/
@@ -1075,7 +1075,7 @@ header.MUA-main-header .hvr-overline-from-center:before {
     background:url("../images/backgrounds/lady-with-phone.png");
     height: auto;
     width: 100%;
-    background-size: cover; 
+    background-size: cover;
     padding: 5rem 0;
 }
 
@@ -1296,7 +1296,7 @@ right:25%;
 }
 
 
-.airports-listing-wrapper .nav-tabs .nav-item.show .nav-link, 
+.airports-listing-wrapper .nav-tabs .nav-item.show .nav-link,
 .airports-listing-wrapper .nav-tabs .nav-link.active{
     color: #ffffff;
     background-color: #bc2a2a;
@@ -1409,7 +1409,7 @@ right:25%;
 
 
 .blog-nav ul li a.nav-link{
-    text-transform: uppercase;  
+    text-transform: uppercase;
     letter-spacing: 4px;
     line-height: 0;
     margin: 0 .8rem;
@@ -1426,7 +1426,7 @@ right:25%;
 
 .blog-nav ul li:last-child{
     border-right: inherit;
-} 
+}
 
 .blog-section .sidebar-panel .social-panel ul li{
     display: inline;
@@ -1519,12 +1519,12 @@ right:25%;
 }
 
 .partner-with-us-form-section .partner-cap   > span{
-    
+
     background-color: #c52127;
     color: #ffffff;
     width: auto;
     padding:.5rem 1rem;
-    
+
 
 }
 
@@ -1720,7 +1720,7 @@ margin:8px 0 0 0;
     width: 50%;
 }*/
 
-.campaign-wrapper .header-text{    
+.campaign-wrapper .header-text{
     width: 65%;
     background: #8080808f;
     padding: 2rem 0;
@@ -1928,7 +1928,7 @@ margin:8px 0 0 0;
 
 .millennium-bookTicket-section .unselected .cust-checkbox + span{
  background:#999999;
-    padding:.5rem;   
+    padding:.5rem;
 }
 
 .millennium-bookTicket-section .cust-checkbox:checked + span{
@@ -1951,7 +1951,7 @@ margin:8px 0 0 0;
 
 
 .millennium-bookTicket-section .info
-{     
+{
     padding:.5rem;
     max-width:100%;
     margin:1rem auto 1rem;
@@ -1998,7 +1998,7 @@ margin:8px 0 0 0;
     box-sizing: border-box;
     width: 80%;
     margin: 0 10%;
-    
+
     /*stacking fieldsets above each other*/
     position: relative;
 }
@@ -2086,7 +2086,7 @@ margin:8px 0 0 0;
 }
 #progressbar li:first-child:after {
     /*connector not needed before the first step*/
-    content: none; 
+    content: none;
 }
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
@@ -2149,7 +2149,7 @@ footer.MUA-MainFooter .foot-2 ul.social-connect li .btn-subscribe {
 
 
 .checkout-wrapper .payment-button-wrapper{
-    margin-top:2rem; 
+    margin-top:2rem;
     margin-bottom: 0;
 }
 
@@ -2356,11 +2356,11 @@ footer.MUA-MainFooter .foot-2 ul.social-connect li .btn-subscribe {
     padding-right: 5px;
     margin-bottom: 15px;
     border: none;
-    
+
 }
 #feedbackCircle label:nth-child(1){
     background: #E60000;
- 
+
 }
 #feedbackCircle label:nth-child(2){
     background: #FF0000;
@@ -2400,4 +2400,7 @@ section.airports-listing-wrapper-3.mt-5.mb-5 {
 }
 .form-control{
     font-size: 14px !important;
+}
+.intl-tel-input{
+  width: 100%;
 }

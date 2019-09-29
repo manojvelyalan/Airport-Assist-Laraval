@@ -124,7 +124,7 @@ class RegisterController extends Controller
     }
 
     protected function index(){
-        $admins = User::where('status',true)->where('isDelete',false)->get();
+        $admins = User::where('status',true)->where('isDelete',false)->where('isAdmin',true)->get();
         return view('admin.user.list',['admins'=>$admins,'count'=>0]);
     }
     public function showRegistrationForm()

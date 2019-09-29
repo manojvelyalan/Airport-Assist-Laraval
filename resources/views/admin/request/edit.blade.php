@@ -159,7 +159,7 @@
 										<option value="">Select Title</option>
 										@foreach($titles as $title)
 										<option value="{{$title->title}}" {{($request->titleName == $title->title)?"selected":""}}>{{ucfirst($title->title)}}</option>
-                                        @endforeach
+                    @endforeach
 									</select>
 
 								</div>

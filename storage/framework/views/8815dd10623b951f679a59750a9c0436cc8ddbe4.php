@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75991732-1"></script>
 <script>
@@ -30,27 +30,27 @@
 <!-- End Facebook Pixel Code -->
     <head>
 
-         <title>{{(isset($pageTitle))?$pageTitle:"Airport Assist By MUrgency"}}</title>
+         <title><?php echo e((isset($pageTitle))?$pageTitle:"Airport Assist By MUrgency"); ?></title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="{{(isset($pageDescription))?$pageDescription:''}}">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('main/images/brand/favicon-32x32.png') }}">
+        <meta name="description" content="<?php echo e((isset($pageDescription))?$pageDescription:''); ?>">
+        <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
+        <link rel="icon" type="image/png" sizes="32x32" href="<?php echo e(asset('main/images/brand/favicon-32x32.png')); ?>">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="{{asset('main/css/bootstrap.min.css')}}">
-        <link rel="stylesheet" href="{{asset('main/css/hover-min.css')}}">
+        <link rel="stylesheet" href="<?php echo e(asset('main/css/bootstrap.min.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('main/css/hover-min.css')); ?>">
        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-        <link rel="stylesheet" href="{{asset('main/css/jquery-ui.min.css')}}">
-        <link rel="stylesheet" href="{{asset('main/css/jquery.timepicker.min.css')}}">
-        <link rel="stylesheet" href="{{asset('main/css/easy-autocomplete.min.css')}}">
-        <link rel="stylesheet" href="{{asset('main/css/easy-autocomplete.themes.min.css')}}">
+        <link rel="stylesheet" href="<?php echo e(asset('main/css/jquery-ui.min.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('main/css/jquery.timepicker.min.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('main/css/easy-autocomplete.min.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('main/css/easy-autocomplete.themes.min.css')); ?>">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
-        <link rel="stylesheet" href="{{asset('main/build/css/intlTelInput.min.css')}}">
-        <link rel="stylesheet" href="{{asset('main/css/style.css')}}">
-        <link rel="stylesheet" href="{{asset('main/css/responsive.css')}}">
+        <link rel="stylesheet" href="<?php echo e(asset('main/build/css/intlTelInput.min.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('main/css/style.css')); ?>">
+        <link rel="stylesheet" href="<?php echo e(asset('main/css/responsive.css')); ?>">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
             rel="stylesheet">
         </head>
@@ -60,57 +60,57 @@
             <header class="MUA-main-header p-b-5">
                 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
                     <a class="navbar-brand" href="/">
-                        <img src="{{asset('main/images/brand/MUA-logo.png')}}" height="50" alt="">
+                        <img src="<?php echo e(asset('main/images/brand/MUA-logo.png')); ?>" height="50" alt="">
                     </a>
                     <button class="navbar-toggler bg-menu_bar " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="{{asset('main/images/icons/menu-bar.png')}}" alt="">
+                    <img src="<?php echo e(asset('main/images/icons/menu-bar.png')); ?>" alt="">
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="mr-auto"></div>
                         <ul class="navbar-nav">
                              <li class="nav-item hvr-overline-from-center">
-                                <a class="nav-link text-uppercase" href="{{route('step-1')}}">Book Airport Service</a>
+                                <a class="nav-link text-uppercase" href="<?php echo e(route('step-1')); ?>">Book Airport Service</a>
                             </li>
                             <li class="nav-item hvr-overline-from-center">
-                                <a class="nav-link text-uppercase" href="{{route('service')}}">Services</a>
+                                <a class="nav-link text-uppercase" href="<?php echo e(route('service')); ?>">Services</a>
                             </li>
                             <li class="nav-item hvr-overline-from-center">
-                                <a class="nav-link text-uppercase" href="{{route('airportserved')}}">Airports Served</a>
+                                <a class="nav-link text-uppercase" href="<?php echo e(route('airportserved')); ?>">Airports Served</a>
                             </li>
 
 
                             <li class="nav-item hvr-overline-from-center">
-                                <a class="nav-link" href="https://web.whatsapp.com/send?phone=+16503089964&text=Hello"><img src="{{asset('main/images/icons/whatsapp_logo.png')}}" style="height: 35px;" alt=""><span class="ml-2">+1 650 308 9964</span></a>
+                                <a class="nav-link" href="https://web.whatsapp.com/send?phone=+16503089964&text=Hello"><img src="<?php echo e(asset('main/images/icons/whatsapp_logo.png')); ?>" style="height: 35px;" alt=""><span class="ml-2">+1 650 308 9964</span></a>
                             </li>
                             <li class="nav-item hvr-overline-from-center">
-                                <a class="nav-link" href="mailto:MUAirportAssist@MUrgency.com"  title="Email" ><img src="{{asset('main/images/icons/email-logo.png')}}" style="height: 35px;" alt="MUAirportAssist@MUrgency.com"><span class="ml-2">MUAirportAssist@MUrgency.com</span></a></a>
+                                <a class="nav-link" href="mailto:MUAirportAssist@MUrgency.com"  title="Email" ><img src="<?php echo e(asset('main/images/icons/email-logo.png')); ?>" style="height: 35px;" alt="MUAirportAssist@MUrgency.com"><span class="ml-2">MUAirportAssist@MUrgency.com</span></a></a>
                             </li>
 
                             <li class="nav-item dropdown header-menu-box" style="background-color:#BD2026">
                                 <a class="nav-link text-white" href="#" id="navbarDropdown-menu" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img src="{{asset('main/images/icons/menu-bar.png')}}" alt="">
+                                    <img src="<?php echo e(asset('main/images/icons/menu-bar.png')); ?>" alt="">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right bg-dark text-white" aria-labelledby="navbarDropdown-menu">
-                                    <a class="dropdown-item text-white text-uppercase" href="{{route('traveltips')}}">blog</a>
-                                    <a class="dropdown-item text-white text-uppercase" href="{{route('legal')}}">Legal</a>
-                                    <a class="dropdown-item text-white text-uppercase" href="{{route('faq')}}">FAQ</a>
-                                    <a class="dropdown-item text-white text-uppercase" href=" {{route('contact')}}">Contact Us</a>
+                                    <a class="dropdown-item text-white text-uppercase" href="<?php echo e(route('traveltips')); ?>">blog</a>
+                                    <a class="dropdown-item text-white text-uppercase" href="<?php echo e(route('legal')); ?>">Legal</a>
+                                    <a class="dropdown-item text-white text-uppercase" href="<?php echo e(route('faq')); ?>">FAQ</a>
+                                    <a class="dropdown-item text-white text-uppercase" href=" <?php echo e(route('contact')); ?>">Contact Us</a>
                                   </div>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </header>
-              @yield('content')
+              <?php echo $__env->yieldContent('content'); ?>
               <footer class="MUA-MainFooter pb-5">
     <section class="foot-1" style="position: relative;">
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-sm-2 col-2">
-                    <img src="{{asset('main/images/icons/footer-circle-band.png')}}" class="img-fluid" alt="bom voyage">
+                    <img src="<?php echo e(asset('main/images/icons/footer-circle-band.png')); ?>" class="img-fluid" alt="bom voyage">
                 </div>
                 <div class="col-md-10 col-sm-10 col-10">
                     <h5 class="text-center text-uppercase text-white ml-5">we ensure swift, smooth and safe passage through
@@ -123,7 +123,7 @@
     </section>
     <section class="foot-2">
         <div class="container">
-            <img src="{{asset('main/images/brand/footer-img.png')}}" style="height: 90px;" class="d-block m-auto img-fluid" alt="MUrgency Airport Assistance Logo">
+            <img src="<?php echo e(asset('main/images/brand/footer-img.png')); ?>" style="height: 90px;" class="d-block m-auto img-fluid" alt="MUrgency Airport Assistance Logo">
             <ul class="social-connect text-center">
                 <li>
                     <a href="https://www.facebook.com/MUAirportAssist/" class="text-black" target="_blank"> <i class="fa fa-facebook-square fa-2x" aria-hidden="true" ></i></a>
@@ -180,26 +180,27 @@
 </html>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src=" {{asset('main/js/jquery.min.js')}}" type="text/javascript" ></script>
+<script src=" <?php echo e(asset('main/js/jquery.min.js')); ?>" type="text/javascript" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
 integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
 crossorigin="anonymous" type="text/javascript" ></script>
-<script src=" {{asset('main/js/bootstrap.min.js')}}" type="text/javascript" ></script>
-<script src=" {{asset('main/js/smoothscroll.js')}}" type="text/javascript" ></script>
-<script src=" {{asset('main/js/jquery.form-validator.min.js')}}" type="text/javascript" ></script>
-<script src=" {{asset('main/js/jquery-ui.min.js')}}" type="text/javascript" ></script>
-<script src=" {{asset('main/js/jquery.timepicker.min.js')}}" type="text/javascript" ></script>
-<script src=" {{asset('main/js/jquery.easy-autocomplete.min.js')}}" type="text/javascript" ></script>
-<script src=" {{asset('main/js/masonry.pkgd.min.js')}}" type="text/javascript" ></script>
+<script src=" <?php echo e(asset('main/js/bootstrap.min.js')); ?>" type="text/javascript" ></script>
+<script src=" <?php echo e(asset('main/js/smoothscroll.js')); ?>" type="text/javascript" ></script>
+<script src=" <?php echo e(asset('main/js/jquery.form-validator.min.js')); ?>" type="text/javascript" ></script>
+<script src=" <?php echo e(asset('main/js/jquery-ui.min.js')); ?>" type="text/javascript" ></script>
+<script src=" <?php echo e(asset('main/js/jquery.timepicker.min.js')); ?>" type="text/javascript" ></script>
+<script src=" <?php echo e(asset('main/js/jquery.easy-autocomplete.min.js')); ?>" type="text/javascript" ></script>
+<script src=" <?php echo e(asset('main/js/masonry.pkgd.min.js')); ?>" type="text/javascript" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js" type="text/javascript" ></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js" type="text/javascript" ></script>
-<script src=" {{asset('main/js/highcharts.js')}}" type="text/javascript" ></script>
-<script src=" {{asset('main/js/exporting.js')}}" type="text/javascript" ></script>
-<script src=" {{asset('main/build/js/intlTelInput.min.js')}}" type="text/javascript" ></script>
-<script src=" {{asset('main/js/app.js')}}" type="text/javascript" ></script>
+<script src=" <?php echo e(asset('main/js/highcharts.js')); ?>" type="text/javascript" ></script>
+<script src=" <?php echo e(asset('main/js/exporting.js')); ?>" type="text/javascript" ></script>
+<script src=" <?php echo e(asset('main/build/js/intlTelInput.min.js')); ?>" type="text/javascript" ></script>
+<script src=" <?php echo e(asset('main/js/app.js')); ?>" type="text/javascript" ></script>
 <script>
 $(document).ready(function(){
 $('[data-toggle="popover"]').popover();
 });
 </script>
-@stack('scripts')
+<?php echo $__env->yieldPushContent('scripts'); ?>
+<?php /**PATH /Users/manojvelyalan/Sites/airport-assist-laravel/resources/views/layouts/main.blade.php ENDPATH**/ ?>

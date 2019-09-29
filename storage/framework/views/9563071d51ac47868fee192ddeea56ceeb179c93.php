@@ -1,26 +1,25 @@
-@extends('layouts.main')
-@section('content')
+<?php $__env->startSection('content'); ?>
 <section class="banner-header">
 	<div class="four-features">
 		<ul>
 			<li class="feature-open flightTracker">
-				<img src="{{asset('main/images/icons/icon-01.png')}}" alt="Flight Tracker">
-				<img src="{{asset('main/images/icons/icon-01-red.png')}}" class="disp-none" alt="Flight Tracker">
+				<img src="<?php echo e(asset('main/images/icons/icon-01.png')); ?>" alt="Flight Tracker">
+				<img src="<?php echo e(asset('main/images/icons/icon-01-red.png')); ?>" class="disp-none" alt="Flight Tracker">
 				<span class="text-uppercase font-weight-bold ml-4" align="center">Flight Tracker <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
 			</li>
 			<li class="feature-open wifiLocator">
-				<img src="{{asset('main/images/icons/icon-02.png')}}" alt="Airport Wifi">
-				<img src="{{asset('main/images/icons/icon-02-red.png')}}" class="disp-none" alt="Airport Wifi">
+				<img src="<?php echo e(asset('main/images/icons/icon-02.png')); ?>" alt="Airport Wifi">
+				<img src="<?php echo e(asset('main/images/icons/icon-02-red.png')); ?>" class="disp-none" alt="Airport Wifi">
 				<span class="text-uppercase font-weight-bold ml-4" align="center">Airport Wifi <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
 			</li>
 			<li class="feature-open weather">
-				<img src="{{asset('main/images/icons/icon-03.png')}}" alt="Weaher">
-				<img src="{{asset('main/images/icons/icon-03-red.png')}}" class="disp-none" alt="Weaher">
+				<img src="<?php echo e(asset('main/images/icons/icon-03.png')); ?>" alt="Weaher">
+				<img src="<?php echo e(asset('main/images/icons/icon-03-red.png')); ?>" class="disp-none" alt="Weaher">
 				<span class="text-uppercase font-weight-bold ml-4" align="center">Weather <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
 			</li>
 			<li class="feature-open currencyConverter">
-				<img src="{{asset('main/images/icons/icon-04.png')}}" alt="Currency Converter">
-				<img src="{{asset('main/images/icons/icon-04-red.png')}}" class="disp-none" alt="Currency Converter">
+				<img src="<?php echo e(asset('main/images/icons/icon-04.png')); ?>" alt="Currency Converter">
+				<img src="<?php echo e(asset('main/images/icons/icon-04-red.png')); ?>" class="disp-none" alt="Currency Converter">
 				<span class="text-uppercase font-weight-bold ml-4" align="center">Currency Converter <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
 			</li>
 		</ul>
@@ -36,32 +35,32 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<div class="d-block w-100">
-						<a href="service"><h5 class="slider-cap brand-bg-grey text-white p-3">SPEED through Airport with <br><label class="pt-1"> {{$displayAirportName}} by <img src="{{asset('main/images/brand/murgency-logo.png')}}" alt="speed through airport"></label></h5></a>
+						<a href="service"><h5 class="slider-cap brand-bg-grey text-white p-3">SPEED through Airport with <br><label class="pt-1"> <?php echo e($displayAirportName); ?> by <img src="<?php echo e(asset('main/images/brand/murgency-logo.png')); ?>" alt="speed through airport"></label></h5></a>
 				</div>
 			</div>
 
 			<div class="carousel-item">
 				<div class="d-block w-100">
-						<a href="service"><h5 class="slider-cap brand-bg-grey text-white p-3">Be a VIP at the Airport with <br><label class="pt-1">{{$displayAirportName}} by <img src="{{asset('main/images/brand/murgency-logo.png')}}" alt="vip service in airprot"></label></h5></a>
+						<a href="service"><h5 class="slider-cap brand-bg-grey text-white p-3">Be a VIP at the Airport with <br><label class="pt-1"><?php echo e($displayAirportName); ?> by <img src="<?php echo e(asset('main/images/brand/murgency-logo.png')); ?>" alt="vip service in airprot"></label></h5></a>
 				</div>
 			</div>
 			<div class="carousel-item">
 				<div class="d-block w-100">
-						<a href="service"><h5 class="slider-cap brand-bg-grey text-white p-3">Lounge at the Airport with <br><label class="pt-1">{{$displayAirportName}}		 by <img src="{{asset('main/images/brand/murgency-logo.png')}}" alt="lounge service in airport"></label></h5></a>
+						<a href="service"><h5 class="slider-cap brand-bg-grey text-white p-3">Lounge at the Airport with <br><label class="pt-1"><?php echo e($displayAirportName); ?>		 by <img src="<?php echo e(asset('main/images/brand/murgency-logo.png')); ?>" alt="lounge service in airport"></label></h5></a>
 				</div>
 			</div>
 		</div>
 
 		<a class="carousel-control-prev" href="#home-slider-carousel" role="button" data-slide="prev">
 			<span aria-hidden="true">
-				<img src="{{asset('main/images/icons/prev-button.png')}}" alt="">
+				<img src="<?php echo e(asset('main/images/icons/prev-button.png')); ?>" alt="">
 			</span>
 			<span class="sr-only">Previous</span>
 		</a>
 
 		<a class="carousel-control-next" href="#home-slider-carousel" role="button" data-slide="next">
 			<span aria-hidden="true">
-				<img src="{{asset('main/images/icons/next-button.png')}}" alt="">
+				<img src="<?php echo e(asset('main/images/icons/next-button.png')); ?>" alt="">
 			</span>
 			<span class="sr-only">Next</span>
 		</a>
@@ -72,7 +71,7 @@
 	<div id="MUA-Band-Banner">
 		<div class="MUA-Band-one">
 			<div class="MUA-Band-Panel">
-                            <p class="p1  text-white text-center lh-1 text-skewToNormal font-weight-bold ">{{strtoupper($displayAirportName)}} <span class="d-block mt-2 mb-2">by</span><img src="{{asset('main/images/brand/murgency-logo.png')}}" width="120" alt="MUrgency Logo" ></p>
+                            <p class="p1  text-white text-center lh-1 text-skewToNormal font-weight-bold "><?php echo e(strtoupper($displayAirportName)); ?> <span class="d-block mt-2 mb-2">by</span><img src="<?php echo e(asset('main/images/brand/murgency-logo.png')); ?>" width="120" alt="MUrgency Logo" ></p>
 			</div>
 			<div class="MUA-band-content pt-4">
 				<div class="row">
@@ -161,82 +160,114 @@
 <h1 class="text-center brand-red text-uppercase brand-header">Book Now</h1>
 <p class="text-center">To get professional and personalize services at airports worldwide.</p>
 <div class="w-75 m-auto pt-5 form-section" >
-	<form class="container" action="{{action('Main\HomeController@store')}}" method="post">
-		@csrf
+	<form class="container" action="<?php echo e(action('Main\HomeController@store')); ?>" method="post">
+		<?php echo csrf_field(); ?>
 		<div class="row">
 				<div class="col-md-6 mb-3">
 		        <div class="input-group">
-		             <input type="email" class="form-control" name="email" placeholder="Email" id="email" required value="{{old('email')}}">
+		             <input type="email" class="form-control" name="email" placeholder="Email" id="email" required value="<?php echo e(old('email')); ?>">
 
-								 @error('email')
+								 <?php if ($errors->has('email')) :
+if (isset($message)) { $messageCache = $message; }
+$message = $errors->first('email'); ?>
 										 <span class="text-danger" role="alert">
-												 <strong>{{ $message }}</strong>
+												 <strong><?php echo e($message); ?></strong>
 										 </span>
-								 @enderror
+								 <?php unset($message);
+if (isset($messageCache)) { $message = $messageCache; }
+endif; ?>
 		        </div>
 				</div>
 				<div class="form-group col-md-6">
-        		<input  class="form-control" name="email_confirmation" placeholder ="Confirm Email" id="email_confirmation"  required value="{{old('email_confirmation')}}">
-						@error('email_confirmation')
+        		<input  class="form-control" name="email_confirmation" placeholder ="Confirm Email" id="email_confirmation"  required value="<?php echo e(old('email_confirmation')); ?>">
+						<?php if ($errors->has('email_confirmation')) :
+if (isset($message)) { $messageCache = $message; }
+$message = $errors->first('email_confirmation'); ?>
 								<span class="text-danger" role="alert">
-										<strong>{{ $message }}</strong>
+										<strong><?php echo e($message); ?></strong>
 								</span>
-						@enderror
+						<?php unset($message);
+if (isset($messageCache)) { $message = $messageCache; }
+endif; ?>
 				</div>
     </div>
     <div class="row">
         <div class="col-md-2 mb-3">
             <select class="form-control" id="titleName" name="titleName" required>
                 <option value="">Select title</option>
-								@foreach($titles as $title)
-								<option value="{{$title->title}}" {{($title->title == old('titleName'))?"selected":""}}>{{ucfirst($title->title)}}</option>
-								@endforeach
+								<?php $__currentLoopData = $titles; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $title): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+								<option value="<?php echo e($title->title); ?>" <?php echo e(($title->title == old('titleName'))?"selected":""); ?>><?php echo e(ucfirst($title->title)); ?></option>
+								<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             </select>
-						@error('titleName')
+						<?php if ($errors->has('titleName')) :
+if (isset($message)) { $messageCache = $message; }
+$message = $errors->first('titleName'); ?>
 								<span class="text-danger" role="alert">
-										<strong>{{ $message }}</strong>
+										<strong><?php echo e($message); ?></strong>
 								</span>
-						@enderror
+						<?php unset($message);
+if (isset($messageCache)) { $message = $messageCache; }
+endif; ?>
         </div>
         <div class="col-md-5 mb-3">
-            <input type="text" class="form-control" name="firstName" placeholder="FirstName"  id="firstName" required value="{{old('firstName')}}">
-						@error('firstName')
+            <input type="text" class="form-control" name="firstName" placeholder="FirstName"  id="firstName" required value="<?php echo e(old('firstName')); ?>">
+						<?php if ($errors->has('firstName')) :
+if (isset($message)) { $messageCache = $message; }
+$message = $errors->first('firstName'); ?>
 								<span class="text-danger" role="alert">
-										<strong>{{ $message }}</strong>
+										<strong><?php echo e($message); ?></strong>
 								</span>
-						@enderror
+						<?php unset($message);
+if (isset($messageCache)) { $message = $messageCache; }
+endif; ?>
         </div>
         <div class="col-md-5 mb-3">
-            <input type="text" class="form-control" name="lastName" placeholder="Last Name"  id="lastName" required value="{{old('lastName')}}">
-						@error('lastName')
+            <input type="text" class="form-control" name="lastName" placeholder="Last Name"  id="lastName" required value="<?php echo e(old('lastName')); ?>">
+						<?php if ($errors->has('lastName')) :
+if (isset($message)) { $messageCache = $message; }
+$message = $errors->first('lastName'); ?>
 								<span class="text-danger" role="alert">
-										<strong>{{ $message }}</strong>
+										<strong><?php echo e($message); ?></strong>
 								</span>
-						@enderror
+						<?php unset($message);
+if (isset($messageCache)) { $message = $messageCache; }
+endif; ?>
         </div>
 		</div>
 		<div class="row mb-3">
 
 				<div class="col-md-6">
 					<input type="tel" class="form-control" id="mobile_number" name="mobile_number" required>
-					@error('mobile_number')
+					<?php if ($errors->has('mobile_number')) :
+if (isset($message)) { $messageCache = $message; }
+$message = $errors->first('mobile_number'); ?>
 							<span class="text-danger" role="alert">
-									<strong>{{ $message }}</strong>
+									<strong><?php echo e($message); ?></strong>
 							</span>
-					@enderror
-					@error('country_code')
+					<?php unset($message);
+if (isset($messageCache)) { $message = $messageCache; }
+endif; ?>
+					<?php if ($errors->has('country_code')) :
+if (isset($message)) { $messageCache = $message; }
+$message = $errors->first('country_code'); ?>
 							<span class="text-danger" role="alert">
-									<strong>{{ $message }}</strong>
+									<strong><?php echo e($message); ?></strong>
 							</span>
-					@enderror
+					<?php unset($message);
+if (isset($messageCache)) { $message = $messageCache; }
+endif; ?>
 				</div>
 				<div class="col-md-6">
-        		<input  class="form-control" name="originAirport" placeholder ="Airport where you want service" id="originAirport" required value="{{old('originAirport')}}">
-						@error('originAirport')
+        		<input  class="form-control" name="originAirport" placeholder ="Airport where you want service" id="originAirport" required value="<?php echo e(old('originAirport')); ?>">
+						<?php if ($errors->has('originAirport')) :
+if (isset($message)) { $messageCache = $message; }
+$message = $errors->first('originAirport'); ?>
 								<span class="text-danger" role="alert">
-										<strong>{{ $message }}</strong>
+										<strong><?php echo e($message); ?></strong>
 								</span>
-						@enderror
+						<?php unset($message);
+if (isset($messageCache)) { $message = $messageCache; }
+endif; ?>
 				</div>
 				<input type="hidden" name="country_code" id="country_code">
 				<input type="hidden" name="request_id" id="request_id" value="">
@@ -247,7 +278,7 @@
 </div>
 <div class="container">
 	<div class="img-wrapper mt-5 pt-5">
-		<img class="d-block m-auto pb-1 img-fluid" src="{{asset('main/images/icons/get-the-app.png')}}" usemap="#image-map">
+		<img class="d-block m-auto pb-1 img-fluid" src="<?php echo e(asset('main/images/icons/get-the-app.png')); ?>" usemap="#image-map">
 		<map name="image-map">
 		<area target="_blank" alt="Android Airport Assist Application" title="Android Airport Assist Application" href="https://play.google.com/store/apps/details?id=com.airport.assistance" coords="115,48,223,88" shape="rect">
 			<area target="_blank" alt="IOS Airport Assist Application" title="IOS Airport Assist Application" href="https://itunes.apple.com/gb/app/airport-assist/id1256650769?mt=8" coords="229,49,339,88" shape="rect">
@@ -271,26 +302,26 @@
 					<div class="row">
 						<div class="col-md-6">
 							<ul class="ls-none">
-								<li><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">Meet & Greet</li>
-								<li class="mt-2"><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">Fast Track - Security
+								<li><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">Meet & Greet</li>
+								<li class="mt-2"><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">Fast Track - Security
 								</li>
 							</ul>
 						</div>
 						<div class="col-md-6">
 							<ul class="ls-none">
-								<li><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">Priority Check In</li>
-								<li class="mt-2"><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">Lounge Access</li>
+								<li><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">Priority Check In</li>
+								<li class="mt-2"><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">Lounge Access</li>
 							</ul>
 						</div>
 					</div>
-					<a href="{{route('service')}}">
+					<a href="<?php echo e(route('service')); ?>">
 					<button type="submit" class="btn btn-MUA-next brand-bg-red mt-3">
 					<i class="ion-android-arrow-forward" aria-hidden="true"></i>
 					</button>
 					</a>
 				</div>
 				<div class="col-md-6 col-sm-12">
-					<img class="d-block m-auto wwd-img" src="{{asset('main/images/services/hassle-free-departure.png')}}"
+					<img class="d-block m-auto wwd-img" src="<?php echo e(asset('main/images/services/hassle-free-departure.png')); ?>"
 					alt="hassle-free-departure">
 				</div>
 			</div>
@@ -300,7 +331,7 @@
 		<section class="container pt-5 pb-6">
 			<div class="row">
 				<div class="col-md-6 col-sm-12">
-					<img src="{{asset('main/images/services/expedited-arrival.png')}}	" class="wwd-img" alt="expedited-arrival">
+					<img src="<?php echo e(asset('main/images/services/expedited-arrival.png')); ?>	" class="wwd-img" alt="expedited-arrival">
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<div class="ml-5">
@@ -309,21 +340,21 @@
 						<div class="row">
 							<div class="col-md-6">
 								<ul class="ls-none">
-									<li><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">Fast Track - Immigration & <span class="m-l-2">Customs</span></li>
-									<li class="mt-2"><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">Baggage Assistance
+									<li><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">Fast Track - Immigration & <span class="m-l-2">Customs</span></li>
+									<li class="mt-2"><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">Baggage Assistance
 									</li>
 								</ul>
 							</div>
 							<div class="col-md-6">
 								<ul class="ls-none">
-									<li><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">VIP Concierge
+									<li><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">VIP Concierge
 									</li>
-									<li class="mt-4"><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">Limousine Services
+									<li class="mt-4"><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">Limousine Services
 									</li>
 								</ul>
 							</div>
 						</div>
-						<a href="{{route('service')}}">
+						<a href="<?php echo e(route('service')); ?>">
 						<button type="submit" class="btn btn-MUA-next brand-bg-red">
 						<i class="ion-android-arrow-forward" aria-hidden="true"></i>
 						</button>
@@ -342,30 +373,30 @@
 					<div class="row">
 						<div class="col-md-6">
 							<ul class="ls-none">
-								<li><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">Gate-To-Gate Service
+								<li><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">Gate-To-Gate Service
 								</li>
-								<li class="mt-2"><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">Expedite Transfer from
+								<li class="mt-2"><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">Expedite Transfer from
 									<span class="m-l-2">Terminal</span>
 								</li>
 							</ul>
 						</div>
 						<div class="col-md-6">
 							<ul class="ls-none">
-								<li><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">Lounge Access</li>
-								<li class="mt-2"><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">
+								<li><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">Lounge Access</li>
+								<li class="mt-2"><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">
 									Meet and Assist
 								</li>
 							</ul>
 						</div>
 					</div>
-					<a href="{{route('service')}}">
+					<a href="<?php echo e(route('service')); ?>">
 					<button type="submit" class="btn btn-MUA-next brand-bg-red mt-3">
 					<i class="ion-android-arrow-forward" aria-hidden="true"></i>
 					</button>
 					</a>
 				</div>
 				<div class="col-md-6 col-sm-12">
-					<img class="d-block m-auto wwd-img" src="{{asset('main/images/services/smooth-transfer.png')}}"
+					<img class="d-block m-auto wwd-img" src="<?php echo e(asset('main/images/services/smooth-transfer.png')); ?>"
 					alt="smooth-transfer">
 				</div>
 			</div>
@@ -375,7 +406,7 @@
 		<section class="container pt-5 pb-6">
 			<div class="row">
 				<div class="col-md-6 col-sm-12">
-					<img src="{{asset('main/images/services/special-needs.png')}}" class="wwd-img" alt="special-needs">
+					<img src="<?php echo e(asset('main/images/services/special-needs.png')); ?>" class="wwd-img" alt="special-needs">
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<div>
@@ -384,24 +415,24 @@
 						<div class="row">
 							<div class="col-md-6">
 								<ul class="ls-none">
-									<li><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">Safety Assistance
+									<li><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">Safety Assistance
 									</li>
-									<li class="mt-4"><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">Unaccompanied Minor Service
+									<li class="mt-4"><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">Unaccompanied Minor Service
 									</li>
 								</ul>
 							</div>
 							<div class="col-md-6">
 								<ul class="ls-none">
-									<li><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">Mobility and
+									<li><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">Mobility and
 										Health-Related <span class="m-l-2">Service</span>
 									</li>
-									<li class="mt-2"><img src="{{asset('main/images/icons/circle-check.png')}}" height="22" class="pr-2">
+									<li class="mt-2"><img src="<?php echo e(asset('main/images/icons/circle-check.png')); ?>" height="22" class="pr-2">
 										Traveling With Infants
 									</li>
 								</ul>
 							</div>
 						</div>
-						<a href="{{route('service')}}">
+						<a href="<?php echo e(route('service')); ?>">
 						<button type="submit" class="btn btn-MUA-next brand-bg-red">
 						<i class="ion-android-arrow-forward" aria-hidden="true"></i>
 						</button>
@@ -418,8 +449,8 @@
 			<span> Airport Assist  by MUrgency App</span></h1>
 			<p class="text-white  mt-4">We guarantee an efficient and pleasant experience<br>No matter which Airport you are in</p>
 			<ul>
-				<li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.airport.assistance"><img src="{{asset('main/images/icons/android-download.png')}}" alt="Android Application"></a></li>
-				<li><a target="_blank" href="https://itunes.apple.com/gb/app/airport-assist/id1256650769?mt=8"><img src="{{asset('main/images/icons/apple-download.png')}}" alt="ios Application"></a></li>
+				<li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.airport.assistance"><img src="<?php echo e(asset('main/images/icons/android-download.png')); ?>" alt="Android Application"></a></li>
+				<li><a target="_blank" href="https://itunes.apple.com/gb/app/airport-assist/id1256650769?mt=8"><img src="<?php echo e(asset('main/images/icons/apple-download.png')); ?>" alt="ios Application"></a></li>
 			</ul>
 		</div>
 	</section>
@@ -436,7 +467,7 @@
 					<div class="col-md-4">
 						<div class="card no-border">
 							<div class="card-body">
-								<img src="{{asset('main/images/family-individuals.png')}}" class="d-block m-auto pb-4" alt="">
+								<img src="<?php echo e(asset('main/images/family-individuals.png')); ?>" class="d-block m-auto pb-4" alt="">
 								<h5 class="text-center text-uppercase">Family/Individuals</h5>
 								<p class="text-justify text-center">
 									Airport assistance for regular passengers, mom traveling alone with kids, large groups, or travelers with special needs.
@@ -452,7 +483,7 @@
 					<div class="col-md-4">
 						<div class="card no-border">
 							<div class="card-body">
-								<img src="{{asset('main/images/business-executives-and-vips.png')}}" class="d-block m-auto pb-4" alt="">
+								<img src="<?php echo e(asset('main/images/business-executives-and-vips.png')); ?>" class="d-block m-auto pb-4" alt="">
 								<h5 class="text-center text-uppercase">Business Executives and VIPs</h5>
 								<p class="text-justify text-center">
 									Airport services for celebrities, business travelers, sports personalities, corporate groups, diplomats or politicians.
@@ -468,7 +499,7 @@
 					<div class="col-md-4">
 						<div class="card no-border">
 							<div class="card-body">
-								<img src="{{asset('main/images/jet-owners.png')}}" class="d-block m-auto pb-4" alt="">
+								<img src="<?php echo e(asset('main/images/jet-owners.png')); ?>" class="d-block m-auto pb-4" alt="">
 								<h5 class="text-center text-uppercase">Jet Owners</h5>
 								<p class="text-justify text-center">
 									Ground handling services are available for private jets, medical flights, and charter flights.
@@ -498,25 +529,25 @@
 					<div class="col-md-6 col-sm-12">
 						<div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner">
-           @foreach($testimonials as $testimonial)
-								<div class="carousel-item {{($testimonial->id==1)?'active':''}}">
-									<img src="{{asset('main/images/testimonial/'.$testimonial->image)}}" class="img-circle d-block m-auto" width="100px" alt="">
-									<h5 class="text-uppercase w-75 m-auto pt-5 text-center">{{$testimonial->title}}</h5>
-									<p class="pt-3 pb-3 text-justify w-65 m-auto">{{$testimonial->shortDescription}}</p>
-									<p class="pt-3 text-center brand-red"><b>-{{$testimonial->firstName." ".$testimonial->lastName}}</b></p>
+           <?php $__currentLoopData = $testimonials; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $testimonial): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+								<div class="carousel-item <?php echo e(($testimonial->id==1)?'active':''); ?>">
+									<img src="<?php echo e(asset('main/images/testimonial/'.$testimonial->image)); ?>" class="img-circle d-block m-auto" width="100px" alt="">
+									<h5 class="text-uppercase w-75 m-auto pt-5 text-center"><?php echo e($testimonial->title); ?></h5>
+									<p class="pt-3 pb-3 text-justify w-65 m-auto"><?php echo e($testimonial->shortDescription); ?></p>
+									<p class="pt-3 text-center brand-red"><b>-<?php echo e($testimonial->firstName." ".$testimonial->lastName); ?></b></p>
 								</div>
 
-            @endforeach
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 							</div>
 							<a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
 								<span class="carousel-control-prev-icon" aria-hidden="true">
-									<img src="{{asset('main/images/icons/prev.png')}}" height="50" alt="">
+									<img src="<?php echo e(asset('main/images/icons/prev.png')); ?>" height="50" alt="">
 								</span>
 								<span class="sr-only">Previous</span>
 							</a>
 							<a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
 								<span class="carousel-control-next-icon" aria-hidden="true">
-									<img src="{{asset('main/images/icons/next.png')}}" height="50" alt="">
+									<img src="<?php echo e(asset('main/images/icons/next.png')); ?>" height="50" alt="">
 								</span>
 								<span class="sr-only">Next</span>
 							</a>
@@ -560,8 +591,8 @@
 			</section>
 		</div>
 	</section>
-  @endsection
-	@push('scripts')
+  <?php $__env->stopSection(); ?>
+	<?php $__env->startPush('scripts'); ?>
 	<script>
 	var input = document.querySelector("#mobile_number");
 	  var iti = intlTelInput(input, {
@@ -586,12 +617,12 @@
 	  //   placeholderNumberType: "MOBILE",
 	     preferredCountries: ['us', 'in'],
 	     separateDialCode: true,
-	    utilsScript: "{{asset('main/build/js/utils.js')}}",
+	    utilsScript: "<?php echo e(asset('main/build/js/utils.js')); ?>",
 
 	  });
-		@if(old('mobile_number') != "" && old('country_code') != "")
-			iti.setNumber("{{'+'.old('country_code').old('mobile_number')}}");
-		@endIf
+		<?php if(old('mobile_number') != "" && old('country_code') != ""): ?>
+			iti.setNumber("<?php echo e('+'.old('country_code').old('mobile_number')); ?>");
+		<?php endif; ?>
 		$("#submitButton").click(function(){
 	      var country = iti.getSelectedCountryData();
 	      $("#country_code").val(country.dialCode);
@@ -615,4 +646,6 @@
 	    return $("<li>").data("ui-autocomplete-item", item).append("<span class='airport-code'>" + item.iata + "</span>" + " " + "<span class='airport-name'>" + item.airportName + "</span>" + "<div class='autocomplete-divider'></div>").appendTo(ul);
 	};
 	</script>
-	@endpush
+	<?php $__env->stopPush(); ?>
+
+<?php echo $__env->make('layouts.main', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Users/manojvelyalan/Sites/airport-assist-laravel/resources/views/main/home/index.blade.php ENDPATH**/ ?>

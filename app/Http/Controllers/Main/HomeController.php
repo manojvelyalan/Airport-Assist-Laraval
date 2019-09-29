@@ -10,6 +10,7 @@ use App\AirportServedList;
 use App\Common;
 use App\User;
 use App\Request as UserRequest;
+use Illuminate\Support\Facades\Validator;
 
 use Illuminate\Support\Facades\Hash;
 class HomeController extends Controller
@@ -27,8 +28,8 @@ class HomeController extends Controller
         'titleName'=>'title',
         'firstName'=>'first name',
         'lastName'=>'last name',
-        'mobile_number_country'=>'country code',
-        'phoneNumber'=>'phone number',
+        'mobile_number'=>'phone number',
+        'country_code'=>'country code',
         'originAirport'=>'origin airport'
       ];
     }
@@ -49,10 +50,7 @@ class HomeController extends Controller
         return view('main.home.service',['pageTitle'=>$pageTitle,'pageDescription'=>$pageDescription,'displayAirportName'=>$request->session()->get('displayName')]);
     }
 
-    public function book(){
 
-        return view('main.home.book');
-    }
     public function served(Request $request){
       $countryId = "";
       $countryLists  = AirportServedList::All()->unique('country_id');
@@ -88,26 +86,31 @@ class HomeController extends Controller
         'titleName'=>['required'],
         'firstName'=>['required'],
         'lastName'=>['required'],
-        'mobile_number_country'=>['required'],
-        'phoneNumber'=>['required'],
+        'mobile_number'=>['required','integer'],
+        'country_code'=>['required'],
         'originAirport'=>['required'],
       ];
     }
 
     public function store(Request $request){
-        Common::validator($request->all(),$this->step1Rule(),$this->attributes())->validate();
+       $validator =  Validator::make($request->all(),$this->step1Rule())->setAttributeNames($this->attributes());
+    //Common::validator($request->all(),$this->step1Rule(),$this->attributes())->validate();
+    if ($validator->fails()) {
+      return redirect("/#register") ->withErrors($validator)->withInput();
+    }
+
         $user = User::where('username',$request->email)->first();
         if($user == ""){
           $user = new User();
-          $userid = $user->createUser($request)->id;
+          $userId = $user->createUser($request)->id;
           $isRepeat = false;
         }else{
           $userId = $user->id;
           $isRepeat = true;
         }
         $userRequest = new UserRequest;
-        $req = $userRequest->createRequest($request, $userId, $isRepeat);
-        dd($req->id);
+        $req = $userRequest->createOrUpdateRequest($request, $userId, $isRepeat);
+        return redirect("step-2/$req->id");
     }
 
 }

@@ -6,6 +6,8 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Request;
+use Illuminate\Support\Facades\Hash;
+
 class User extends Authenticatable
 {
     use Notifiable;
@@ -16,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'contactNumber','countryCode','titleName','firstName', 'lastName','email', 'password','department_id','username','isAdmin','status','isDelete','profileImage'
+        'contactNumber','titleName','firstName', 'lastName','email', 'password','department_id','username','isAdmin','status','isDelete','profileImage'
     ];
 
     /**
@@ -37,7 +39,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
     public function department(){
-        return $this->belongsTo(Department::class);
+        return $this->belongsTo(Department::class,'department_id');
     }
     public function requests(){
       return $this->hasMany(Request::class,id,respondedBy);
@@ -66,17 +68,16 @@ class User extends Authenticatable
    public function createUser($request){
      $user = self::create([
        'username'=>$request->email,
-       'titleName'=>$request->titleName,
-       'firstName'=>$request->firstName,
-       'lastName'=>$request->lastName,
-       'countryCode'=>$request->mobile_number_country,
-       'contactNumber'=>$request->phoneNumber,
+       'titleName'=>strtolower($request->titleName),
+       'firstName'=>strtolower($request->firstName),
+       'lastName'=>strtolower($request->lastName),
+       'contactNumber'=>$request->mobile_number,
        'password'=>Hash::make(User::createPassword()),
        'email'=>$request->email,
        'status'=>true,
        'isAdmin'=>false,
        'isDelete'=>false,
      ]);
-     return $suer;
+     return $user;
    }
 }
