@@ -47,7 +47,7 @@
                                 Please make the payment of USD {{$data['amount']}} {{$data['creditcardCharge']}}by clicking the link
                             </p>
                             <p>
-                                <a href="https://www.murgencyairportassistance.com/payment?r={{$data['serviceCode']}}">https://www.murgencyairportassistance.com/payment?r={{$data['serviceCode']}}</a>
+                                <a href="https://www.murgencyairportassistance.com/payment/show/{{$data['serviceCode']}}">https://www.murgencyairportassistance.com/payment/show/{{$data['serviceCode']}}</a>
                             </p>
                             <p>
                                 The service will be confirmed by email after receiving the payment.

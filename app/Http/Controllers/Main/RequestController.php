@@ -9,6 +9,8 @@ use App\ServiceType;
 use App\Request as Req;
 use Illuminate\Http\Request;
 use App\User;
+
+
 class RequestController  extends Controller{
   public function __construct(){
 
@@ -95,7 +97,7 @@ class RequestController  extends Controller{
       $user = User::where('username',$request->email)->first();
       if($user == ""){
         $user = new User();
-        $userid = $user->createUser($request)->id;
+        $userId = $user->createUser($request)->id;
         $isRepeat = false;
       }else{
         $userId = $user->id;
@@ -103,6 +105,8 @@ class RequestController  extends Controller{
       }
       $userRequest = new Req;
       $req = $userRequest->createOrUpdateRequest($request, $userId, $isRepeat);
+
+
       return redirect("step-2/$req->id");
   }
   public function step2(Request $request, Req $req){

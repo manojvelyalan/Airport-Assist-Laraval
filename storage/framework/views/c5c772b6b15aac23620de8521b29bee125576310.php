@@ -47,7 +47,7 @@
                                 Please make the payment of USD <?php echo e($data['amount']); ?> <?php echo e($data['creditcardCharge']); ?>by clicking the link
                             </p>
                             <p>
-                                <a href="https://www.murgencyairportassistance.com/payment?r=<?php echo e($data['serviceCode']); ?>">https://www.murgencyairportassistance.com/payment?r=<?php echo e($data['serviceCode']); ?></a>
+                                <a href="https://www.murgencyairportassistance.com/payment/show/<?php echo e($data['serviceCode']); ?>">https://www.murgencyairportassistance.com/payment/show/<?php echo e($data['serviceCode']); ?></a>
                             </p>
                             <p>
                                 The service will be confirmed by email after receiving the payment.

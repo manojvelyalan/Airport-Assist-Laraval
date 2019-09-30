@@ -30,7 +30,7 @@
                                     <input type="text" class="form-control" name="fullName" placeholder="Full Name" id="fullName" value="{{ old('fullName') }}">
                                     @error('fullName')
                                         <span class="text-danger" role="alert">
-                                            <strong>{{ $message }}</strong>
+                                            {{ $message }}
                                         </span>
                                     @enderror
                                 </div>
@@ -38,7 +38,7 @@
                                     <input type="email" class="form-control" name="email" placeholder="Email" id="email"value="{{ old('email') }}" >
                                     @error('email')
                                         <span class="text-danger" role="alert">
-                                            <strong>{{ $message }}</strong>
+                                            {{ $message }}
                                         </span>
                                     @enderror
                                 </div>
@@ -48,7 +48,7 @@
                                         <input type="tel" class="form-control" id="mobile_number_country" name="mobile_number_country" placeholder="Country Code"   readonly>
                                         @error('mobile_number_country')
                                             <span class="text-danger" role="alert">
-                                                <strong>{{ $message }}</strong>
+                                                {{ $message }}
                                             </span>
                                         @enderror
                                 </div>
@@ -56,7 +56,7 @@
         <input type="tel" class="form-control" name="phoneNumber" placeholder="Phone number" id="phoneNumber" value="{{ old('phoneNumber') }}">
         @error('phoneNumber')
             <span class="text-danger" role="alert">
-                <strong>{{ $message }}</strong>
+                {{ $message }}
             </span>
         @enderror
                                 </div>
@@ -64,7 +64,7 @@
                                     <input type="text" class="form-control" name="subject" placeholder="Subject" id="subject" value="{{ old('subject') }}">
                                     @error('subject')
                                         <span class="text-danger" role="alert">
-                                            <strong>{{ $message }}</strong>
+                                            {{ $message }}
                                         </span>
                                     @enderror
                                 </div>
@@ -73,7 +73,7 @@
                                 <textarea name="message" class="form-control" rows="5" placeholder="Message" id="message">{{ old('message') }}</textarea>
                                 @error('message')
                                     <span class="text-danger" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        {{ $message }}  
                                     </span>
                                 @enderror
                             </div>
