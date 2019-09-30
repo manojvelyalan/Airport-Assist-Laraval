@@ -10,6 +10,11 @@ use App\Request as Req;
 use Illuminate\Http\Request;
 use App\User;
 class RequestController  extends Controller{
+  public function __construct(){
+
+    $this->middleware('airport.name');
+
+  }
   public function attributes(){
     return [
       'email'=>'email',
@@ -19,7 +24,19 @@ class RequestController  extends Controller{
       'lastName'=>'last name',
       'mobile_number'=>'phone number',
       'country_code'=>'country code',
-      'originAirport'=>'origin airport'
+      'originAirport'=>'origin airport',
+      'service_type'=>'servie type',
+      'airlineName'=>'airline name',
+      'flightNumber'=>'flight number',
+      'arrivalDate' => 'arrival date',
+      'arrivalTime'=>'arrival time',
+      'pickordropAddress'=>'pick or drop address',
+      'departureDate'=>'departure date',
+      'departureTime'=>'departure time',
+      'TAirlineName'=>'transit airline name',
+      'transitNumber'=>'transit flight number',
+      'adults'=>'adults',
+      'classOfTravel'=>'class of travel'
     ];
   }
   public function step1(Request $request){
@@ -50,6 +67,26 @@ class RequestController  extends Controller{
       'originAirport'=>['required'],
     ];
   }
+  public function step2Rule(){
+    return[
+      'service_type'=>['required'],
+      'airlineName'=>['required'],
+      'flightNumber'=>['required'],
+      'arrivalDate'=>['required_if:service_type,2,5,1'],
+      'arrivalTime'=>['required_if:service_type,2,5,1'],
+      'departureDate'=>['required_if:service_type,4,5'],
+      'departureTime'=>['required_if:service_type,4,5'],
+      'pickordropAddress'=>['required_if:service_type,1'],
+      'TAirlineName'=>['required_if:service_type,5'],
+      'transitNumber'=>['required_if:service_type,5'],
+    ];
+  }
+  public function step3Rule(){
+      return[
+        'adults'=>'required_without_all:children,infants',
+        'classOfTravel'=>'required'
+      ];
+  }
   public function postStep1(Request $request){
 
     $request['mobile_number'] = str_replace(' ', '', $request->mobile_number);
@@ -76,16 +113,42 @@ class RequestController  extends Controller{
     ]);
   }
 
-  public function step3(Request $request){
-    $step = 3;
-    $serviceTypes = ServiceType::where('status',true)->get();
-    $classOfTravels = ClassOfTravel::where('status',true)->get();
-    $titles = Title::where('status',true)->orderBy('title','asc')->get();
-    return view('main.request.step-3',[
-      'serviceTypes'=>$serviceTypes,
-      'classOfTravels'=>$classOfTravels,
-      'titles'=>$titles,
-      'step'=>$step,
-    ]);
+  public function postStep2(Request $request, Req $req){
+      Common::validator($request->all(),$this->step2Rule(),$this->attributes())->validate();
+      $req->update([
+          'service_type_id'=>$request->service_type,
+          'flightNumber'=>$request->airlineName."-".$request->flightNumber,
+          'arrivalDate'=>($request->arrivalDate != "")?date("Y-m-d",strtotime($request->arrivalDate)):NULL,
+          'arrivalTime'=>($request->arrivalTime != "")?$request->arrivalTime:NULL,
+          'departureDate'=>($request->departureDate != "")?date("Y-m-d",strtotime($request->departureDate)):NULL,
+          'departureTime'=>($request->departureTime != "")?$request->departureTime:NULL,
+          'pickOrDropAddress'=>($request->pickordropAddress != "")?$request->pickordropAddress:NULL,
+          'isPickup'=>($request->isPickUp == "pickup")?true:false,
+          'transitFlightNumber'=>$request->TAirlineName."-".$request->transitNumber,
+      ]);
+      return redirect("step-3/$req->id");
   }
+
+  public function step3(Request $request, Req $req){
+      $classOfTravels = ClassOfTravel::where('status',true)->get();
+      return view('main.request.step-3',[
+        'classOfTravels'=>$classOfTravels,
+        'request'=>$req
+      ]);
+  }
+  public function postStep3(Request $request, Req $req){
+    Common::validator($request->all(),$this->step3Rule(),$this->attributes())->validate();
+    $req->update([
+      'adults'=>($request->adults != "")?$request->adults : NULL,
+      'children'=>($request->children != "")?$request->children : NULL,
+      'infants'=>($request->infants != "")?$request->infants : NULL,
+      'classOfTravel_id'=>$request->classOfTravel,
+      'message'=>($request->message != "")?$request->message : NULL,
+    ]);
+    return redirect("welcome");
+  }
+  public function welcome(Request $request){
+    return view('main.request.welcome');
+  }
+
 }

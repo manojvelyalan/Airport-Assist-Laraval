@@ -34,7 +34,7 @@
                                     </div>
                                     @error('email')
                         								<span class="text-danger" role="alert">
-                        										<strong>{{ $message }}</strong>
+                        										{{ $message }}
                         								</span>
                         						@enderror
                                 </div>
@@ -42,7 +42,7 @@
                                     <input  class="form-control" name="email_confirmation" placeholder ="Confirm Email" id="email_confirmation" value="{{($request == false)?old('email_confirmation'):$request->email}}">
                                     @error('email_confirmation')
                                         <span class="text-danger" role="alert">
-                                            <strong>{{ $message }}</strong>
+                                             {{ $message }}
                                         </span>
                                     @enderror
                                 </div>
@@ -53,7 +53,7 @@
                                     <input  class="form-control" name="originAirport" placeholder ="Airport where you want service" id="originAirport" value="{{($request == false)?old('originAirport'):$request->originAirport}}">
                                     @error('originAirport')
                                         <span class="text-danger" role="alert">
-                                            <strong>{{ $message }}</strong>
+                                             {{ $message }}
                                         </span>
                                     @enderror
                                 </div>
@@ -71,7 +71,7 @@
                                     </select>
                                     @error('titleName')
                                         <span class="text-danger" role="alert">
-                                            <strong>{{ $message }}</strong>
+                                             {{ $message }}
                                         </span>
                                     @enderror
                                 </div>
@@ -79,7 +79,7 @@
                                     <input type="text" class="form-control" name="firstName" placeholder="FirstName"  id="firstName" value="{{($request == false)?old('firstName'):$request->firstName}}">
                                     @error('firstName')
                                         <span class="text-danger" role="alert">
-                                            <strong>{{ $message }}</strong>
+                                             {{ $message }}
                                         </span>
                                     @enderror
                                 </div>
@@ -87,7 +87,7 @@
                                     <input type="text" class="form-control" name="lastName" placeholder="Last Name"  id="lastName" value="{{($request == false)?old('lastName'):$request->lastName}}">
                                     @error('lastName')
                                         <span class="text-danger" role="alert">
-                                            <strong>{{ $message }}</strong>
+                                             {{ $message }}
                                         </span>
                                     @enderror
                                 </div>
@@ -97,12 +97,12 @@
                                     <input type="tel" class="form-control" id="mobile_number" name="mobile_number">
                                     @error('mobile_number')
                                         <span class="text-danger" role="alert">
-                                            <strong>{{ $message }}</strong>
+                                             {{ $message }}
                                         </span>
                                     @enderror
                                     @error('country_code')
                                         <span class="text-danger" role="alert">
-                                            <strong>{{ $message }}</strong>
+                                             {{ $message }}
                                         </span>
                                     @enderror
                                 </div>
@@ -131,29 +131,11 @@
 <script>
 var input = document.querySelector("#mobile_number");
   var iti = intlTelInput(input, {
-    // allowDropdown: false,
-    // autoHideDialCode: false,
-    // autoPlaceholder: "off",
     dropdownContainer: document.body,
-    // excludeCountries: ["us"],
-  //   formatOnDisplay: false,
-    // geoIpLookup: function(callback) {
-    //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-  //       var countryCode = (resp && resp.country) ? resp.country : "";
-
-  //       callback(countryCode);
-  //     });
-  //   },
-     hiddenInput: "country_code",
-    // initialCountry: "auto",
-    // localizedCountries: { 'de': 'Deutschland' },
-    // nationalMode: false,
-    // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-  //   placeholderNumberType: "MOBILE",
-     preferredCountries: ['us', 'in'],
-     separateDialCode: true,
+    hiddenInput: "country_code",
+    preferredCountries: ['us', 'in'],
+    separateDialCode: true,
     utilsScript: "{{asset('main/build/js/utils.js')}}",
-
   });
   @if($full_number != "")
   iti.setNumber("{{$full_number}}");
