@@ -27,78 +27,101 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <input type="text" class="form-control" name="fullName" placeholder="Full Name" id="fullName" value="<?php echo e(old('fullName')); ?>">
-                                    <?php if ($errors->has('fullName')) :
-if (isset($message)) { $messageCache = $message; }
-$message = $errors->first('fullName'); ?>
+                                    <?php $__errorArgs = ['fullName'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
                                         <span class="text-danger" role="alert">
-                                            <strong><?php echo e($message); ?></strong>
+                                            <?php echo e($message); ?>
+
                                         </span>
                                     <?php unset($message);
-if (isset($messageCache)) { $message = $messageCache; }
-endif; ?>
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                 </div>
                                 <div class="form-group col-md-6" id="airport-autocomplete">
                                     <input type="email" class="form-control" name="email" placeholder="Email" id="email"value="<?php echo e(old('email')); ?>" >
-                                    <?php if ($errors->has('email')) :
-if (isset($message)) { $messageCache = $message; }
-$message = $errors->first('email'); ?>
+                                    <?php $__errorArgs = ['email'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
                                         <span class="text-danger" role="alert">
-                                            <strong><?php echo e($message); ?></strong>
+                                            <?php echo e($message); ?>
+
                                         </span>
                                     <?php unset($message);
-if (isset($messageCache)) { $message = $messageCache; }
-endif; ?>
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-md-3 form-group">
                                         <input type="tel" class="form-control" id="mobile_number_country" name="mobile_number_country" placeholder="Country Code"   readonly>
-                                        <?php if ($errors->has('mobile_number_country')) :
-if (isset($message)) { $messageCache = $message; }
-$message = $errors->first('mobile_number_country'); ?>
+                                        <?php $__errorArgs = ['mobile_number_country'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
                                             <span class="text-danger" role="alert">
-                                                <strong><?php echo e($message); ?></strong>
+                                                <?php echo e($message); ?>
+
                                             </span>
                                         <?php unset($message);
-if (isset($messageCache)) { $message = $messageCache; }
-endif; ?>
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                 </div>
                                 <div class="col-md-4 form-group">
         <input type="tel" class="form-control" name="phoneNumber" placeholder="Phone number" id="phoneNumber" value="<?php echo e(old('phoneNumber')); ?>">
-        <?php if ($errors->has('phoneNumber')) :
-if (isset($message)) { $messageCache = $message; }
-$message = $errors->first('phoneNumber'); ?>
+        <?php $__errorArgs = ['phoneNumber'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
             <span class="text-danger" role="alert">
-                <strong><?php echo e($message); ?></strong>
+                <?php echo e($message); ?>
+
             </span>
         <?php unset($message);
-if (isset($messageCache)) { $message = $messageCache; }
-endif; ?>
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                 </div>
                                 <div class="form-group col-md-5" id="airport-autocomplete">
                                     <input type="text" class="form-control" name="subject" placeholder="Subject" id="subject" value="<?php echo e(old('subject')); ?>">
-                                    <?php if ($errors->has('subject')) :
-if (isset($message)) { $messageCache = $message; }
-$message = $errors->first('subject'); ?>
+                                    <?php $__errorArgs = ['subject'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
                                         <span class="text-danger" role="alert">
-                                            <strong><?php echo e($message); ?></strong>
+                                            <?php echo e($message); ?>
+
                                         </span>
                                     <?php unset($message);
-if (isset($messageCache)) { $message = $messageCache; }
-endif; ?>
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <textarea name="message" class="form-control" rows="5" placeholder="Message" id="message"><?php echo e(old('message')); ?></textarea>
-                                <?php if ($errors->has('message')) :
-if (isset($message)) { $messageCache = $message; }
-$message = $errors->first('message'); ?>
+                                <?php $__errorArgs = ['message'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
                                     <span class="text-danger" role="alert">
-                                        <strong><?php echo e($message); ?></strong>
+                                        <?php echo e($message); ?>  
                                     </span>
                                 <?php unset($message);
-if (isset($messageCache)) { $message = $messageCache; }
-endif; ?>
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                             </div>
                             <div class="btn-group float-right" role="group">
                                 <button type="submit" class="btn btn-MUA-next float-right brand-bg-red" id="contact"><i class="ion-android-arrow-forward" id="contactFA"></i>

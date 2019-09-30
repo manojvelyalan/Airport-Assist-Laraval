@@ -64,10 +64,11 @@ Route::post('/comments','Main\MainBlogController@comments')->name('comments');
  // Contact
 
  Route::get('/contact','Main\ContactController@contact')->name('contact');
-
  Route::post('/contact','Main\MailController@contact_send');
 
+//payment..
 
+Route::get('/payment/show/{service_code}','Main\PaymentController@show')->name('paymentdetails');
 
 // Dashboard...
 

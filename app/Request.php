@@ -4,6 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use App\Jobs\SendAdminRequestSuccessMail;
+use App\Jobs\UserRequestSuccessMail;
 class Request extends Model
 
 {
@@ -82,6 +84,7 @@ class Request extends Model
     public function vendorPaymentMode(){
         return $this->belongsTo(VendorPaymentMode::class,'vendor_payment_mode_id');
     }
+    
 
     public function createOrUpdateRequest($request, $userId, $isRepeat){
       if($request->request_id != ""){
@@ -99,7 +102,7 @@ class Request extends Model
           ]);
           return $req;
         }else{
-          return $req =  self::create([
+           $req =  self::create([
             'serviceCode'=>Str::random(10),
             'titleName'=>$request->titleName,
             'firstName'=>strtolower($request->firstName),
@@ -114,6 +117,9 @@ class Request extends Model
             'domainName'=>$request->session()->get('domainName'),
             'isRepeat'=>$isRepeat
           ]);
+            dispatch(new SendAdminRequestSuccessMail($req));
+            dispatch(new UserRequestSuccessMail($req));
+            return $req;
       }
 
     }
