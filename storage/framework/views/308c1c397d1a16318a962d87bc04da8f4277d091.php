@@ -34,7 +34,8 @@
 if (isset($message)) { $messageCache = $message; }
 $message = $errors->first('email'); ?>
                         								<span class="text-danger" role="alert">
-                        										<strong><?php echo e($message); ?></strong>
+                        										<?php echo e($message); ?>
+
                         								</span>
                         						<?php unset($message);
 if (isset($messageCache)) { $message = $messageCache; }
@@ -46,7 +47,8 @@ endif; ?>
 if (isset($message)) { $messageCache = $message; }
 $message = $errors->first('email_confirmation'); ?>
                                         <span class="text-danger" role="alert">
-                                            <strong><?php echo e($message); ?></strong>
+                                             <?php echo e($message); ?>
+
                                         </span>
                                     <?php unset($message);
 if (isset($messageCache)) { $message = $messageCache; }
@@ -61,7 +63,8 @@ endif; ?>
 if (isset($message)) { $messageCache = $message; }
 $message = $errors->first('originAirport'); ?>
                                         <span class="text-danger" role="alert">
-                                            <strong><?php echo e($message); ?></strong>
+                                             <?php echo e($message); ?>
+
                                         </span>
                                     <?php unset($message);
 if (isset($messageCache)) { $message = $messageCache; }
@@ -83,7 +86,8 @@ endif; ?>
 if (isset($message)) { $messageCache = $message; }
 $message = $errors->first('titleName'); ?>
                                         <span class="text-danger" role="alert">
-                                            <strong><?php echo e($message); ?></strong>
+                                             <?php echo e($message); ?>
+
                                         </span>
                                     <?php unset($message);
 if (isset($messageCache)) { $message = $messageCache; }
@@ -95,7 +99,8 @@ endif; ?>
 if (isset($message)) { $messageCache = $message; }
 $message = $errors->first('firstName'); ?>
                                         <span class="text-danger" role="alert">
-                                            <strong><?php echo e($message); ?></strong>
+                                             <?php echo e($message); ?>
+
                                         </span>
                                     <?php unset($message);
 if (isset($messageCache)) { $message = $messageCache; }
@@ -107,7 +112,8 @@ endif; ?>
 if (isset($message)) { $messageCache = $message; }
 $message = $errors->first('lastName'); ?>
                                         <span class="text-danger" role="alert">
-                                            <strong><?php echo e($message); ?></strong>
+                                             <?php echo e($message); ?>
+
                                         </span>
                                     <?php unset($message);
 if (isset($messageCache)) { $message = $messageCache; }
@@ -121,7 +127,8 @@ endif; ?>
 if (isset($message)) { $messageCache = $message; }
 $message = $errors->first('mobile_number'); ?>
                                         <span class="text-danger" role="alert">
-                                            <strong><?php echo e($message); ?></strong>
+                                             <?php echo e($message); ?>
+
                                         </span>
                                     <?php unset($message);
 if (isset($messageCache)) { $message = $messageCache; }
@@ -130,7 +137,8 @@ endif; ?>
 if (isset($message)) { $messageCache = $message; }
 $message = $errors->first('country_code'); ?>
                                         <span class="text-danger" role="alert">
-                                            <strong><?php echo e($message); ?></strong>
+                                             <?php echo e($message); ?>
+
                                         </span>
                                     <?php unset($message);
 if (isset($messageCache)) { $message = $messageCache; }
@@ -161,29 +169,11 @@ endif; ?>
 <script>
 var input = document.querySelector("#mobile_number");
   var iti = intlTelInput(input, {
-    // allowDropdown: false,
-    // autoHideDialCode: false,
-    // autoPlaceholder: "off",
     dropdownContainer: document.body,
-    // excludeCountries: ["us"],
-  //   formatOnDisplay: false,
-    // geoIpLookup: function(callback) {
-    //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-  //       var countryCode = (resp && resp.country) ? resp.country : "";
-
-  //       callback(countryCode);
-  //     });
-  //   },
-     hiddenInput: "country_code",
-    // initialCountry: "auto",
-    // localizedCountries: { 'de': 'Deutschland' },
-    // nationalMode: false,
-    // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-  //   placeholderNumberType: "MOBILE",
-     preferredCountries: ['us', 'in'],
-     separateDialCode: true,
+    hiddenInput: "country_code",
+    preferredCountries: ['us', 'in'],
+    separateDialCode: true,
     utilsScript: "<?php echo e(asset('main/build/js/utils.js')); ?>",
-
   });
   <?php if($full_number != ""): ?>
   iti.setNumber("<?php echo e($full_number); ?>");

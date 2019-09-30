@@ -71,10 +71,10 @@
                         <div class="mr-auto"></div>
                         <ul class="navbar-nav">
                              <li class="nav-item hvr-overline-from-center">
-                                <a class="nav-link text-uppercase" href="{{route('step-1')}}">Book Airport Service</a>
+                                <a class="nav-link text-uppercase" href="{{route('service')}}">Book Airport Service</a>
                             </li>
                             <li class="nav-item hvr-overline-from-center">
-                                <a class="nav-link text-uppercase" href="{{route('service')}}">Services</a>
+                                <a class="nav-link text-uppercase" href="{{route('ourservice')}}">Services</a>
                             </li>
                             <li class="nav-item hvr-overline-from-center">
                                 <a class="nav-link text-uppercase" href="{{route('airportserved')}}">Airports Served</a>

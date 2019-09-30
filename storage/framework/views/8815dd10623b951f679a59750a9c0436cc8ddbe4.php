@@ -71,10 +71,10 @@
                         <div class="mr-auto"></div>
                         <ul class="navbar-nav">
                              <li class="nav-item hvr-overline-from-center">
-                                <a class="nav-link text-uppercase" href="<?php echo e(route('step-1')); ?>">Book Airport Service</a>
+                                <a class="nav-link text-uppercase" href="<?php echo e(route('service')); ?>">Book Airport Service</a>
                             </li>
                             <li class="nav-item hvr-overline-from-center">
-                                <a class="nav-link text-uppercase" href="<?php echo e(route('service')); ?>">Services</a>
+                                <a class="nav-link text-uppercase" href="<?php echo e(route('ourservice')); ?>">Services</a>
                             </li>
                             <li class="nav-item hvr-overline-from-center">
                                 <a class="nav-link text-uppercase" href="<?php echo e(route('airportserved')); ?>">Airports Served</a>

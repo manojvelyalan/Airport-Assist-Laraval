@@ -17,16 +17,24 @@ Route::post('/','Main\HomeController@store');
 
 //service..
 
-Route::get('/service','Main\HomeController@service')->name('service');
+Route::get('/ourservice','Main\HomeController@service')->name('ourservice');
+
+//flight search..
+
+Route::get('/flight','Main\FlightController@search')->name('search');
 
 //book service ..
 
-Route::get('/step-1','Main\RequestController@step1')->name('step-1');
+Route::get('/service','Main\RequestController@step1')->name('service');
 Route::post('/step-1','Main\RequestController@postStep1');
-
 Route::get('/step-2/{req}','Main\RequestController@step2')->name('step-2');
-
+Route::put("/step-2/{req}",'Main\RequestController@postStep2');
 Route::get('/step-3/{req}','Main\RequestController@step3')->name('step-3');
+Route::put("/step-3/{req}",'Main\RequestController@postStep3');
+
+//welcome page...
+Route::get('/welcome','Main\RequestController@welcome')->name('welcome');
+
 // airport served...
 
 Route::get('/airportserved','Main\HomeController@served')->name('airportserved');

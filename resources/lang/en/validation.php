@@ -146,4 +146,13 @@ return [
 
     'attributes' => [],
 
+    'values' => [
+    'service_type' => [
+        '2' => 'arrival',
+        '4'=>'departure',
+        '1'=>'limousine',
+        '3'=>'lounge services',
+        '5'=>'transfer / transit'
+    ],
+],
 ];
